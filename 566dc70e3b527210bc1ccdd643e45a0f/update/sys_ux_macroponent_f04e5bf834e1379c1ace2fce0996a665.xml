@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Header Toolbar Component</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "ส่งคำขอ",
+        "fieldType": "string",
+        "label": "Button 1 Label",
+        "name": "btn1Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "https://www.google.com",
+        "fieldType": "string",
+        "label": "Button 1 URL",
+        "name": "btn1Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "fieldType": "boolean",
+        "label": "Button 1 Open in new tab",
+        "name": "btn1NewTab",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 1 Icon URL (optional)",
+        "name": "btn1IconUrl",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ติดตามสถานะ",
+        "fieldType": "string",
+        "label": "Button 2 Label",
+        "name": "btn2Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 2 URL",
+        "name": "btn2Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "fieldType": "boolean",
+        "label": "Button 2 Open in new tab",
+        "name": "btn2NewTab",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 2 Icon URL (optional)",
+        "name": "btn2IconUrl",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ติดตามเงื่อนไขการอนุญาต",
+        "fieldType": "string",
+        "label": "Button 3 Label",
+        "name": "btn3Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 3 URL",
+        "name": "btn3Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "fieldType": "boolean",
+        "label": "Button 3 Open in new tab",
+        "name": "btn3NewTab",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 3 Icon URL (optional)",
+        "name": "btn3IconUrl",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "รายงาน",
+        "fieldType": "string",
+        "label": "Button 4 Label",
+        "name": "btn4Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 4 URL",
+        "name": "btn4Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "fieldType": "boolean",
+        "label": "Button 4 Open in new tab",
+        "name": "btn4NewTab",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Button 4 Icon URL (optional)",
+        "name": "btn4IconUrl",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-1896436-header-toolbar">3e41549ad10c775db595eb2329c3b43e</root_component>
+        <root_component_config>{"btn1Label":"@context/btn1Label","btn1Url":"@context/btn1Url","btn1NewTab":"@context/btn1NewTab","btn1IconUrl":"@context/btn1IconUrl","btn2Label":"@context/btn2Label","btn2Url":"@context/btn2Url","btn2NewTab":"@context/btn2NewTab","btn2IconUrl":"@context/btn2IconUrl","btn3Label":"@context/btn3Label","btn3Url":"@context/btn3Url","btn3NewTab":"@context/btn3NewTab","btn3IconUrl":"@context/btn3IconUrl","btn4Label":"@context/btn4Label","btn4Url":"@context/btn4Url","btn4NewTab":"@context/btn4NewTab","btn4IconUrl":"@context/btn4IconUrl"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:11:40</sys_created_on>
+        <sys_id>f04e5bf834e1379c1ace2fce0996a665</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Header Toolbar Component</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_macroponent_f04e5bf834e1379c1ace2fce0996a665</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:46:01</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=f04e5bf834e1379c1ace2fce0996a665"/>
+</record_update>

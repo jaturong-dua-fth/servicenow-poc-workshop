@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="People Info Default">690362c73b1e3210bc1ccdd643e45a05</macroponent>
+        <name>Transform lookup old name to client state</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log({api, event, helpers, imports}, 6767676767);
+    console.log(api.data.look_up_old_name, 888888888888);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 12:18:11</sys_created_on>
+        <sys_id>20a63c333b52b610bc1ccdd643e45a85</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Transform lookup old name to client state</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_20a63c333b52b610bc1ccdd643e45a85</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 12:23:57</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_client_script_20a63c333b52b610bc1ccdd643e45a85</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="People Info Default"&gt;690362c73b1e3210bc1ccdd643e45a05&lt;/macroponent&gt;&lt;name&gt;Transform lookup old name to client state&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    console.log({api, event, helpers, imports}, 6767676767);
+    console.log(api.data.look_up_old_name, 888888888888);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-14 12:18:11&lt;/sys_created_on&gt;&lt;sys_id&gt;20a63c333b52b610bc1ccdd643e45a85&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Transform lookup old name to client state&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_20a63c333b52b610bc1ccdd643e45a85&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-14 12:23:57&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1278017186</payload_hash>
+        <record_name>Transform lookup old name to client state</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 12:23:57</sys_created_on>
+        <sys_id>ecb5e5b33bd6b610bc1ccdd643e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bbc7672270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 12:23:57</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>acb5e5b34cd6b6102541eebb5c4f9722</update_guid>
+        <update_guid_history>acb5e5b34cd6b6102541eebb5c4f9722:-1278017186,0f45a9732ad6b61067ba162386166280:312784486,9864a9fff896b6103b16d6f00dcb1001:352021350</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 12:26:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>b38b72809f7a48fe9f7d7c293cbc7e24</sys_id>
+        <sys_metadata>20a63c333b52b610bc1ccdd643e45a85</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transform lookup old name to client state</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_20a63c333b52b610bc1ccdd643e45a85</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_20a63c333b52b610bc1ccdd643e45a85">ecb5e5b33bd6b610bc1ccdd643e45a23</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 12:26:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="981eaac33b9e3210bc1ccdd643e45ad0" label="Request" max_length="40" name="x_1896436_bot_ap_0_request" type="collection">
+        <element label="Registered Capital" max_length="40" name="registered_capital" type="string"/>
+        <element label="Title" max_length="255" name="title" type="string"/>
+        <element label="Company Corporation" max_length="255" name="company_corporation" type="string"/>
+        <element label="Request Type" max_length="40" name="request_type" type="string"/>
+        <element label="Authorized Position" max_length="128" name="authorized_position" type="string"/>
+        <element label="Shareholder Capital" max_length="40" name="shareholder_capital" type="string"/>
+        <element label="Authorized Name" max_length="40" name="authorized_name" type="string"/>
+        <element label="Coordinator" max_length="40" name="coordinator" type="string"/>
+        <element label="Company" max_length="255" name="company" type="string"/>
+        <element display="true" label="Status" max_length="40" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Topic" max_length="1024" name="topic" type="string"/>
+    </element>
+</database>

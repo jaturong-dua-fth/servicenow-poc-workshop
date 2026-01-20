@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="People Info Default">690362c73b1e3210bc1ccdd643e45a05</macroponent>
+        <name>Submit spouse old name form</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    api.setState('spouseOldNameFormSubmitted', true);
+
+    const formData = api.state.spouseOldNameForm;
+    let requiredFields = ['title_name', 'first_name_th', 'last_name_th', 'first_name_en', 'last_name_en'];
+    
+    const invalidFields = requiredFields.filter(field => !formData[field]);
+    if (invalidFields.length > 0) {
+        return;
+    }
+
+    const { spouseList, spouseSelectedSysId } = api.state;
+    let currentSpouseList = [
+        ...spouseList,
+    ];
+    let currentSpouseOldName = {};
+
+    // new item
+    if (!formData.sys_id) {
+        currentSpouseOldName = {
+            _row_data: {
+                uniqueValue: `NEW_${new Date().getTime()}`,
+            },
+            title_name: {
+                value: formData.title_name,
+            },
+            first_name_th: {
+                displayValue: formData.first_name_th,
+                value: formData.first_name_th
+            },
+            first_name_en: {
+                displayValue: formData.first_name_en,
+                value: formData.first_name_en
+            },
+            last_name_th: {
+                displayValue: formData.last_name_th,
+                value: formData.last_name_th
+            },
+            last_name_en: {
+                displayValue: formData.last_name_en,
+                value: formData.last_name_en
+            },
+            operation: "insert",
+        };
+
+        currentSpouseList = currentSpouseList.map( item => {
+            if (item._row_data.uniqueValue === spouseSelectedSysId) {
+                return {
+                    ...item,
+                    oldNameList: [
+                        ...item.oldNameList,
+                        currentSpouseOldName
+                    ]
+                };
+            }
+            return item;
+        });
+    } else {
+        currentSpouseList = currentSpouseList.map( item => {
+            if (item._row_data.uniqueValue === spouseSelectedSysId) {
+                return {
+                    ...item,
+                    oldNameList: item.oldNameList.map( o => {
+                        if (o._row_data.uniqueValue === formData.sys_id) {
+                            return {
+                                _row_data: {
+                                    uniqueValue: formData.sys_id,
+                                },
+                                title_name: {
+                                    value: formData.title_name,
+                                },
+                                first_name_th: {
+                                    displayValue: formData.first_name_th,
+                                    value: formData.first_name_th
+                                },
+                                first_name_en: {
+                                    displayValue: formData.first_name_en,
+                                    value: formData.first_name_en
+                                },
+                                last_name_th: {
+                                    displayValue: formData.last_name_th,
+                                    value: formData.last_name_th
+                                },
+                                last_name_en: {
+                                    displayValue: formData.last_name_en,
+                                    value: formData.last_name_en
+                                },
+                                operation: formData.sys_id.includes("NEW_") ? "insert" : "update",
+                            };
+                        }
+                        return o;
+                    })
+                };
+            }
+            return item;
+        });
+    }
+    api.setState('spouseList', currentSpouseList);
+    api.setState('spouseOldNameFormSubmitted', false);
+    api.setState('spouseOldNameForm', {
+        "sys_id": "",
+        "first_name_en": "",
+        "first_name_th": "",
+        "last_name_en": "",
+        "last_name_th": "",
+        "title_name": "",
+    });
+    api.emit('MODAL_SELECTED', {
+        modalId: 'spouse_olde_name_modal',
+        showModal: false
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-19 09:21:56</sys_created_on>
+        <sys_id>d97c511d3ba2b250bc1ccdd643e45abf</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Submit spouse old name form</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_d97c511d3ba2b250bc1ccdd643e45abf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 03:49:13</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

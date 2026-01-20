@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="978117863b927210bc1ccdd643e45a62" label="People Info" max_length="40" name="x_1896436_bot_ap_0_people_info" type="collection">
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element choice="3" default="MALE" label="เพศ" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="หญิง" sequence="1" value="FEMALE"/>
+                <element inactive_on_update="false" label="ชาย" sequence="0" value="MALE"/>
+                <element inactive_on_update="false" label="ไม่ระบุ" sequence="2" value="NO_SPECIFIC"/>
+            </choice>
+        </element>
+        <element label="ประเภทกรรมการ/ผู้บริหารระดับสูง" max_length="40" name="position_type" type="string"/>
+        <element label="นามสกุล (TH)" max_length="100" name="last_name_th" type="string"/>
+        <element label="ที่อยู่ปัจจุบัน" max_length="200" name="address" type="string"/>
+        <element label="ตำแหน่งที่ขอความเห็นชอบ" max_length="40" name="position" type="string"/>
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true" label="แขวง/ตำบล" max_length="32" name="city" reference="x_1896436_bot_ap_0_u_location_area" reference_qual="javascript:'active=true^type=subdistrict^parent=' + current.district.getDisplayValue();&#13;&#10;" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="3" default="DRAFT" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="DRAFT"/>
+                <element inactive_on_update="false" label="Ready" sequence="1" value="READY"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true" label="รหัสไปรษณีย์" max_length="32" name="post_code" reference="x_1896436_bot_ap_0_u_location_area" reference_qual="javascript:'active=true^type=postcode^parent=' + current.city.getDisplayValue();&#13;&#10;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="หมายเลขโทรศัพท์ มือถือ" max_length="40" name="mobile_no" type="string"/>
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true" label="เขต/อำเภอ" max_length="32" name="district" reference="x_1896436_bot_ap_0_u_location_area" reference_qual="javascript:'active=true^type=district^parent=' + current.province.getDisplayValue();&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element label="เลขที่ Passport" max_length="40" name="passport_no" type="string"/>
+        <element label="วันที่คาดว่าจะแต่งตั้งให้ดำรงตำแหน่ง" max_length="40" name="effective_date" type="glide_date"/>
+        <element label="วันเดือนปีเกิด" max_length="40" name="dob" type="glide_date"/>
+        <element label="นามสกุล (EN)" max_length="100" name="last_name_en" type="string"/>
+        <element label="ชื่อ (EN)" max_length="100" name="first_name_en" type="string"/>
+        <element label="เทียบเท่า (กลุ่มตำแหน่ง)" max_length="40" name="position_category" type="string"/>
+        <element label="เลขที่บัตรประชาชน" max_length="40" name="id_card" type="string"/>
+        <element choice="1" label="คำนำหน้าชื่อ" max_length="40" name="title" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="นาง" sequence="1" value="MRS"/>
+                <element inactive_on_update="false" label="นาย" sequence="0" value="MR"/>
+                <element inactive_on_update="false" label="นางสาว" sequence="2" value="MS"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true,ref_auto_completer=AJAXTableCompleter,ref_ac_columns=nationality_th;nationality_en,ref_ac_columns_search=true" label="สัญชาติ" max_length="32" name="nationality" reference="x_1896436_bot_ap_0_u_nationality" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="ดำรงตำแหน่งที่" max_length="40" name="position_at" type="string"/>
+        <element choice="3" default="EXIST" label="Request type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="แทนรายเดิม" sequence="2" value="REPLACE"/>
+                <element inactive_on_update="false" label="รายใหม่" sequence="1" value="NEW"/>
+                <element inactive_on_update="false" label="รายเดิม" sequence="0" value="EXIST"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false,ref_decoration_disabled=true,ref_buttons=false" label="จังหวัด" max_length="32" name="province" reference="x_1896436_bot_ap_0_u_location_area" reference_qual="active=true^type=province" reference_qual_condition="active=true^type=province" type="reference"/>
+        <element label="หมายเลขโทรศัพท์" max_length="40" name="tel_no" type="string"/>
+        <element display="true" label="ชื่อ (TH)" max_length="100" name="first_name_th" type="string"/>
+        <element label="ที่อยู่อีเมล์" max_length="100" name="email" type="string"/>
+        <index name="index">
+            <element name="nationality"/>
+        </index>
+        <index name="index2">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

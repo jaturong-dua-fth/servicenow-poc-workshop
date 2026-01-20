@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_entity">
+    <sys_rte_eb_etl_entity action="DELETE">
+        <child_id_field/>
+        <name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>Temp_x_1896436_bot_ap_0_u_location_area</path>
+        <run_business_rules>false</run_business_rules>
+        <synchronize_inserts>false</synchronize_inserts>
+        <sys_class_name>sys_rte_eb_etl_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 04:00:01</sys_created_on>
+        <sys_id>df2fd50f3b923210bc1ccdd643e45a0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="x_1896436_bot_ap_0_u_location_area Data _etl_ihub">0f2f950f3b923210bc1ccdd643e45a69</sys_rte_eb_definition>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_entity_df2fd50f3b923210bc1ccdd643e45a0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 04:00:01</sys_updated_on>
+        <table/>
+    </sys_rte_eb_etl_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_rte_eb_etl_entity_df2fd50f3b923210bc1ccdd643e45a0b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_entity"><sys_rte_eb_etl_entity action="INSERT_OR_UPDATE"><child_id_field/><name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</name><parent_entity/><parent_id_field/><path>Temp_x_1896436_bot_ap_0_u_location_area</path><run_business_rules>false</run_business_rules><synchronize_inserts>false</synchronize_inserts><sys_class_name>sys_rte_eb_etl_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 04:00:01</sys_created_on><sys_id>df2fd50f3b923210bc1ccdd643e45a0b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_rte_eb_definition display_value="x_1896436_bot_ap_0_u_location_area Data _etl_ihub">0f2f950f3b923210bc1ccdd643e45a69</sys_rte_eb_definition><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_rte_eb_etl_entity_df2fd50f3b923210bc1ccdd643e45a0b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 04:00:01</sys_updated_on><table/></sys_rte_eb_etl_entity></record_update>]]></payload>
+        <payload_hash>126028241</payload_hash>
+        <record_name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 04:00:01</sys_created_on>
+        <sys_id>9f2fd50f3b923210bc1ccdd643e45a0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb05c5db30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 04:00:01</sys_updated_on>
+        <type>ETL Entity</type>
+        <update_guid>5f2fd50f549232100893ee12e617ba0d</update_guid>
+        <update_guid_history>5f2fd50f549232100893ee12e617ba0d:126028241</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 04:00:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_etl_entity">sys_rte_eb_etl_entity</sys_db_object>
+        <sys_id>21313652c13d46f0bbe06b380688c640</sys_id>
+        <sys_metadata>df2fd50f3b923210bc1ccdd643e45a0b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IHUB_TARGET_TEMP_x_1896436_bot_ap_0_u_location_area</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_etl_entity_df2fd50f3b923210bc1ccdd643e45a0b</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_etl_entity_df2fd50f3b923210bc1ccdd643e45a0b">9f2fd50f3b923210bc1ccdd643e45a0e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 04:00:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

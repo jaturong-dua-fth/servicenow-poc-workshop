@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>People Info Menu</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "ประวัติส่วนตัวผู้บริหาร",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "bio",
+        "fieldType": "string",
+        "label": "Active key",
+        "name": "activeKey",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "fieldType": "boolean",
+        "label": "Navigate on click",
+        "name": "navigateOnClick",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "bio",
+        "fieldType": "string",
+        "label": "Item 1 key",
+        "name": "item1Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ประวัติส่วนตัวผู้บริหาร",
+        "fieldType": "string",
+        "label": "Item 1 label",
+        "name": "item1Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "user",
+        "fieldType": "string",
+        "label": "Item 1 icon (now-icon)",
+        "name": "item1Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 1 url",
+        "name": "item1Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 1 target",
+        "name": "item1Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "committee",
+        "fieldType": "string",
+        "label": "Item 2 key",
+        "name": "item2Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "คณะกรรมการชุดย่อย",
+        "fieldType": "string",
+        "label": "Item 2 label",
+        "name": "item2Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "group",
+        "fieldType": "string",
+        "label": "Item 2 icon (now-icon)",
+        "name": "item2Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 2 url",
+        "name": "item2Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 2 target",
+        "name": "item2Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "skills",
+        "fieldType": "string",
+        "label": "Item 3 key",
+        "name": "item3Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ความรู้ความสามารถ",
+        "fieldType": "string",
+        "label": "Item 3 label",
+        "name": "item3Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "tree-view",
+        "fieldType": "string",
+        "label": "Item 3 icon (now-icon)",
+        "name": "item3Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 3 url",
+        "name": "item3Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 3 target",
+        "name": "item3Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "experience",
+        "fieldType": "string",
+        "label": "Item 4 key",
+        "name": "item4Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ประสบการณ์",
+        "fieldType": "string",
+        "label": "Item 4 label",
+        "name": "item4Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "crown",
+        "fieldType": "string",
+        "label": "Item 4 icon (now-icon)",
+        "name": "item4Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 4 url",
+        "name": "item4Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 4 target",
+        "name": "item4Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "business",
+        "fieldType": "string",
+        "label": "Item 5 key",
+        "name": "item5Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ธุรกิจที่เกี่ยวข้อง",
+        "fieldType": "string",
+        "label": "Item 5 label",
+        "name": "item5Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "document-outline",
+        "fieldType": "string",
+        "label": "Item 5 icon (now-icon)",
+        "name": "item5Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 5 url",
+        "name": "item5Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 5 target",
+        "name": "item5Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "lawsuit",
+        "fieldType": "string",
+        "label": "Item 6 key",
+        "name": "item6Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ประวัติการฟ้องร้องดำเนินคดี\nในรอบส่วน",
+        "fieldType": "string",
+        "label": "Item 6 label",
+        "name": "item6Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "clock-outline",
+        "fieldType": "string",
+        "label": "Item 6 icon (now-icon)",
+        "name": "item6Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 6 url",
+        "name": "item6Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 6 target",
+        "name": "item6Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "docs",
+        "fieldType": "string",
+        "label": "Item 7 key",
+        "name": "item7Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "รายการเอกสารประกอบ\nการพิจารณา",
+        "fieldType": "string",
+        "label": "Item 7 label",
+        "name": "item7Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "layers-outline",
+        "fieldType": "string",
+        "label": "Item 7 icon (now-icon)",
+        "name": "item7Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 7 url",
+        "name": "item7Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "fieldType": "choice",
+        "label": "Item 7 target",
+        "name": "item7Target",
+        "typeMetadata": {
+            "choices": [
+                {
+                    "label": "Same tab",
+                    "value": "same"
+                },
+                {
+                    "label": "New tab",
+                    "value": "new"
+                }
+            ]
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-1896436-people-info-menu">db8ceacb050027070fbd4ed26f951b84</root_component>
+        <root_component_config>{"title":"@context/title","activeKey":"@context/activeKey","navigateOnClick":"@context/navigateOnClick","item1Key":"@context/item1Key","item1Label":"@context/item1Label","item1Icon":"@context/item1Icon","item1Url":"@context/item1Url","item1Target":"@context/item1Target","item2Key":"@context/item2Key","item2Label":"@context/item2Label","item2Icon":"@context/item2Icon","item2Url":"@context/item2Url","item2Target":"@context/item2Target","item3Key":"@context/item3Key","item3Label":"@context/item3Label","item3Icon":"@context/item3Icon","item3Url":"@context/item3Url","item3Target":"@context/item3Target","item4Key":"@context/item4Key","item4Label":"@context/item4Label","item4Icon":"@context/item4Icon","item4Url":"@context/item4Url","item4Target":"@context/item4Target","item5Key":"@context/item5Key","item5Label":"@context/item5Label","item5Icon":"@context/item5Icon","item5Url":"@context/item5Url","item5Target":"@context/item5Target","item6Key":"@context/item6Key","item6Label":"@context/item6Label","item6Icon":"@context/item6Icon","item6Url":"@context/item6Url","item6Target":"@context/item6Target","item7Key":"@context/item7Key","item7Label":"@context/item7Label","item7Icon":"@context/item7Icon","item7Url":"@context/item7Url","item7Target":"@context/item7Target"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 08:44:16</sys_created_on>
+        <sys_id>053538b5e5c7eab6f4cdc4c1da90b5b2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>People Info Menu</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_macroponent_053538b5e5c7eab6f4cdc4c1da90b5b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:46:36</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=053538b5e5c7eab6f4cdc4c1da90b5b2"/>
+</record_update>

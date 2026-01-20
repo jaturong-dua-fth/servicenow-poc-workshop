@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="90f115553b62b250bc1ccdd643e45a61" label="People Adoptee" max_length="40" name="x_1896436_bot_ap_0_people_adoptee" type="collection">
+        <element label="Passport_No" max_length="40" name="passport_no" type="string"/>
+        <element label="First_Name_EN" mandatory="true" max_length="250" name="first_name_en" type="string"/>
+        <element label="Last_Name_EN" mandatory="true" max_length="40" name="last_name_en" type="string"/>
+        <element label="People Info ID" max_length="32" name="people_info_id" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
+        <element label="Nationality" mandatory="true" max_length="32" name="nationality" reference="x_1896436_bot_ap_0_u_nationality" type="reference"/>
+        <element display="true" label="First_Name_TH" mandatory="true" max_length="250" name="first_name_th" type="string"/>
+        <element label="ID_Card" max_length="13" name="id_card" type="string"/>
+        <element label="Last_Name_TH" mandatory="true" max_length="250" name="last_name_th" type="string"/>
+        <element label="DOB" mandatory="true" max_length="40" name="dob" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Title Name" mandatory="true" max_length="32" name="title_name" reference="x_1896436_bot_ap_0_title_name" type="reference"/>
+        <index name="index">
+            <element name="nationality"/>
+        </index>
+        <index name="index2">
+            <element name="people_info_id"/>
+        </index>
+        <index name="index3">
+            <element name="title_name"/>
+        </index>
+    </element>
+</database>

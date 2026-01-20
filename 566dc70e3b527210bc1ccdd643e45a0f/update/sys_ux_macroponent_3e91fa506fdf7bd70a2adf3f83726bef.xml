@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>component</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>393a4ce67464ff4e0b546939b6288371</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Request Menu</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "request",
+        "description": "Key of the active menu item",
+        "fieldType": "string",
+        "label": "Active key",
+        "name": "activeKey",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "description": "Navigate to target URL when clicking menu",
+        "fieldType": "boolean",
+        "label": "Navigate on click",
+        "name": "navigateOnClick",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "request",
+        "fieldType": "string",
+        "label": "Item 1 key",
+        "name": "item1Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "ข้อมูลคำขอ",
+        "fieldType": "string",
+        "label": "Item 1 label",
+        "name": "item1Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "request",
+        "description": "request | docs",
+        "fieldType": "string",
+        "label": "Item 1 icon",
+        "name": "item1Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 1 URL",
+        "name": "item1Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "description": "same | new",
+        "fieldType": "string",
+        "label": "Item 1 target",
+        "name": "item1Target",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "docs",
+        "fieldType": "string",
+        "label": "Item 2 key",
+        "name": "item2Key",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "เอกสารประกอบการพิจารณา",
+        "fieldType": "string",
+        "label": "Item 2 label",
+        "name": "item2Label",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "docs",
+        "description": "request | docs",
+        "fieldType": "string",
+        "label": "Item 2 icon",
+        "name": "item2Icon",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Item 2 URL",
+        "name": "item2Url",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "same",
+        "description": "same | new",
+        "fieldType": "string",
+        "label": "Item 2 target",
+        "name": "item2Target",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-1896436-request-menu">a38cc06f078d2a3eb25b66dc6a326ba1</root_component>
+        <root_component_config>{"activeKey":"@context/activeKey","navigateOnClick":"@context/navigateOnClick","item1Key":"@context/item1Key","item1Label":"@context/item1Label","item1Icon":"@context/item1Icon","item1Url":"@context/item1Url","item1Target":"@context/item1Target","item2Key":"@context/item2Key","item2Label":"@context/item2Label","item2Icon":"@context/item2Icon","item2Url":"@context/item2Url","item2Target":"@context/item2Target"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-16 02:54:51</sys_created_on>
+        <sys_id>3e91fa506fdf7bd70a2adf3f83726bef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Request Menu</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_macroponent_3e91fa506fdf7bd70a2adf3f83726bef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:46:47</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=3e91fa506fdf7bd70a2adf3f83726bef"/>
+</record_update>

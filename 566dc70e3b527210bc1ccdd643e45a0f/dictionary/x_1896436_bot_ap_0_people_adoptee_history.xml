@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b88499d93b62b250bc1ccdd643e45a39" label="People Adoptee History" max_length="40" name="x_1896436_bot_ap_0_people_adoptee_history" type="collection">
+        <element label="First_Name_TH" max_length="40" name="first_name_th" type="string"/>
+        <element label="Last_Name_TH" max_length="40" name="last_name_th" type="string"/>
+        <element label="Last_Name_EN" max_length="40" name="last_name_en" type="string"/>
+        <element label="First_Name_EN" max_length="40" name="first_name_en" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="People Adoptee Id" max_length="40" name="people_adoptee_id" reference="x_1896436_bot_ap_0_people_adoptee" reference_cascade_rule="delete" type="reference"/>
+        <element label="Title Name" max_length="32" name="title_name" reference="x_1896436_bot_ap_0_title_name" type="reference"/>
+        <index name="index">
+            <element name="title_name"/>
+        </index>
+    </element>
+</database>

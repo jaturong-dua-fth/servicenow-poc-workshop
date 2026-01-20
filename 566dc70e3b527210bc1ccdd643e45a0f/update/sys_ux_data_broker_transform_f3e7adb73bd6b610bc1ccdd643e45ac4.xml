@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1896436_bot_ap_0.Save people history (old name)</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>Processes a list of people history records (Insert, Update, Delete)</description>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Save people history (old name)</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "items",&#13;
+    "label": "List Items",&#13;
+    "description": "JSON array of objects",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "json",&#13;
+    "required": true&#13;
+  },&#13;
+  {&#13;
+    "name": "peopleInfoSysId",&#13;
+    "label": "People info sysId",&#13;
+    "description": "People info sysId",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "required": true&#13;
+  }&#13;
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	gs.info("[Save people history] : " + JSON.stringify(input));
+    var items = input.items;
+	var peopleInfoSysId = input.peopleInfoSysId;
+    var response = {
+        success: true,
+    };
+
+    if (!items || !Array.isArray(items)) {
+        return {
+            success: false,
+            error: "Invalid input"
+        };
+    }
+
+    items.forEach(function(item) {
+        var gr = new GlideRecord('x_1896436_bot_ap_0_people_info_history');
+
+        if (item.operation === 'insert') {
+            gr.initialize();
+            gr.setValue('title_name', item.title_name.value || '');
+            gr.setValue('first_name_th', item.first_name_th.value || '');
+            gr.setValue('first_name_en', item.first_name_en.value || '');
+			gr.setValue('last_name_th', item.last_name_th.value || '');
+            gr.setValue('last_name_en', item.last_name_en.value || '');
+			gr.setValue('people_info_id', peopleInfoSysId || '');
+            gr.insert();
+        } else if (item.operation === 'update') {
+            if (gr.get(item._row_data.uniqueValue)) {
+				gr.setValue('title_name', item.title_name.value || '');
+				gr.setValue('first_name_th', item.first_name_th.value || '');
+				gr.setValue('first_name_en', item.first_name_en.value || '');
+				gr.setValue('last_name_th', item.last_name_th.value || '');
+				gr.setValue('last_name_en', item.last_name_en.value || '');
+				gr.setValue('people_info_id', peopleInfoSysId || '');
+                gr.update();
+            }
+        } else if (item.operation === 'delete') {
+            if (gr.get(item._row_data.uniqueValue)) {
+                gr.deleteRecord();
+            }
+        }
+    });
+
+    return response;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 12:35:16</sys_created_on>
+        <sys_id>f3e7adb73bd6b610bc1ccdd643e45ac4</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Save people history (old name)</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_f3e7adb73bd6b610bc1ccdd643e45ac4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-19 07:52:30</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=f3e7adb73bd6b610bc1ccdd643e45ac4"/>
+</record_update>

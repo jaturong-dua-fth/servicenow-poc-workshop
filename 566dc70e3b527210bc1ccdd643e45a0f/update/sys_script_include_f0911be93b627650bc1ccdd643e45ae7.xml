@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1896436_bot_ap_0.RequestSubmitService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RequestSubmitService</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RequestSubmitService = Class.create();
+RequestSubmitService.prototype = {
+    initialize: function() {
+    },
+submit: function (payload) {
+	console.log("request submit service called");
+    // 1) Validate input shape
+    var v = this._validate(payload);
+    if (!v.ok) return v;
+
+    // 2) Transaction
+    var tx = new GlideTransaction(); // (optional) conceptually; SN auto handles DB; for rollback use try/catch + delete compensation if needed
+    try {
+      var req = this._upsertRequest(payload);
+    //   this._syncRequestItems(req.sys_id, payload.items || []);
+    //   this._syncRequestPeople(req.sys_id, payload.people || []);
+    //   this._syncRequestDocuments(req.sys_id, payload.documents || []);
+
+      // set submitted status
+      var grReq = new GlideRecord('x_1896436_bot_ap_0_request'); // <-- เปลี่ยนเป็น table ของคุณ
+      if (grReq.get(req.sys_id)) {
+        grReq.setValue('status', 'under_review'); // หรือ submitted
+        grReq.update();
+      }
+
+      return {
+        ok: true,
+        requestSysId: req.sys_id,
+        requestNumber: req.number,
+        message: 'Submitted'
+      };
+    } catch (e) {
+      gs.error('[RequestSubmitService] submit failed: ' + e);
+
+      // ถ้าคุณต้องการ rollback แบบชัวร์: ทำ compensation เช่นลบ record ที่เพิ่งสร้าง (ถ้า create ใหม่)
+      // ข้ามไว้ก่อนก็ได้
+
+      return {
+        ok: false,
+        message: 'Submit failed: ' + e
+      };
+    }
+  },
+
+  _validate: function (p) {
+	console.log("param is : ",p);
+    if (!p) return { ok: false, message: 'Missing payload' };
+    var title = (p.title || '').trim();
+    if (!title) return { ok: false, message: 'Title is required' };
+
+    // ตัวอย่าง rule: ต้องมีอย่างน้อย 1 item
+    if (!p.items || !p.items.length) return { ok: false, message: 'Select at least 1 request item' };
+
+    return { ok: true };
+  },
+
+  _upsertRequest: function (p) {
+    var gr = new GlideRecord('x_1896436_bot_ap_0_request');
+    var isUpdate = p.requestSysId && gr.get(p.requestSysId);
+
+    if (!isUpdate) gr.initialize();
+
+    gr.setValue('title', p.title);
+    if (p.company) gr.setValue('company', p.company);
+
+    // owner = current user
+    gr.setValue('requested_by', gs.getUserID());
+
+    var sysId = isUpdate ? gr.update() : gr.insert();
+
+    // อ่าน number กลับมา
+    gr.get(sysId);
+
+    return { sys_id: sysId, number: gr.getValue('number') };
+  },
+
+  _syncRequestItems: function (requestSysId, items) {
+    // แนวทางง่าย: ลบของเก่าแล้ว insert ใหม่ (เหมาะกับ MVP)
+    // ถ้า production จริงค่อยทำ diff/update
+    var grDel = new GlideRecord('x_1896436_bot_ap_0_request_item');
+    grDel.addQuery('request', requestSysId);
+    grDel.query();
+    while (grDel.next()) grDel.deleteRecord();
+
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var gr = new GlideRecord('x_1896436_bot_ap_0_request_item');
+      gr.initialize();
+      gr.setValue('request', requestSysId);
+      gr.setValue('form', it.form);        // reference ไป master form
+      gr.setValue('status', 'draft');      // หรือ whatever
+      // ใส่ field อื่นตามจริง
+      gr.insert();
+    }
+  },
+
+  _syncRequestPeople: function (requestSysId, people) {
+    var grDel = new GlideRecord('x_1896436_bot_ap_0_request_people');
+    grDel.addQuery('request', requestSysId);
+    grDel.query();
+    while (grDel.next()) grDel.deleteRecord();
+
+    for (var i = 0; i < people.length; i++) {
+      var p = people[i];
+      var gr = new GlideRecord('x_1896436_bot_ap_0_request_people');
+      gr.initialize();
+      gr.setValue('request', requestSysId);
+      gr.setValue('full_name', p.full_name);
+      gr.setValue('role', p.role);
+      gr.insert();
+    }
+  },
+
+  _syncRequestDocuments: function (requestSysId, docs) {
+    var grDel = new GlideRecord('x_1896436_bot_ap_0_request_document');
+    grDel.addQuery('request', requestSysId);
+    grDel.query();
+    while (grDel.next()) grDel.deleteRecord();
+
+    for (var i = 0; i < docs.length; i++) {
+      var d = docs[i];
+      var gr = new GlideRecord('x_1896436_bot_ap_0_request_document');
+      gr.initialize();
+      gr.setValue('request', requestSysId);
+      gr.setValue('doc', d.docSysId); // reference ไป sys_attachment หรือ table เอกสารของคุณ
+      gr.setValue('doc_type', d.type);
+      gr.insert();
+    }
+  },
+    type: 'RequestSubmitService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 06:49:04</sys_created_on>
+        <sys_id>f0911be93b627650bc1ccdd643e45ae7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RequestSubmitService</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_script_include_f0911be93b627650bc1ccdd643e45ae7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 11:28:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

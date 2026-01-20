@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="BOT Application App Config">235e8b8e635272101266c922fe036698</app_config>
+        <description/>
+        <disable_auto_reflow>true</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings/>
+        <macroponent display_value="Index">d66a034b3b927210bc1ccdd643e45a1f</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Index</name>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Select Form">3aab2a4f3b5e3210bc1ccdd643e45acd</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:48:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d66a834b3b927210bc1ccdd643e45a0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Index</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_screen_d66a834b3b927210bc1ccdd643e45a0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:48:32</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=d66a834b3b927210bc1ccdd643e45a0c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_screen_d66a834b3b927210bc1ccdd643e45a0c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="BOT Application App Config">235e8b8e635272101266c922fe036698</app_config><description/><disable_auto_reflow>true</disable_auto_reflow><disable_interoperable>false</disable_interoperable><event_mappings/><macroponent display_value="Index">d66a034b3b927210bc1ccdd643e45a1f</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Index</name><order>0</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Select Form">3aab2a4f3b5e3210bc1ccdd643e45acd</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 11:48:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d66a834b3b927210bc1ccdd643e45a0c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Index</sys_name><sys_overrides/><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ux_screen_d66a834b3b927210bc1ccdd643e45a0c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 11:48:32</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=d66a834b3b927210bc1ccdd643e45a0c"/></record_update>]]></payload>
+        <payload_hash>-618949007</payload_hash>
+        <record_name>Index</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:48:32</sys_created_on>
+        <sys_id>526a834b3b927210bc1ccdd643e45a12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb2094be60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:48:32</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>126a834bea9272103f0bf83fdea4cc11</update_guid>
+        <update_guid_history>126a834bea9272103f0bf83fdea4cc11:-618949007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:49:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>98ba62a98bf44690a9085e551b8ab990</sys_id>
+        <sys_metadata>d66a834b3b927210bc1ccdd643e45a0c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Index</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_d66a834b3b927210bc1ccdd643e45a0c</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_d66a834b3b927210bc1ccdd643e45a0c">526a834b3b927210bc1ccdd643e45a12</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:49:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

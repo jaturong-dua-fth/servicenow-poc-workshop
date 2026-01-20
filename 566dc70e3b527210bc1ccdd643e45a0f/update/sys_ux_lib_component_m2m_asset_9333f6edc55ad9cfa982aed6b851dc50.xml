@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component_m2m_asset">
+    <sys_ux_lib_component_m2m_asset action="INSERT_OR_UPDATE">
+        <asset display_value="@myorg/wow-test/index">60cbe1870a686c149586a922663e5169</asset>
+        <component display_value="x-1896436-menu-two">f73492640ce1bf24548349b8af195c72</component>
+        <sys_class_name>sys_ux_lib_component_m2m_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:11:20</sys_created_on>
+        <sys_id>9333f6edc55ad9cfa982aed6b851dc50</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_lib_component_m2m_asset_9333f6edc55ad9cfa982aed6b851dc50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:45:38</sys_updated_on>
+    </sys_ux_lib_component_m2m_asset>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="551e88333bda7610bc1ccdd643e45a46" label="Title Name" max_length="40" name="x_1896436_bot_ap_0_title_name" type="collection">
+        <element label="Title name EN" mandatory="true" max_length="40" name="title_name_en" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element display="true" label="Title name TH" mandatory="true" max_length="40" name="title_name_th" type="string"/>
+    </element>
+</database>

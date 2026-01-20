@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="People Info Default">690362c73b1e3210bc1ccdd643e45a05</macroponent>
+        <name>Delete spouse item</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+    const { spouseList, spouseSelectedSysId} = api.state;
+    let currentSpouseList = [...spouseList];
+
+    const objSelected = spouseList.find(item => item._row_data.uniqueValue === spouseSelectedSysId);
+    if (objSelected.operation === 'insert') {
+        currentSpouseList = currentSpouseList.filter( item => item._row_data.uniqueValue !== spouseSelectedSysId);
+    } else {
+        currentSpouseList = currentSpouseList.map(item => {
+            if (item._row_data.uniqueValue === spouseSelectedSysId) {
+                return {
+                    ...item,
+                    operation: "delete" ,
+                };
+            }
+            return item;
+        });
+    }
+    api.setState('spouseList', currentSpouseList);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-19 03:29:24</sys_created_on>
+        <sys_id>0b70d1913b62b250bc1ccdd643e45a04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete spouse item</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_0b70d1913b62b250bc1ccdd643e45a04</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-19 03:29:24</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

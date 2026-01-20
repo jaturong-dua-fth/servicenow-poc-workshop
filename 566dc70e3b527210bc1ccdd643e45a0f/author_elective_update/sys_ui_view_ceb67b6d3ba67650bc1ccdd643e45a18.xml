@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>People_Sued_History_View</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 09:26:56</sys_created_on>
+        <sys_id>ceb67b6d3ba67650bc1ccdd643e45a18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>People Sued History View</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ui_view_ceb67b6d3ba67650bc1ccdd643e45a18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 09:26:56</sys_updated_on>
+        <title>People Sued History View</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ui_view_ceb67b6d3ba67650bc1ccdd643e45a18</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>People_Sued_History_View</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-20 09:26:56</sys_created_on><sys_id>ceb67b6d3ba67650bc1ccdd643e45a18</sys_id><sys_mod_count>0</sys_mod_count><sys_name>People Sued History View</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ui_view_ceb67b6d3ba67650bc1ccdd643e45a18</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-20 09:26:56</sys_updated_on><title>People Sued History View</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>-433415376</payload_hash>
+        <record_name>People Sued History View</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 09:26:56</sys_created_on>
+        <sys_id>06b67b6d3ba67650bc1ccdd643e45ae4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bdaba88d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 09:26:56</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>c2b67b6d0ca6765021dd1851f397ece3</update_guid>
+        <update_guid_history>c2b67b6d0ca6765021dd1851f397ece3:-433415376</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 10:55:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>012374af54f34deb80bef97b20b0d891</sys_id>
+        <sys_metadata>ceb67b6d3ba67650bc1ccdd643e45a18</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>People Sued History View</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ui_view_ceb67b6d3ba67650bc1ccdd643e45a18</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_ceb67b6d3ba67650bc1ccdd643e45a18">06b67b6d3ba67650bc1ccdd643e45ae4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 10:55:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4e892e873b5e3210bc1ccdd643e45ab0" label="Nationality" max_length="40" name="x_1896436_bot_ap_0_u_nationality" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="ISO code 3" mandatory="true" max_length="40" name="iso_code_3" type="string"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Nationality EN" mandatory="true" max_length="40" name="nationality_en" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ISO code 2" mandatory="true" max_length="40" name="iso_code_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Country TH" mandatory="true" max_length="40" name="country_th" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nationality TH" mandatory="true" max_length="40" name="nationality_th" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country en" mandatory="true" max_length="40" name="country_en" type="string"/>
+    </element>
+</database>

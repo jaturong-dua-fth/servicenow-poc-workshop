@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_1896436_bot_ap_0_master_form">x_1896436_bot_ap_0_master_form</category>
+        <maximum_digits>13</maximum_digits>
+        <number>1</number>
+        <prefix>MF</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:01:40</sys_created_on>
+        <sys_id>8f765a073b9a3210bc1ccdd643e45ac9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>MF</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_number_8f765a073b9a3210bc1ccdd643e45ac9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 08:37:44</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_number_8f765a073b9a3210bc1ccdd643e45ac9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_1896436_bot_ap_0_master_form">x_1896436_bot_ap_0_master_form</category><maximum_digits>13</maximum_digits><number>1</number><prefix>MF</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 08:01:40</sys_created_on><sys_id>8f765a073b9a3210bc1ccdd643e45ac9</sys_id><sys_mod_count>4</sys_mod_count><sys_name>MF</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_number_8f765a073b9a3210bc1ccdd643e45ac9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 08:37:44</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>2071131488</payload_hash>
+        <record_name>MF</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:37:44</sys_created_on>
+        <sys_id>ebbe9e8b3bda3210bc1ccdd643e45afc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb15a9eef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 08:37:44</sys_updated_on>
+        <type>Number</type>
+        <update_guid>abbe9e8b48da3210d26826d3954f56fb</update_guid>
+        <update_guid_history>abbe9e8b48da3210d26826d3954f56fb:2071131488,f54b52c347da321079a5c7d5a2fc19bd:-461614373,868a1a0326da321009d3e3344cfbb53f:2122074556,fbc852cbbd9a32104048d66569682e71:2009599816,ffc852cbc09a3210e1d068b97b57036d:405595943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:38:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>a450854b960e4a2a80e69eaa67983ba4</sys_id>
+        <sys_metadata>8f765a073b9a3210bc1ccdd643e45ac9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MF</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent display_value="">ba761a073b9a3210bc1ccdd643e45aaa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_number_8f765a073b9a3210bc1ccdd643e45ac9</sys_update_name>
+        <sys_update_version display_value="sys_number_8f765a073b9a3210bc1ccdd643e45ac9">ebbe9e8b3bda3210bc1ccdd643e45afc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 08:38:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

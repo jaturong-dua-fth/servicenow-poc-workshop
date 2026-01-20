@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Card item for repeaterdd list</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-1896436-menu-two.svg">d81c1bc0fcc9c50d0824377f01cb8d51</image_icon>
+        <internal_component>false</internal_component>
+        <label>Menu Two Component</label>
+        <macroponent display_value="Menu Two Component">4208ac6c04a55e7815ca040149b95de5</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:11:20</sys_created_on>
+        <sys_id>2a581ea368ae2b3a53ca881321dd57c6</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Menu Two Component</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_2a581ea368ae2b3a53ca881321dd57c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:45:36</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a581ea368ae2b3a53ca881321dd57c6"/>
+</record_update>

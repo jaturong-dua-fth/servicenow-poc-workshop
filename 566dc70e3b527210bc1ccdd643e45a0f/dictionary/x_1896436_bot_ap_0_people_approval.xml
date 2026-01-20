@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7fe3fae93b6e3650bc1ccdd643e45aa8" label="People Approval" max_length="40" name="x_1896436_bot_ap_0_people_approval" type="collection">
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element label="People" max_length="32" name="people" reference="x_1896436_bot_ap_0_people_task" type="reference"/>
+        <element label="Comment" max_length="255" name="comment" type="string"/>
+        <element label="Step No" max_length="40" name="step_no" type="integer"/>
+        <element label="Action Date" max_length="40" name="action_date" type="glide_date_time"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Role" max_length="40" name="role" type="string"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="people"/>
+        </index>
+    </element>
+</database>

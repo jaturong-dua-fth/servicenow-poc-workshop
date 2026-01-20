@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Bot Theme</name>
+        <parent/>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 10:34:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6aac05333b16b610bc1ccdd643e45a25</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_name>Bot Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_theme_6aac05333b16b610bc1ccdd643e45a25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-19 06:30:43</sys_updated_on>
+        <theme>{&#13;
+    "--now-font-family":"Kanit",&#13;
+     "canvas-menu--background-color": "21, 34, 44",&#13;
+   	"--now-canvas-header-container--background-color":"21, 34, 44",&#13;
+   &#13;
+       "--now-color_divider--tertiary":"21, 34, 44",&#13;
+&#13;
+    &#13;
+    "--now-canvas-nav-item--main-nav--color--active":"255,255,255",&#13;
+    "--now-canvas-nav-item--main-nav--color":"255,255,255",&#13;
+    "--now-canvas-nav-item--main-nav--box-shadow":"255,255,255",&#13;
+    "--now-canvas-nav-item--main-nav--color--hover":"255,255,255",&#13;
+    &#13;
+    "--now-canvas-footer--border-top-color":"242, 242, 242",&#13;
+    &#13;
+      "--now-button--border-radius": "16px",&#13;
+    "--now-color--primary-0": "255, 255, 255",&#13;
+    "--now-color--primary-1": "25, 74, 127",&#13;
+    "--now-color--primary-2": "39, 121, 188",&#13;
+    "--now-color--primary-3": "36, 62, 69",&#13;
+    "--now-button--border-width": "4px",&#13;
+    &#13;
+ "--now-display-type_header--font-size--lg":"24px",&#13;
+    "--now-heading--header-secondary--font-weight":"500",&#13;
+    "--now-card--border-radius":"28px",&#13;
+    "--now-input--border-radius":"12px",&#13;
+    "--now-select--border-radius":"12px",&#13;
+    "--now-typeahead--border-radius":"12px",&#13;
+    "--now-button--primary--border-end-end-radius":"16px",&#13;
+    "--now-button--primary--border-end-start-radius":"16px",&#13;
+    "--now-button--primary--border-start-end-radius":"16px",&#13;
+    "--now-button--primary--border-start-start-radius":"16px",&#13;
+&#13;
+   	"--now-button--secondary--border-end-end-radius":"16px",&#13;
+    "--now-button--secondary--border-end-start-radius":"16px",&#13;
+    "--now-button--secondary--border-start-end-radius":"16px",&#13;
+    "--now-button--secondary--border-start-start-radius":"16px",&#13;
+    &#13;
+    "--now-button--primary-negative--border-end-end-radius":"16px",&#13;
+    "--now-button--primary-negative--border-end-start-radius":"16px",&#13;
+    "--now-button--primary-negative--border-start-end-radius":"16px",&#13;
+    "--now-button--primary-negative--border-start-start-radius":"16px",&#13;
+    &#13;
+  &#13;
+   "--now-container--font-weight":"500"&#13;
+   &#13;
+&#13;
+}</theme>
+    </sys_ux_theme>
+</record_update>

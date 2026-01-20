@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="id_card" label="ID_Card" language="en" table="x_1896436_bot_ap_0_people_adoptee">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>id_card</element>
+            <help/>
+            <hint/>
+            <label>ID_Card</label>
+            <language>en</language>
+            <name>x_1896436_bot_ap_0_people_adoptee</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-19 02:55:58</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>ID_Card</sys_name>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_documentation_x_1896436_bot_ap_0_people_adoptee_id_card_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-19 02:56:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

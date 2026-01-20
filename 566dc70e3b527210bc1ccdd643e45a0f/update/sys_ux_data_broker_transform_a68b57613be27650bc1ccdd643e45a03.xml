@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1896436_bot_ap_0.Save people adoptee</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>Processes a list of people adoptee records (Insert, Update, Delete)</description>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Save people adoptee</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "items",&#13;
+    "label": "List Items",&#13;
+    "description": "JSON array of objects",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "json",&#13;
+    "required": true&#13;
+  },&#13;
+  {&#13;
+    "name": "peopleInfoSysId",&#13;
+    "label": "People info sysId",&#13;
+    "description": "People info sysId",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "string",&#13;
+    "required": true&#13;
+  }&#13;
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	gs.info("[Save people adoptee] : " + JSON.stringify(input));
+    var items = input.items;
+	var peopleInfoSysId = input.peopleInfoSysId;
+    var response = {
+        success: true,
+    };
+
+    if (!items || !Array.isArray(items)) {
+        return {
+            success: false,
+            error: "Invalid input"
+        };
+    }
+
+	var setAdopteeFields = function(gr, item, peopleInfoSysId) {
+		gr.setValue('title_name', item.title_name.value || '');
+		gr.setValue('first_name_th', item.first_name_th.value || '');
+		gr.setValue('first_name_en', item.first_name_en.value || '');
+		gr.setValue('last_name_th', item.last_name_th.value || '');
+		gr.setValue('last_name_en', item.last_name_en.value || '');
+		gr.setValue('nationality', item.nationality.value || '');
+		gr.setValue('id_card', item.id_card.value || '');
+		gr.setValue('passport_no', item.passport_no.value || '');
+		gr.setValue('people_info_id', peopleInfoSysId || '');
+	};
+
+    items.forEach(function(item) {
+        var gr = new GlideRecord('x_1896436_bot_ap_0_people_adoptee');
+		var adopteeSysId = '';
+
+        if (item.operation === 'insert') {
+            gr.initialize();
+			setAdopteeFields(gr, item, peopleInfoSysId);
+            adopteeSysId = gr.insert();
+        } else if (item.operation === 'update') {
+			adopteeSysId = item._row_data.uniqueValue;
+            if (gr.get(adopteeSysId)) {
+				setAdopteeFields(gr, item, peopleInfoSysId);
+                gr.update();
+            }
+        } else if (item.operation === 'delete') {
+            if (gr.get(item._row_data.uniqueValue)) {
+                gr.deleteRecord();
+            }
+        } else {
+			adopteeSysId = item._row_data.uniqueValue;
+		}
+
+		// --- CHILD RECORD LOGIC (1 adoptee to Many old name) ---
+        if (adopteeSysId && item.oldNameList && Array.isArray(item.oldNameList)) {
+			var setAdopteeOldNameFields = function(gr, item, adopteeSysId) {
+				gr.setValue('title_name', item.title_name.value || '');
+				gr.setValue('first_name_th', item.first_name_th.value || '');
+				gr.setValue('first_name_en', item.first_name_en.value || '');
+				gr.setValue('last_name_th', item.last_name_th.value || '');
+				gr.setValue('last_name_en', item.last_name_en.value || '');
+				gr.setValue('people_adoptee_id', adopteeSysId || '');
+			};
+            item.oldNameList.forEach(function(childItem) {
+                var childGr = new GlideRecord('x_1896436_bot_ap_0_people_adoptee_history');
+
+				if (childItem.operation === 'insert') {
+					childGr.initialize();
+					setAdopteeOldNameFields(childGr, childItem, adopteeSysId);
+					childGr.insert();
+				} else if (childItem.operation === 'update') {
+					if (childGr.get(childItem._row_data.uniqueValue)) {
+						setAdopteeOldNameFields(childGr, childItem, adopteeSysId);
+						childGr.update();
+					}
+				} else if (childItem.operation === 'delete') {
+					if (childGr.get(childItem._row_data.uniqueValue)) {
+						childGr.deleteRecord();
+					}
+				}
+            });
+        }
+    });
+
+    return response;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 07:29:35</sys_created_on>
+        <sys_id>a68b57613be27650bc1ccdd643e45a03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save people adoptee</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_a68b57613be27650bc1ccdd643e45a03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 07:29:35</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=a68b57613be27650bc1ccdd643e45a03"/>
+</record_update>

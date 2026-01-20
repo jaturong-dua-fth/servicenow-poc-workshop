@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">87a71ec73b9a3210bc1ccdd643e45afc</macroponent>
+        <name>New client script 1</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * Set client state "statusState" from ANY event that contains "status" somewhere.
+ * If not found => default "draft"
+ */
+function handler(params) {
+  var api = params && params.api;
+  var event = params && params.event;
+
+  try {
+    console.log('CTX=', event && event.context);
+console.log('PAYLOAD=', event && event.payload);
+    console.log('[statusState] script fired', event);
+
+    function isObject(x) {
+      return x && typeof x === 'object';
+    }
+
+    function safeTrim(v) {
+      if (v === null || v === undefined) return '';
+      return String(v).trim();
+    }
+
+    // Find first "status" field value in a deep object (BFS)
+    function findStatus(root) {
+      if (!isObject(root)) return '';
+
+      var queue = [root];
+      var seen = [];
+
+      function seenHas(x) {
+        for (var i = 0; i < seen.length; i++) {
+          if (seen[i] === x) return true;
+        }
+        return false;
+      }
+
+      while (queue.length) {
+        var cur = queue.shift();
+        if (!isObject(cur)) continue;
+        if (seenHas(cur)) continue;
+        seen.push(cur);
+
+        // direct key "status"
+        if (Object.prototype.hasOwnProperty.call(cur, 'status')) {
+          var v = safeTrim(cur.status);
+          if (v) return v;
+        }
+
+        // scan children
+        for (var k in cur) {
+          if (!Object.prototype.hasOwnProperty.call(cur, k)) continue;
+          var v2 = cur[k];
+
+          if (isObject(v2)) {
+            queue.push(v2);
+          } else if (Array.isArray(v2)) {
+            for (var j = 0; j < v2.length; j++) {
+              if (isObject(v2[j])) queue.push(v2[j]);
+            }
+          }
+        }
+      }
+
+      return '';
+    }
+
+    function setClientState(name, value) {
+      if (api && typeof api.setState === 'function') {
+        api.setState(name, value);
+        return true;
+      }
+      if (api && api.state && typeof api.state.set === 'function') {
+        api.state.set(name, value);
+        return true;
+      }
+      return false;
+    }
+
+    var status = '';
+    if (event && event.context) status = findStatus(event.context);
+    if (!status && event && event.payload) status = findStatus(event.payload);
+
+    if (!status) status = 'draft';
+
+    console.log('[statusState] set statusState =', status);
+
+    var ok = setClientState('statusState', status);
+    if (!ok) console.warn('[statusState] cannot set state (no api.setState/api.state.set)');
+  } catch (e) {
+    console.error('[statusState] failed', e);
+  }
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 03:58:31</sys_created_on>
+        <sys_id>7fb9e7233b967610bc1ccdd643e45a7a</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>New client script 1</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_7fb9e7233b967610bc1ccdd643e45a7a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 07:25:47</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

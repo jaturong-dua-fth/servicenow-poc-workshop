@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="477a954f3b523210bc1ccdd643e45a40" sys_domain="global" table="x_1896436_bot_ap_0_1767979924478" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>1b7a954f3b523210bc1ccdd643e45a46</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>d37a954f3b523210bc1ccdd643e45a47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_parent</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>9f7a954f3b523210bc1ccdd643e45a47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>5b7a954f3b523210bc1ccdd643e45a48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_active</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>177a954f3b523210bc1ccdd643e45a49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>df7a954f3b523210bc1ccdd643e45a49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_id>9b7a954f3b523210bc1ccdd643e45a4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1896436_bot_ap_0_1767979924478</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>477a954f3b523210bc1ccdd643e45a40</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_1767979924478</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_section_477a954f3b523210bc1ccdd643e45a40</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ui_section_477a954f3b523210bc1ccdd643e45a40</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="477a954f3b523210bc1ccdd643e45a40" sys_domain="global" table="x_1896436_bot_ap_0_1767979924478" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>1b7a954f3b523210bc1ccdd643e45a46</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_name</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>d37a954f3b523210bc1ccdd643e45a47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_parent</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>9f7a954f3b523210bc1ccdd643e45a47</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>5b7a954f3b523210bc1ccdd643e45a48</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_active</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>177a954f3b523210bc1ccdd643e45a49</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_type</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>df7a954f3b523210bc1ccdd643e45a49</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_id>9b7a954f3b523210bc1ccdd643e45a4a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_1767979924478" sys_domain="global" view="Default view">477a954f3b523210bc1ccdd643e45a40</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1896436_bot_ap_0_1767979924478</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 03:39:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>477a954f3b523210bc1ccdd643e45a40</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1896436_bot_ap_0_1767979924478</sys_name><sys_overrides/><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ui_section_477a954f3b523210bc1ccdd643e45a40</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 03:39:32</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-352579394</payload_hash>
+        <record_name>Bot Ap 0 1767979924478</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 03:39:32</sys_created_on>
+        <sys_id>5b7a954f3b523210bc1ccdd643e45aa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb0499b0e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 03:39:32</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>9b7a954f42523210e3e8b5420ad6b6a4</update_guid>
+        <update_guid_history>9b7a954f42523210e3e8b5420ad6b6a4:-352579394,db7a954fbe5232104abdb680e8fc6145:1590539209</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 03:47:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>65a21d9d0e8a4064bd59c6464870fd04</sys_id>
+        <sys_metadata>477a954f3b523210bc1ccdd643e45a40</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1896436_bot_ap_0_1767979924478</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent display_value="">324cb4563bde7210bc1ccdd643e45ad6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ui_section_477a954f3b523210bc1ccdd643e45a40</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_477a954f3b523210bc1ccdd643e45a40">5b7a954f3b523210bc1ccdd643e45aa5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 03:47:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

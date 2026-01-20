@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>title</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 03:58:17</sys_created_on>
+        <sys_id>a15826d73b5eb210bc1ccdd643e45a9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_a15826d73b5eb210bc1ccdd643e45a9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 03:58:17</sys_updated_on>
+        <table>x_1896436_bot_ap_0_people_info</table>
+        <ui_policy display_value="Make fields mandatory if not in Draft">4fe5e6933b5eb210bc1ccdd643e45abf</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=a15826d73b5eb210bc1ccdd643e45a9a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ui_policy_action_a15826d73b5eb210bc1ccdd643e45a9a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>title</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-13 03:58:17</sys_created_on><sys_id>a15826d73b5eb210bc1ccdd643e45a9a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>title</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ui_policy_action_a15826d73b5eb210bc1ccdd643e45a9a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-13 03:58:17</sys_updated_on><table>x_1896436_bot_ap_0_people_info</table><ui_policy display_value="Make fields mandatory if not in Draft">4fe5e6933b5eb210bc1ccdd643e45abf</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=a15826d73b5eb210bc1ccdd643e45a9a"/></record_update>]]></payload>
+        <payload_hash>-2033454643</payload_hash>
+        <record_name>title</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 03:58:17</sys_created_on>
+        <sys_id>af5826d73b5eb210bc1ccdd643e45adf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb58122450000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 03:58:17</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>6f5826d7715eb21063b0c55b85ee1ade</update_guid>
+        <update_guid_history>6f5826d7715eb21063b0c55b85ee1ade:-2033454643</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 03:59:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>062af7fd19f0416089e3ff6368df0440</sys_id>
+        <sys_metadata>a15826d73b5eb210bc1ccdd643e45a9a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>title</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent display_value="Make fields mandatory if not in Draft">4fe5e6933b5eb210bc1ccdd643e45abf</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_a15826d73b5eb210bc1ccdd643e45a9a</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_a15826d73b5eb210bc1ccdd643e45a9a">af5826d73b5eb210bc1ccdd643e45adf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 03:59:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

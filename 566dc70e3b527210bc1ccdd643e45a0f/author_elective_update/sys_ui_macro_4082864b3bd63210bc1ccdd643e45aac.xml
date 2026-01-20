@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>bot_app_people_info_reques_type_radio_buttons</name>
+        <scoped_name>x_1896436_bot_ap_0_bot_app_people_info_reques_type_radio_buttons</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 06:36:57</sys_created_on>
+        <sys_id>4082864b3bd63210bc1ccdd643e45aac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bot_app_people_info_reques_type_radio_buttons</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ui_macro_4082864b3bd63210bc1ccdd643e45aac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 06:36:57</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly map="http://commons.apache.org/jelly/core" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <div class="form-group">
+        <div class="col-xs-12">
+            <input type="radio" name="EXIST" value="option1">รายเดิม</input> <br/>
+			<input type="radio" name="NEW" value="option1">รายใหม่</input> <br/>
+            <input type="radio" name="REPLACE" value="option2">แทนรายเดิม</input>
+        </div>
+    </div>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ui_macro_4082864b3bd63210bc1ccdd643e45aac</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_macro"&gt;&lt;sys_ui_macro action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;description/&gt;&lt;media_type/&gt;&lt;name&gt;bot_app_people_info_reques_type_radio_buttons&lt;/name&gt;&lt;scoped_name&gt;x_1896436_bot_ap_0_bot_app_people_info_reques_type_radio_buttons&lt;/scoped_name&gt;&lt;sys_class_name&gt;sys_ui_macro&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-12 06:36:57&lt;/sys_created_on&gt;&lt;sys_id&gt;4082864b3bd63210bc1ccdd643e45aac&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bot_app_people_info_reques_type_radio_buttons&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_macro_4082864b3bd63210bc1ccdd643e45aac&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-12 06:36:57&lt;/sys_updated_on&gt;&lt;xml&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly map="http://commons.apache.org/jelly/core" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+    &lt;div class="form-group"&gt;
+        &lt;div class="col-xs-12"&gt;
+            &lt;input type="radio" name="EXIST" value="option1"&gt;รายเดิม&lt;/input&gt; &lt;br/&gt;
+			&lt;input type="radio" name="NEW" value="option1"&gt;รายใหม่&lt;/input&gt; &lt;br/&gt;
+            &lt;input type="radio" name="REPLACE" value="option2"&gt;แทนรายเดิม&lt;/input&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/j:jelly&gt;]]&gt;&lt;/xml&gt;&lt;/sys_ui_macro&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1626072552</payload_hash>
+        <record_name>bot_app_people_info_reques_type_radio_buttons</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 06:36:57</sys_created_on>
+        <sys_id>8a134a8b3bd63210bc1ccdd643e45a95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb0ec07ba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 06:36:57</sys_updated_on>
+        <type>Macro</type>
+        <update_guid>4a134a8b4cd63210dbee21e8906f6494</update_guid>
+        <update_guid_history>4a134a8b4cd63210dbee21e8906f6494:1626072552</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 06:46:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_macro">sys_ui_macro</sys_db_object>
+        <sys_id>163648803c904fb39aa93a45b2f08c11</sys_id>
+        <sys_metadata>4082864b3bd63210bc1ccdd643e45aac</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bot_app_people_info_reques_type_radio_buttons</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ui_macro_4082864b3bd63210bc1ccdd643e45aac</sys_update_name>
+        <sys_update_version display_value="sys_ui_macro_4082864b3bd63210bc1ccdd643e45aac">8a134a8b3bd63210bc1ccdd643e45a95</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 06:46:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

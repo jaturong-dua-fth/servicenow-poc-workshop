@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1896436_bot_ap_0.Request Transform Data</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Request Transform Data</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "payload",&#13;
+    "label": "Payload Data",&#13;
+    "description": "JSON array of objects",&#13;
+    "readOnly": false,&#13;
+    "fieldType": "json",&#13;
+    "required": true&#13;
+  }&#13;
+  &#13;
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	console.log('input request TD ', input);
+  var svc = new x_1896436_bot_ap_0.RequestSubmitService();
+  var result = svc.submit(input); // ทำ insert/update ในนี้
+  return { output: result };
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 07:09:53</sys_created_on>
+        <sys_id>e4835bed3b627650bc1ccdd643e45a03</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Request Transform Data</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_e4835bed3b627650bc1ccdd643e45a03</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 11:20:42</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=e4835bed3b627650bc1ccdd643e45a03"/>
+</record_update>

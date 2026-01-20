@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">b6ab6e4f3b5e3210bc1ccdd643e45ac1</macroponent>
+        <name>OnCheckBoxChecked</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function handler({ api, event }) {
+  console.log('=== checkbox event fired ===');
+
+  const checked = event.payload.value === true;
+  const row = event.context.item.value;
+  const sysId = row._row_data.uniqueValue;
+
+  console.log('checked =', checked);
+  console.log('sysId =', sysId);
+
+  if (!sysId) {
+    console.warn('❌ sysId not found');
+    return;
+  }
+
+  // ✅ JSON state อาจเป็น null ได้ ต้อง normalize เป็น array ก่อน
+  const raw = api.state && api.state.selectedIds;
+  const selectedIds = Array.isArray(raw) ? raw : [];
+
+  console.log('selectedIds (before) =', selectedIds);
+
+  let nextSelectedIds;
+
+  if (checked) {
+    nextSelectedIds = selectedIds.indexOf(sysId) === -1
+      ? selectedIds.concat(sysId)
+      : selectedIds;
+  } else {
+    nextSelectedIds = selectedIds.filter(id => id !== sysId);
+  }
+
+  api.setState('selectedIds', nextSelectedIds);
+
+  console.log('selectedIds (after) =', nextSelectedIds);
+  console.log('============================');
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-19 07:11:12</sys_created_on>
+        <sys_id>58a24a193be6b250bc1ccdd643e45a94</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>OnCheckBoxChecked</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_58a24a193be6b250bc1ccdd643e45a94</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-19 08:16:10</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

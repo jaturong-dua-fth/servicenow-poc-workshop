@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="People Info Default">690362c73b1e3210bc1ccdd643e45a05</macroponent>
+        <name>Submit adoptee form</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    api.setState('adopteeFormSubmitted', true);
+
+    const formData = api.state.adopteeForm;
+    let requiredFields = ['title_name', 'first_name_th', 'last_name_th', 'first_name_en', 'last_name_en', 'nationality'];
+    
+    const nationality = api.data.look_up_nationality.results.find( item => item._row_data.uniqueValue === formData.nationality);
+    if (nationality.nationality_th.value === 'ไทย') {
+        requiredFields = [...requiredFields, 'id_card'];
+    } else {
+        requiredFields = [...requiredFields, 'passport_no'];
+    }
+
+    const invalidFields = requiredFields.filter(field => !formData[field]);
+    if (invalidFields.length > 0) {
+        return;
+    }
+
+    const adopteeList = api.state.adopteeList;
+    let currentAdopteeList = [
+        ...adopteeList,
+    ];
+    let currentAdoptee = {};
+
+    // new item
+    if (!formData.sys_id) {
+        currentAdoptee = {
+            _row_data: {
+                uniqueValue: `NEW_${new Date().getTime()}`,
+            },
+            title_name: {
+                value: formData.title_name,
+            },
+            first_name_th: {
+                displayValue: formData.first_name_th,
+                value: formData.first_name_th
+            },
+            first_name_en: {
+                displayValue: formData.first_name_en,
+                value: formData.first_name_en
+            },
+            last_name_th: {
+                displayValue: formData.last_name_th,
+                value: formData.last_name_th
+            },
+            last_name_en: {
+                displayValue: formData.last_name_en,
+                value: formData.last_name_en
+            },
+            nationality: {
+                value: formData.nationality
+            },
+            id_card: {
+                displayValue: formData.id_card,
+                value: formData.id_card
+            },
+            passport_no: {
+                displayValue: formData.passport_no,
+                value: formData.passport_no
+            },
+            oldNameList: [],
+            operation: "insert",
+        };
+        currentAdopteeList = [
+            ...currentAdopteeList,
+            currentAdoptee,
+        ];
+    } else {
+        currentAdopteeList = currentAdopteeList.map(item => {
+            if (item._row_data.uniqueValue === formData.sys_id) {
+                return {
+                    _row_data: {
+                        uniqueValue: formData.sys_id,
+                    },
+                    title_name: {
+                        value: formData.title_name,
+                    },
+                    first_name_th: {
+                        displayValue: formData.first_name_th,
+                        value: formData.first_name_th
+                    },
+                    first_name_en: {
+                        displayValue: formData.first_name_en,
+                        value: formData.first_name_en
+                    },
+                    last_name_th: {
+                        displayValue: formData.last_name_th,
+                        value: formData.last_name_th
+                    },
+                    last_name_en: {
+                        displayValue: formData.last_name_en,
+                        value: formData.last_name_en
+                    },
+                    nationality: {
+                        value: formData.nationality
+                    },
+                    id_card: {
+                        displayValue: formData.id_card,
+                        value: formData.id_card
+                    },
+                    passport_no: {
+                        displayValue: formData.passport_no,
+                        value: formData.passport_no
+                    },
+                    oldNameList: [...item.oldNameList],
+                    operation: formData.sys_id.includes("NEW_") ? "insert" : "update",
+                };
+            }
+            return item;
+        });
+    }
+
+    api.setState('adopteeList', currentAdopteeList);
+    api.setState('adopteeFormSubmitted', false);
+    api.setState('adopteeForm', {
+        "sys_id": "",
+        "first_name_en": "",
+        "first_name_th": "",
+        "last_name_en": "",
+        "last_name_th": "",
+        "title_name": "",
+        "nationality": "",
+        "id_card": "",
+        "passport_no": "",
+    });
+    api.emit('MODAL_SELECTED', {
+        modalId: 'adoptee_modal_',
+        showModal: false
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 06:58:33</sys_created_on>
+        <sys_id>23ae9e693baa3650bc1ccdd643e45a34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit adoptee form</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_23ae9e693baa3650bc1ccdd643e45a34</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 06:58:33</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

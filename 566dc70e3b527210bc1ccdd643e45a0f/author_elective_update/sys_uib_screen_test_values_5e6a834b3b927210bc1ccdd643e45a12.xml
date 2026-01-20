@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="DELETE">
+        <macroponent/>
+        <macroponent_config/>
+        <screen display_value="Index">d66a834b3b927210bc1ccdd643e45a0c</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:48:32</sys_created_on>
+        <sys_id>5e6a834b3b927210bc1ccdd643e45a12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_5e6a834b3b927210bc1ccdd643e45a12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:48:32</sys_updated_on>
+    </sys_uib_screen_test_values>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_uib_screen_test_values_5e6a834b3b927210bc1ccdd643e45a12</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values"><sys_uib_screen_test_values action="INSERT_OR_UPDATE"><macroponent/><macroponent_config/><screen display_value="Index">d66a834b3b927210bc1ccdd643e45a0c</screen><sys_class_name>sys_uib_screen_test_values</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-12 11:48:32</sys_created_on><sys_id>5e6a834b3b927210bc1ccdd643e45a12</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_uib_screen_test_values_5e6a834b3b927210bc1ccdd643e45a12</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-12 11:48:32</sys_updated_on></sys_uib_screen_test_values></record_update>]]></payload>
+        <payload_hash>194859239</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:48:32</sys_created_on>
+        <sys_id>d26a834b3b927210bc1ccdd643e45a16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb2094c040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:48:32</sys_updated_on>
+        <type>UIB Test Values</type>
+        <update_guid>926a834b9f92721096fbef5b07844a15</update_guid>
+        <update_guid_history>926a834b9f92721096fbef5b07844a15:194859239</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 11:49:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_uib_screen_test_values">sys_uib_screen_test_values</sys_db_object>
+        <sys_id>362f65bdacfc4219ad637c952c0f5d11</sys_id>
+        <sys_metadata>5e6a834b3b927210bc1ccdd643e45a12</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_uib_screen_test_values_5e6a834b3b927210bc1ccdd643e45a12</sys_update_name>
+        <sys_update_version display_value="sys_uib_screen_test_values_5e6a834b3b927210bc1ccdd643e45a12">d26a834b3b927210bc1ccdd643e45a16</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 11:49:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

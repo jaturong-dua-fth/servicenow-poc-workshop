@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="75986ae13b2e3650bc1ccdd643e45ab0" label="License Approval" max_length="40" name="x_1896436_bot_ap_0_license_approval" type="collection">
+        <element label="Step No" max_length="2" name="step_no" type="integer"/>
+        <element label="Comment" max_length="255" name="comment" type="string"/>
+        <element label="Action Date" max_length="40" name="action_date" type="string"/>
+        <element label="Role" max_length="40" name="role" type="string"/>
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element label="License Task" max_length="32" name="license_task" reference="x_1896436_bot_ap_0_license_task" type="reference"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="license_task"/>
+        </index>
+    </element>
+</database>

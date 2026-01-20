@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8c95ad9d3be2b250bc1ccdd643e45afa" label="Request Document" max_length="40" name="x_1896436_bot_ap_0_request_document" type="collection">
+        <element label="Doc Type" max_length="40" name="doc_type" type="string"/>
+        <element label="Request" max_length="32" name="request" reference="x_1896436_bot_ap_0_request" type="reference"/>
+        <element label="Status" max_length="40" name="status" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Comment" max_length="512" name="comment" type="string"/>
+        <element label="Doc File" max_length="120" name="doc_file" type="string"/>
+        <element label="Doc Id" max_length="40" name="doc_id" type="string"/>
+        <index name="index">
+            <element name="request"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4da7471b3b52f210bc1ccdd643e45a2d" label="People Info History" max_length="40" name="x_1896436_bot_ap_0_people_info_history" type="collection">
+        <element label="ชื่อ (ภาษาอังกฤษ)" max_length="250" name="first_name_en" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element display="true" label="ชื่อ (ภาษาไทย)" max_length="250" name="first_name_th" type="string"/>
+        <element label="นามสกุล (ภาษาอังกฤษ)" max_length="250" name="last_name_en" type="string"/>
+        <element label="People Info ID" max_length="32" name="people_info_id" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
+        <element label="คำนำหน้าชื่อ" max_length="32" name="title_name" reference="x_1896436_bot_ap_0_title_name" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="นามสกุล (ภาษาไทย)" max_length="250" name="last_name_th" type="string"/>
+        <index name="index">
+            <element name="people_info_id"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

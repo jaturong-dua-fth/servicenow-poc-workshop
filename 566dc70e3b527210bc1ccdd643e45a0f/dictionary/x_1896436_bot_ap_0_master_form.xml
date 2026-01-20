@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d6d36a4b3b1e3210bc1ccdd643e45a2c" label="Master Form" max_length="40" name="x_1896436_bot_ap_0_master_form" type="collection">
+        <element label="Effective From" max_length="40" name="effective_from" type="glide_date"/>
+        <element label="Form No" max_length="40" name="form_no" type="string"/>
+        <element label="Is Need Opinion" max_length="40" name="is_need_opinion" type="boolean"/>
+        <element label="Effective To" max_length="40" name="effective_to" type="glide_date"/>
+        <element label="Form Name" max_length="200" name="form_name" type="string"/>
+        <element choice="1" label="Form Category" max_length="40" name="form_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="คำขอแบบ Free Form" sequence="1" value="free_form"/>
+                <element inactive_on_update="false" label="คำขอแบบ Fixed Form" sequence="0" value="fixed_form"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,ignore_filter_on_new=true,auto_increment=true" default="javascript:global.getNextObjNumberPadded();" label="Form Id" max_length="40" name="number" read_only="true" type="integer"/>
+        <element choice="1" label="Form Type" max_length="40" name="form_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="กลุ่มคำขอประเภท People" sequence="1" value="people"/>
+                <element inactive_on_update="false" label="กลุ่มคำขอประเภท License   Place &amp; Channel" sequence="0" value="license_place_channel"/>
+                <element inactive_on_update="false" label="กลุ่มคำขอประเภท อื่นๆ" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <element label="Is Auto Close" max_length="40" name="is_auto_close" type="boolean"/>
+        <element label="SLA" max_length="40" name="sla" type="string"/>
+        <element label="Is Active" max_length="40" name="is_active" type="boolean"/>
+    </element>
+</database>

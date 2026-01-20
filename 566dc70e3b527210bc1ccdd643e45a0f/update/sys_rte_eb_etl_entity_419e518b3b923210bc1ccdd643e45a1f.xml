@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_entity">
+    <sys_rte_eb_etl_entity action="INSERT_OR_UPDATE">
+        <child_id_field/>
+        <name>Target_x_1896436_bot_ap_0_u_location_area</name>
+        <parent_entity/>
+        <parent_id_field/>
+        <path>x_1896436_bot_ap_0_u_location_area</path>
+        <run_business_rules>true</run_business_rules>
+        <synchronize_inserts>false</synchronize_inserts>
+        <sys_class_name>sys_rte_eb_etl_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 03:57:24</sys_created_on>
+        <sys_id>419e518b3b923210bc1ccdd643e45a1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Target_x_1896436_bot_ap_0_u_location_area</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="x_1896436_bot_ap_0_u_location_area Data _etl_ihub">bc9e118b3b923210bc1ccdd643e45ab5</sys_rte_eb_definition>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_entity_419e518b3b923210bc1ccdd643e45a1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 03:57:24</sys_updated_on>
+        <table>x_1896436_bot_ap_0_u_location_area</table>
+    </sys_rte_eb_etl_entity>
+</record_update>

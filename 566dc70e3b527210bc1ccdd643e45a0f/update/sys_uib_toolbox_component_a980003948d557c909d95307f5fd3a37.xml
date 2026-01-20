@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Fixed status list with counts</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-1896436-status-sidebar.svg">e8a3697a242cdb0183a963a0c29d52d1</image_icon>
+        <internal_component>false</internal_component>
+        <label>Status Sidebar Component</label>
+        <macroponent display_value="Status Sidebar Component">5c537edb11281aa6c07412c9d70e1edd</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 08:11:28</sys_created_on>
+        <sys_id>a980003948d557c909d95307f5fd3a37</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Status Sidebar Component</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_a980003948d557c909d95307f5fd3a37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-16 07:45:45</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=a980003948d557c909d95307f5fd3a37"/>
+</record_update>

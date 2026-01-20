@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b58869553b26b250bc1ccdd643e45a44" label="Request Item" max_length="40" name="x_1896436_bot_ap_0_request_item" type="collection">
+        <element label="SLA" max_length="40" name="sla" type="string"/>
+        <element label="Request" max_length="32" name="request" reference="x_1896436_bot_ap_0_request" type="reference"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Request Item Number" max_length="40" name="number" type="string"/>
+        <element label="Form" max_length="32" name="form" reference="x_1896436_bot_ap_0_master_form" type="reference"/>
+        <index name="index">
+            <element name="form"/>
+        </index>
+        <index name="index2">
+            <element name="request"/>
+        </index>
+    </element>
+</database>

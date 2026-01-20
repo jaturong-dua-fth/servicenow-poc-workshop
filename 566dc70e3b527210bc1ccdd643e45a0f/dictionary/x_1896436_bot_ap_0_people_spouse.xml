@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="439b39943b6aba10bc1ccdd643e45a89" label="People Spouse" max_length="40" name="x_1896436_bot_ap_0_people_spouse" type="collection">
+        <element label="First_Name_EN" mandatory="true" max_length="250" name="first_name_en" type="string"/>
+        <element label="ID_Card" max_length="13" name="id_card" type="string"/>
+        <element label="People Info ID" max_length="32" name="people_info_id" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
+        <element label="Passport_No" max_length="40" name="passport_no" type="string"/>
+        <element label="Last_Name_TH" mandatory="true" max_length="250" name="last_name_th" type="string"/>
+        <element label="Nationality" mandatory="true" max_length="32" name="nationality" reference="x_1896436_bot_ap_0_u_nationality" type="reference"/>
+        <element label="Title Name" mandatory="true" max_length="32" name="title_name" reference="x_1896436_bot_ap_0_title_name" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element label="Last_Name_EN" mandatory="true" max_length="250" name="last_name_en" type="string"/>
+        <element display="true" label="First_Name_TH" mandatory="true" max_length="250" name="first_name_th" type="string"/>
+        <index name="index">
+            <element name="nationality"/>
+        </index>
+        <index name="index2">
+            <element name="people_info_id"/>
+        </index>
+        <index name="index3">
+            <element name="title_name"/>
+        </index>
+    </element>
+</database>

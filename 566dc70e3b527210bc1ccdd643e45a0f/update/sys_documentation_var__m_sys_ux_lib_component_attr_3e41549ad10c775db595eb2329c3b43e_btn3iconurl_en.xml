@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="btn3IconUrl" label="Button 3 Icon URL (optional)" language="en" table="var__m_sys_ux_lib_component_attr_3e41549ad10c775db595eb2329c3b43e">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>btn3IconUrl</element>
+            <help/>
+            <hint/>
+            <label>Button 3 Icon URL (optional)</label>
+            <language>en</language>
+            <name>var__m_sys_ux_lib_component_attr_3e41549ad10c775db595eb2329c3b43e</name>
+            <plural>Button 3 Icon URL (optional)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-12 08:11:37</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Button 3 Icon URL (optional)</sys_name>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_ux_lib_component_attr_3e41549ad10c775db595eb2329c3b43e_btn3IconUrl_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-12 08:11:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

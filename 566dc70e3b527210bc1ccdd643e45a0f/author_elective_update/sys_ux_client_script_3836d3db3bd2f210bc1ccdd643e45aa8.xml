@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Add Executive Modal">8b98554b3b523210bc1ccdd643e45a97</macroponent>
+        <name>select_2/now_default/items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script/>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 10:10:48</sys_created_on>
+        <sys_id>3836d3db3bd2f210bc1ccdd643e45aa8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>select_2/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_3836d3db3bd2f210bc1ccdd643e45aa8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 10:26:30</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_client_script_3836d3db3bd2f210bc1ccdd643e45aa8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script"><sys_ux_client_script action="INSERT_OR_UPDATE"><controller_preset/><includes/><macroponent display_value="Add Executive Modal">8b98554b3b523210bc1ccdd643e45a97</macroponent><name>select_2/now_default/items</name><preset/><required_translations>[]</required_translations><script/><script_api_version>2.0.0</script_api_version><sys_class_name>sys_ux_client_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-13 10:10:48</sys_created_on><sys_id>3836d3db3bd2f210bc1ccdd643e45aa8</sys_id><sys_mod_count>6</sys_mod_count><sys_name>select_2/now_default/items</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ux_client_script_3836d3db3bd2f210bc1ccdd643e45aa8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-13 10:26:30</sys_updated_on><target>macroponent</target><type>transform</type></sys_ux_client_script></record_update>]]></payload>
+        <payload_hash>2074580797</payload_hash>
+        <record_name>select_2/now_default/items</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 10:26:31</sys_created_on>
+        <sys_id>6231cc2b3b5af210bc1ccdd643e45a4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb6e490020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 10:26:31</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>2231cc2b745af21058ead2faa543784b</update_guid>
+        <update_guid_history>2231cc2b745af21058ead2faa543784b:2074580797,f5b08ce7f85af210410e5f431aece92a:-2122487371,898f3757aa5af210b26a77ac440d39bf:1309961516,1a4f7f17d85af21038d4fd3ee6041986:-545710407,5d0f3717365af210867f50504f3dfdc6:-524498318,353e7b93cd5af2101cb7f0005b9867e6:-463832366,e0ad7753b35af2106d5ef7a35f65f50a:-791335758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 10:26:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0f4d126a0b9a4128816ac0c769483061</sys_id>
+        <sys_metadata>3836d3db3bd2f210bc1ccdd643e45aa8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_2/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_3836d3db3bd2f210bc1ccdd643e45aa8</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_3836d3db3bd2f210bc1ccdd643e45aa8">6231cc2b3b5af210bc1ccdd643e45a4c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 10:26:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

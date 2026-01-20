@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Add Executive Modal">8b98554b3b523210bc1ccdd643e45a97</macroponent>
+        <name>select_1/now_default/items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function evaluateScript({api}) {
+    // Check if the data resource has loaded records
+    if (api.data.look_up_records_1.results) {
+        // Map the results to the format the select component expects
+        return api.data.look_up_records_1.results.map(item => {
+            return {
+                label: item.name.displayValue, // Use displayValue for the label
+                value: item.sys_id.value       // Use sys_id for the value
+            };
+        });
+    }
+    return []; // Return an empty array if no data is available yet
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 07:25:46</sys_created_on>
+        <sys_id>43dd58b73b5e7610bc1ccdd643e45a0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_1/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_43dd58b73b5e7610bc1ccdd643e45a0a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 07:25:46</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_client_script_43dd58b73b5e7610bc1ccdd643e45a0a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Add Executive Modal"&gt;8b98554b3b523210bc1ccdd643e45a97&lt;/macroponent&gt;&lt;name&gt;select_1/now_default/items&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function evaluateScript({api}) {
+    // Check if the data resource has loaded records
+    if (api.data.look_up_records_1.results) {
+        // Map the results to the format the select component expects
+        return api.data.look_up_records_1.results.map(item =&gt; {
+            return {
+                label: item.name.displayValue, // Use displayValue for the label
+                value: item.sys_id.value       // Use sys_id for the value
+            };
+        });
+    }
+    return []; // Return an empty array if no data is available yet
+}
+]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-14 07:25:46&lt;/sys_created_on&gt;&lt;sys_id&gt;43dd58b73b5e7610bc1ccdd643e45a0a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;select_1/now_default/items&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_43dd58b73b5e7610bc1ccdd643e45a0a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-14 07:25:46&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1386445992</payload_hash>
+        <record_name>select_1/now_default/items</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 07:25:46</sys_created_on>
+        <sys_id>e871e0ff3b5e7610bc1ccdd643e45a3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bbb6570f70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 07:25:46</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>a871e0ff8e5e76103aef5e60ab74d939</update_guid>
+        <update_guid_history>a871e0ff8e5e76103aef5e60ab74d939:1386445992</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 07:35:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2d187099b6fb4da0ae09d70695076400</sys_id>
+        <sys_metadata>43dd58b73b5e7610bc1ccdd643e45a0a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_1/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_43dd58b73b5e7610bc1ccdd643e45a0a</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_43dd58b73b5e7610bc1ccdd643e45a0a">e871e0ff3b5e7610bc1ccdd643e45a3a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 07:35:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

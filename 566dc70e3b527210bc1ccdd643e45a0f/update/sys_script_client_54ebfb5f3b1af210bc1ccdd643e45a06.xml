@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>People info onload</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var fieldName = 'nationality'; // Replace with your actual field name
+    
+    // 1. Get the field element
+    var control = g_form.getControl(fieldName);
+    
+    if (control) {
+        // 2. Find the button that has the 'data-ref-id' or ID matching the lookup
+        // We look for a button that is a sibling or child of the parent container
+        var parent = control.closest('div.form-field-element');
+        if (!parent) parent = control.parentElement;
+        
+        var lookupBtn = parent.querySelector('button[id*="lookup"]');
+        
+        if (lookupBtn) {
+            lookupBtn.style.setProperty('display', 'none', 'important');
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 10:03:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>54ebfb5f3b1af210bc1ccdd643e45a06</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>People info onload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_script_client_54ebfb5f3b1af210bc1ccdd643e45a06</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 10:30:01</sys_updated_on>
+        <table>x_1896436_bot_ap_0_people_info</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

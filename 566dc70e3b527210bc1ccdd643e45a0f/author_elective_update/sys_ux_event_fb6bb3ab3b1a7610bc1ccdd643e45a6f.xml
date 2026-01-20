@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description/>
+        <event_name>CONTENT_UPDATED_RELAY_87a71ec73b9a3210bc1ccdd643e45afc</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Add parameters to URL Relay (Default)</label>
+        <props>[
+    {
+        "defaultValue": null,
+        "description": "Add parameters to the URL",
+        "fieldType": "json",
+        "label": "Parameters",
+        "name": "params",
+        "type": "json",
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "selectedIndex": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 04:53:47</sys_created_on>
+        <sys_id>fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add parameters to URL Relay (Default)</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_event_fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 04:53:47</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=fb6bb3ab3b1a7610bc1ccdd643e45a6f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_event_fb6bb3ab3b1a7610bc1ccdd643e45a6f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event"><sys_ux_event action="INSERT_OR_UPDATE"><description/><event_name>CONTENT_UPDATED_RELAY_87a71ec73b9a3210bc1ccdd643e45afc</event_name><explicit_api_name/><interfaces/><label>Add parameters to URL Relay (Default)</label><props>[
+    {
+        "defaultValue": null,
+        "description": "Add parameters to the URL",
+        "fieldType": "json",
+        "label": "Parameters",
+        "name": "params",
+        "type": "json",
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "selectedIndex": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "valueType": "string"
+    }
+]</props><required_translations/><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_event</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-14 04:53:47</sys_created_on><sys_id>fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Add parameters to URL Relay (Default)</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ux_event_fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-14 04:53:47</sys_updated_on></sys_ux_event><sys_translated_text action="delete_multiple" query="documentkey=fb6bb3ab3b1a7610bc1ccdd643e45a6f"/></record_update>]]></payload>
+        <payload_hash>503952977</payload_hash>
+        <record_name>Add parameters to URL Relay (Default)</record_name>
+        <reverted_from/>
+        <source>5e6dc70e3b527210bc1ccdd643e45a17</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 04:53:48</sys_created_on>
+        <sys_id>2eae33633b5a7610bc1ccdd643e45a48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bbada4fa10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 04:53:48</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>eaae3363c95a76106c18821dfb68c147</update_guid>
+        <update_guid_history>eaae3363c95a76106c18821dfb68c147:503952977</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-14 04:55:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>663e3111f4e84bbe881eff30c2793d41</sys_id>
+        <sys_metadata>fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add parameters to URL Relay (Default)</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_event_fb6bb3ab3b1a7610bc1ccdd643e45a6f</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_fb6bb3ab3b1a7610bc1ccdd643e45a6f">2eae33633b5a7610bc1ccdd643e45a48</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-14 04:55:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

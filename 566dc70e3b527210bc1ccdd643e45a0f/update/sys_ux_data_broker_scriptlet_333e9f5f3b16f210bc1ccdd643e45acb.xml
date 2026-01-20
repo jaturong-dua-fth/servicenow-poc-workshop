@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_scriptlet">
+    <sys_ux_data_broker_scriptlet action="INSERT_OR_UPDATE">
+        <api_name>x_1896436_bot_ap_0.Group Category Form 2</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Group Category Form 2</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+
+    var rows = input.GlideRecord_Query._results;
+
+    var map = {};
+
+    rows.forEach(function (r) {
+        var cat = r.form_category;
+
+        if (!map[cat]) {
+            map[cat] = {
+                category: cat,
+                items: []
+            };
+        }
+
+        map[cat].items.push({
+            sys_id: r.number,
+            name: r.form_name,
+            no: r.form_no,
+            type: r.form_type
+        });
+    });
+
+    var result = [];
+    for (var k in map)
+        result.push(map[k]);
+
+    return result;
+}
+]]></script>
+        <sys_class_name>sys_ux_data_broker_scriptlet</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-13 07:59:59</sys_created_on>
+        <sys_id>333e9f5f3b16f210bc1ccdd643e45acb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Group Category Form 2</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_data_broker_scriptlet_333e9f5f3b16f210bc1ccdd643e45acb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 07:59:59</sys_updated_on>
+    </sys_ux_data_broker_scriptlet>
+    <sys_translated_text action="delete_multiple" query="documentkey=333e9f5f3b16f210bc1ccdd643e45acb"/>
+</record_update>
