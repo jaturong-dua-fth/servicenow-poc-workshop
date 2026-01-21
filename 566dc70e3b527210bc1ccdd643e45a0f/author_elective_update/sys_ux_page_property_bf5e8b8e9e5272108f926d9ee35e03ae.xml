@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="BOT Application">2f5e8b8e6e527210172d16fb779bd597</page>
+        <required_translations>[]</required_translations>
+        <route display_value="">bb5e8b8e7f52721050b6c549328370d9</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-09 09:32:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>bf5e8b8e9e5272108f926d9ee35e03ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_page_property_bf5e8b8e9e5272108f926d9ee35e03ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 09:32:03</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1896436_bot_ap_0.2f5e8b8e6e527210172d16fb779bd597.route.chrome_header.bb5e8b8e7f52721050b6c549328370d9</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}&#13;
+</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_page_property_bf5e8b8e9e5272108f926d9ee35e03ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_header</name><page display_value="BOT Application">2f5e8b8e6e527210172d16fb779bd597</page><required_translations>[]</required_translations><route display_value="">bb5e8b8e7f52721050b6c549328370d9</route><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-09 09:32:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>bf5e8b8e9e5272108f926d9ee35e03ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_header</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ux_page_property_bf5e8b8e9e5272108f926d9ee35e03ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-09 09:32:03</sys_updated_on><type>json</type><unique_name>x_1896436_bot_ap_0.2f5e8b8e6e527210172d16fb779bd597.route.chrome_header.bb5e8b8e7f52721050b6c549328370d9</unique_name><value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}&#13;
+</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-265297956</payload_hash>
+        <record_name>chrome_header</record_name>
+        <reverted_from/>
+        <source>76c6b9023b123210bc1ccdd643e45a30</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2026-01-09 03:09:17</sys_created_on>
+        <sys_id>1210e80a3b2ef650bc1ccdd643e45a4c</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19ba0bad3480000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>de10e80abf2ef650acaa50febc46da4b</update_guid>
+        <update_guid_history>de10e80abf2ef650acaa50febc46da4b:-265297956</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 07:06:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>028dad63810642fa810cea8d028a5011</sys_id>
+        <sys_metadata>bf5e8b8e9e5272108f926d9ee35e03ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_bf5e8b8e9e5272108f926d9ee35e03ae</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_bf5e8b8e9e5272108f926d9ee35e03ae">1210e80a3b2ef650bc1ccdd643e45a4c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 07:06:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

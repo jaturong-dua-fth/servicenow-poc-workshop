@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">534ad6883b6e3a10bc1ccdd643e45ac7</macroponent>
+        <name>checkbox_choose_people_modal/now_default/label</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  const obj = api.item.value;
+  const title = obj.title.displayValue;
+  const firstName = obj.first_name_th.displayValue;
+  const lastName = obj.last_name_th.displayValue;
+	return `${title} ${firstName} ${lastName}`.trim();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-20 18:11:30</sys_created_on>
+        <sys_id>339d21fd3b66b650bc1ccdd643e45a9c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>checkbox_choose_people_modal/now_default/label</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_339d21fd3b66b650bc1ccdd643e45a9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-20 18:40:26</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

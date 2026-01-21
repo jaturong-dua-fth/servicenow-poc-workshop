@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">534ad6883b6e3a10bc1ccdd643e45ac7</macroponent>
+        <name>Mappping Coordinator To State</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[function handler({ api, event }) {
+  var el = event && event.elementId;
+  if (!el) return;
+
+  var payload = event.payload || {};
+
+  var raw =
+    payload.value != null ? payload.value :
+    payload.checked != null ? payload.checked :
+    payload.selected != null ? payload.selected :
+    payload.sysId != null ? payload.sysId :
+    '';
+
+  var value = (typeof raw === 'string') ? raw.trim() : raw;
+
+  var MAP = {
+    coordinator_email: 'email',
+    coordinator_firstname: 'first_name_th',
+    coordinator_lastname: 'last_name_th',
+    coordinator_tel: 'mobile_no',
+    coordinator_prefix: 'title_name'
+  };
+
+  var targetKey = MAP[el];
+  if (!targetKey) return;
+
+  var current = api.state.coordinatorItem || {};
+
+  api.setState('coordinatorItem', Object.assign({}, current, {
+    [targetKey]: value
+  }));
+  console.log("set co ",api.state.coordinatorItem);
+}
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 07:57:48</sys_created_on>
+        <sys_id>a9f9d0c63beaf650bc1ccdd643e45ac9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Mappping Coordinator To State</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_a9f9d0c63beaf650bc1ccdd643e45ac9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 07:57:53</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

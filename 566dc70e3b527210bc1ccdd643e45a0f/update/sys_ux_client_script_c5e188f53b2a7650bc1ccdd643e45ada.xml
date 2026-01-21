@@ -12,47 +12,89 @@
  * @param {any} params.event
  * @param {ApiHelpers} params.helpers
  */
-function handler({ api, event, helpers }) {
-  // ถ้า event นี้มาจาก validate แล้ว success
-//   if (event.payload.status !== 'success') return;
+function handler({
+    api,
+    event,
+    helpers
+}) {
+    api.setState('isRequestSubmitted', true);
 
-  // ดึง request จาก state
-  const request = api.state.request || {};
+    var request = api.state.request || {};
 
-console.log("request ",request);
+    console.log('request', request);
+    console.log('items', api.state.items);
 
-  // (แนะนำ) เช็คขั้นต่ำก่อนส่ง
-  if (!request.title || String(request.title).trim() === '') {
-    // ถ้ามี notification helper ค่อยใช้ (บาง instance ไม่มี)
-    // try {
-    //   helpers.screen.updateStatus.({
-    //     status: 'error',
-    //     message: 'Title is required'
-    //   });
-    // } catch (e) {}
-    return;
-  }
-console.log("called submit request ",request);
-  // ✅ เรียก Data Resource (Transform) แล้วส่ง input เข้าไป
-  // NOTE: ชื่อ input ต้องตรงกับที่คุณสร้างไว้ใน Data Broker Server Script (inputs)
-  api.data.request_transform_data_1.execute({
-    payload: request
-  });
-}
-]]></script>
+    function isEmpty(v) {
+        return v === null || v === undefined || (typeof v === 'string' && v.trim() === '');
+    }
+
+    var messages = [];
+
+    // title
+    if (isEmpty(request.title)) {
+        messages.push('กรุณากรอก "เรื่อง" ในหัวข้อ ยื่นคำขอ');
+    }
+
+    // company
+    if (isEmpty(request.company)) {
+        messages.push('กรุณากรอก "บริษัท" ในหัวข้อ ยื่นคำขอ');
+    }
+
+    // authorized_name
+    if (isEmpty(request.authorized_name)) {
+        messages.push('กรุณากรอก "ผู้มีอำนาจลงนาม" ในหัวข้อ ผู้มีอำนาจลงนาม');
+    }
+
+    // authorized_position
+    if (isEmpty(request.authorized_position)) {
+        messages.push('กรุณากรอก "ตำแหน่ง/ฝ่ายงาน/สง." ในหัวข้อ ผู้มีอำนาจลงนาม');
+    }
+
+    // ✅ coordinator ต้องเป็น array และต้องมีอย่างน้อย 1 คน
+    var coordinators = api.state.coordinator;
+    if (!Array.isArray(coordinators) || coordinators.length === 0) {
+        messages.push('กรุณาเพิ่ม "ผู้ประสานงานคำขอ" ในหัวข้อ ผู้ประสานงานคำขอ');
+    }
+
+    // ถ้ามี error -> set state + เปิด modal แล้วจบ
+    if (messages.length > 0) {
+        api.setState('warningMessage', messages.join('<br>'));
+        api.emit('OPEN_WARNING_MODAL', {});
+        return;
+    }
+
+    // รวม payload
+    var allPayload = {
+        request: request,
+        people: api.state.peopleSysIds || [],
+        items: api.state.items || [],
+        documents: api.state.documents || [],
+        coordinator: coordinators || [] // ให้ชัดว่าเป็น array
+    };
+
+    console.log('called submit request', allPayload);
+
+    const r = api.data.request_transform_data_1.execute({
+        payload: allPayload
+    });
+
+    console.log('respose is : ', r);
+    api.setState('isRequestSubmitted', false);
+    api.emit('OPEN_SUCCESS_MODAL', {});
+}]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-20 11:10:17</sys_created_on>
         <sys_id>c5e188f53b2a7650bc1ccdd643e45ada</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Submit Request</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy/>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_client_script_c5e188f53b2a7650bc1ccdd643e45ada</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-20 11:26:51</sys_updated_on>
+        <sys_updated_on>2026-01-21 10:49:05</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="876113e93b627650bc1ccdd643e45ab6" label="People Sued History" max_length="40" name="x_1896436_bot_ap_0_people_sued_history" type="collection">
-        <element choice="1" label="ผลคดี" max_length="40" name="result" type="choice">
+        <element choice="1" label="ผลคดี" mandatory="true" max_length="40" name="result" type="choice">
             <choice>
                 <element inactive_on_update="false" label="คดีสิ้นสุด" sequence="6" value="end"/>
                 <element inactive_on_update="false" label="ขาดอายุความ" sequence="4" value="expire"/>
@@ -12,18 +12,18 @@
             </choice>
         </element>
         <element label="หมายเลขคดีดำ" max_length="40" name="black_no" type="string"/>
-        <element label="ทุนทรัพย์" max_length="40" name="principal" type="string"/>
+        <element label="ทุนทรัพย์/ค่าเสียหายที่เรียกร้องได้ในคดี" mandatory="true" max_length="40" name="principal" type="string"/>
         <element label="หมายเลขคดีแดง" max_length="40" name="red_no" type="string"/>
-        <element label="เลขคดี" max_length="40" name="case_id" type="string"/>
-        <element label="เลขบุคคล" max_length="40" name="people_id" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
-        <element label="ศาล/อัยการ/ตำรวจ" max_length="40" name="court" type="string"/>
-        <element choice="1" label="สถานะในคดี" max_length="40" name="status" type="choice">
+        <element label="เลขที่คดี" mandatory="true" max_length="40" name="case_id" type="string"/>
+        <element label="เลขที่บุคคล" max_length="40" name="people_id" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
+        <element label="ศาล/อัยการ/ตำรวจ" mandatory="true" max_length="40" name="court" type="string"/>
+        <element choice="1" label="สถานะในคดี" mandatory="true" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="จำเลย" sequence="0" value="jumloey"/>
                 <element inactive_on_update="false" label="ผู้ถูกฟ้องคดี" sequence="1" value="defendant"/>
             </choice>
         </element>
-        <element choice="1" label="ประเภทคดี" max_length="40" name="case_type" type="choice">
+        <element choice="1" label="ประเภทคดี" mandatory="true" max_length="40" name="case_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="อาญา" sequence="0" value="criminal"/>
                 <element inactive_on_update="false" label="ปกครอง" sequence="3" value="administrative"/>
@@ -32,9 +32,9 @@
                 <element inactive_on_update="false" label="ล้มละลาย" sequence="2" value="insolvent"/>
             </choice>
         </element>
-        <element label="วันพิพากษา" max_length="40" name="court_date" type="glide_date"/>
+        <element label="วันที่พิจารณาคดีล่าสุด/วันที่ศาลมีคำสั่งพิพากษาถึงที่สุด" max_length="40" name="court_date" type="glide_date"/>
         <element label="หมายเหตุ" max_length="40" name="comment" type="string"/>
-        <element label="ข้อหาหรือฐานความผิด" max_length="40" name="accusation" type="string"/>
-        <element label="เลขรายการคำขอ" max_length="40" name="request_item_id" reference="x_1896436_bot_ap_0_request_item" type="reference"/>
+        <element label="ข้อหาหรือฐานความผิด" mandatory="true" max_length="40" name="accusation" type="string"/>
+        <element label="เลขที่รายการคำขอ" max_length="40" name="request_item_id" reference="x_1896436_bot_ap_0_request_item" type="reference"/>
     </element>
 </database>

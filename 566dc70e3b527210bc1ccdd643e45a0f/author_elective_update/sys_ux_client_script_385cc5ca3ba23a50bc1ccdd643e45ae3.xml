@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">e34bb8c23b223a50bc1ccdd643e45af9</macroponent>
+        <name>repeater_spouse/repeatWith</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+
+	return api.state.spouseList.filter( item => item.operation !== 'delete');
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 10:31:37</sys_created_on>
+        <sys_id>385cc5ca3ba23a50bc1ccdd643e45ae3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>repeater_spouse/repeatWith</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_385cc5ca3ba23a50bc1ccdd643e45ae3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 10:31:37</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_client_script_385cc5ca3ba23a50bc1ccdd643e45ae3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Default"&gt;e34bb8c23b223a50bc1ccdd643e45af9&lt;/macroponent&gt;&lt;name&gt;repeater_spouse/repeatWith&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+
+	return api.state.spouseList.filter( item =&gt; item.operation !== 'delete');
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-21 10:31:37&lt;/sys_created_on&gt;&lt;sys_id&gt;385cc5ca3ba23a50bc1ccdd643e45ae3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;repeater_spouse/repeatWith&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_385cc5ca3ba23a50bc1ccdd643e45ae3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-21 10:31:37&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-485377098</payload_hash>
+        <record_name>repeater_spouse/repeatWith</record_name>
+        <reverted_from/>
+        <source>abe81cf93bea7650bc1ccdd643e45aef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 10:31:37</sys_created_on>
+        <sys_id>d31fc1c23be23a50bc1ccdd643e45a8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19be01c1beb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 10:31:37</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>931fc1c24ee23a50f6dd89af107c8e8b</update_guid>
+        <update_guid_history>931fc1c24ee23a50f6dd89af107c8e8b:-485377098</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 12:34:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>286dae6f88194124a87552fb263eb690</sys_id>
+        <sys_metadata>385cc5ca3ba23a50bc1ccdd643e45ae3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>repeater_spouse/repeatWith</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_385cc5ca3ba23a50bc1ccdd643e45ae3</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_385cc5ca3ba23a50bc1ccdd643e45ae3">d31fc1c23be23a50bc1ccdd643e45a8c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 12:34:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

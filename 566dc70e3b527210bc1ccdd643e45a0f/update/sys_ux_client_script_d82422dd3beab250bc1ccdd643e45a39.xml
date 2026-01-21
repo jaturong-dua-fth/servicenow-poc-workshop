@@ -6,49 +6,49 @@
         <name>LoadedSelectedIdsParam</name>
         <preset/>
         <required_translations>[]</required_translations>
-        <script><![CDATA[function handler({ api }) {
-  var raw = api.state.selectedIdsParam;
-  console.log('raw from state =', raw, 'type=', typeof raw);
+        <script><![CDATA[function handler({
+    api
+}) {
+    var raw = api.state.selectedIdsParam;
 
-  var selectedIds = [];
+    var selectedIds = [];
 
-  // 1) ถ้ามันเป็น array อยู่แล้ว
-  if (Object.prototype.toString.call(raw) === '[object Array]') {
-    selectedIds = raw;
-  }
-  // 2) ถ้ามันเป็น string (JSON string หรือ URL-encoded JSON)
-  else if (typeof raw === 'string' && raw) {
-    try {
-      selectedIds = JSON.parse(raw);
-    } catch (e) {
-      try {
-        selectedIds = JSON.parse(decodeURIComponent(raw));
-      } catch (e2) {
-        selectedIds = [];
-      }
+    // 1) ถ้ามันเป็น array อยู่แล้ว
+    if (Object.prototype.toString.call(raw) === '[object Array]') {
+        selectedIds = raw;
     }
-  }
+    // 2) ถ้ามันเป็น string (JSON string หรือ URL-encoded JSON)
+    else if (typeof raw === 'string' && raw) {
+        try {
+            selectedIds = JSON.parse(raw);
+        } catch (e) {
+            try {
+                selectedIds = JSON.parse(decodeURIComponent(raw));
+            } catch (e2) {
+                selectedIds = [];
+            }
+        }
+    }
+    
+    api.setState('items', selectedIds);
 
-  api.setState('items', selectedIds);
-  console.log('items =', selectedIds);
 
-  console.log('STATE request =', api.state.request);
+console.log("coordinator ",api.state.coordinator);
 
-}
-]]></script>
+}]]></script>
         <script_api_version>2.0.0</script_api_version>
         <sys_class_name>sys_ux_client_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-19 09:10:09</sys_created_on>
         <sys_id>d82422dd3beab250bc1ccdd643e45a39</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>LoadedSelectedIdsParam</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy/>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_client_script_d82422dd3beab250bc1ccdd643e45a39</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-20 10:52:32</sys_updated_on>
+        <sys_updated_on>2026-01-21 10:57:05</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

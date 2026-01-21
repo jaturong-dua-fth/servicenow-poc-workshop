@@ -837,7 +837,7 @@
                                                 "title": {
                                                     "binding": {
                                                         "address": [
-                                                            "topic",
+                                                            "title",
                                                             "displayValue"
                                                         ],
                                                         "category": "value"
@@ -955,7 +955,7 @@
                                                 "title": {
                                                     "binding": {
                                                         "address": [
-                                                            "topic",
+                                                            "title",
                                                             "displayValue"
                                                         ],
                                                         "category": "value"
@@ -1811,7 +1811,122 @@
         },
         "elementId": "look_up_multiple_records_1",
         "elementLabel": "Look up multiple records 1",
-        "eventMappings": [],
+        "eventMappings": [
+            {
+                "eventMappingId": "wHeefgvENBksdjjeeddgAjccSwqPUp",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_INITIATED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_INITIATED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": true,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "WgvqaaeehhsuDEPteeddLkJxoBjHQKi",
+                        "type": "EVENT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "HnfmeeddeehhLIDkddIjjvUCTgKhhNQEY",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_FAILED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_FAILED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": false,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "oeebKfffhjBkbeehhjjjkIoHicjFJjj",
+                        "type": "EVENT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "ECcggpeehhilDkUBeeddKcHvddHeehhbWggI",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": false,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "FCeeDsvObbCkccTjjlkGIAYnprHd",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
         "inputValues": {
             "encodedQuery": {
                 "transform": {
@@ -1859,7 +1974,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "coordinator,sys_created_on,sys_created_by,number,request_type,status,sys_tags,topic,sys_updated_on,sys_updated_by,sys_mod_count"
+                "value": "coordinator,sys_created_on,sys_created_by,number,request_type,status,sys_tags,topic,sys_updated_on,sys_updated_by,sys_mod_count,title"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -2215,7 +2330,122 @@
         },
         "elementId": "look_up_multiple_records_2",
         "elementLabel": "Look up multiple records 2",
-        "eventMappings": [],
+        "eventMappings": [
+            {
+                "eventMappingId": "PgyccrfxhDUozeeddKEFIZbEqMBy",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_INITIATED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_INITIATED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": true,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "RleeddqhPRBCklCjjggIFsdWeeeFpr",
+                        "type": "EVENT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "AZbbELvlDCaahmjjREATeehhEWSTuH",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_FAILED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_FAILED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": false,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "UkggPaPeeVAUJfjjVYCYnqcQsdii",
+                        "type": "EVENT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "eeddxigNfffbDUwVjjjMNkeUiogsV",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_FETCH_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "sn_uxf_page.NOW_UXF_PAGE#SET_LOADING_STATE",
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {
+                                    "action": null,
+                                    "label": null,
+                                    "loading": false,
+                                    "nonBlocking": false
+                                }
+                            },
+                            "sysId": "0404f68486f1baab1dc7ef2a27a3de50"
+                        },
+                        "operation": null,
+                        "targetId": "YWMqkwBaAUhhnjjiiiiDccoeeLeddqaa",
+                        "type": "EVENT"
+                    }
+                ]
+            }
+        ],
         "inputValues": {
             "encodedQuery": {
                 "type": "JSON_LITERAL",
@@ -2243,7 +2473,7 @@
             },
             "returnFields": {
                 "type": "JSON_LITERAL",
-                "value": "coordinator,sys_created_on,sys_created_by,number,request_type,status,sys_tags,topic,sys_updated_on,sys_updated_by,sys_mod_count"
+                "value": "coordinator,sys_created_on,sys_created_by,number,request_type,status,sys_tags,topic,sys_updated_on,sys_updated_by,sys_mod_count,title"
             },
             "sortType": {
                 "type": "JSON_LITERAL",
@@ -2359,14 +2589,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-12 08:06:52</sys_created_on>
         <sys_id>87a71ec73b9a3210bc1ccdd643e45afc</sys_id>
-        <sys_mod_count>99</sys_mod_count>
+        <sys_mod_count>101</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy/>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_macroponent_87a71ec73b9a3210bc1ccdd643e45afc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-15 11:42:51</sys_updated_on>
+        <sys_updated_on>2026-01-21 11:12:46</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=87a71ec73b9a3210bc1ccdd643e45afc"/>
 </record_update>

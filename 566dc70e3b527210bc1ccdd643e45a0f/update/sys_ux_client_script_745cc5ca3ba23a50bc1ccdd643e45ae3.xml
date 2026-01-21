@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">e34bb8c23b223a50bc1ccdd643e45af9</macroponent>
+        <name>body_spouse_nationality/now_default/text</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api
+}) {
+    const obj = api.item.value;
+
+    const nationality = api.data.look_up_nationality.results.find( item => item._row_data.uniqueValue === obj.nationality.value);
+    return nationality.nationality_th.value;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 10:30:46</sys_created_on>
+        <sys_id>745cc5ca3ba23a50bc1ccdd643e45ae3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>body_spouse_nationality/now_default/text</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_745cc5ca3ba23a50bc1ccdd643e45ae3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 10:30:46</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

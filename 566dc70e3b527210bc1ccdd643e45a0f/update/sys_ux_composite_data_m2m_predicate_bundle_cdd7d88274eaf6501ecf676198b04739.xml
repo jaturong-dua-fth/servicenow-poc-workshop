@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_predicate_bundle">
+    <sys_ux_composite_data_m2m_predicate_bundle action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">c9d7d882dfeaf6509c529128871e9d40</dataset>
+        <order/>
+        <predicate_bundle display_value="My Tasks - Task bundle">c5d7d882cceaf6506a0c52c46319b13b</predicate_bundle>
+        <sys_class_name>sys_ux_composite_data_m2m_predicate_bundle</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 06:30:07</sys_created_on>
+        <sys_id>cdd7d88274eaf6501ecf676198b04739</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_predicate_bundle_cdd7d88274eaf6501ecf676198b04739</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 06:30:07</sys_updated_on>
+    </sys_ux_composite_data_m2m_predicate_bundle>
+</record_update>

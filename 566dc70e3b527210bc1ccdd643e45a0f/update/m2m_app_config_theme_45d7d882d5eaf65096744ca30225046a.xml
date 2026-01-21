@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">41d7d88266eaf650ca0c27fbac85e96a</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-21 06:30:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>45d7d882d5eaf65096744ca30225046a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>m2m_app_config_theme_45d7d882d5eaf65096744ca30225046a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-21 06:30:06</sys_updated_on>
+        <theme display_value="Light Theme">4dd7d8823feaf650b01eab1d0c0a596a</theme>
+        <ux_app_configuration display_value="BOT Admin Application App Config">01d7d8826eeaf650b71fd5cc6e6b3821</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

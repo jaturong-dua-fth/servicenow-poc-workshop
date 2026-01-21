@@ -166,7 +166,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a90362c73b1e3210bc1ccdd643e45a10</sys_id>
-        <sys_mod_count>645</sys_mod_count>
+        <sys_mod_count>646</sys_mod_count>
         <sys_name>People Info Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
@@ -174,7 +174,7 @@
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_screen_a90362c73b1e3210bc1ccdd643e45a10</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-20 11:35:34</sys_updated_on>
+        <sys_updated_on>2026-01-21 10:23:49</sys_updated_on>
     </sys_ux_screen>
     <sys_translated_text action="delete_multiple" query="documentkey=a90362c73b1e3210bc1ccdd643e45a10"/>
 </record_update>
