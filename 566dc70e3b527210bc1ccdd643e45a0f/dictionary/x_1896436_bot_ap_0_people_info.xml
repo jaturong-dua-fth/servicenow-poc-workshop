@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" db_object_id="978117863b927210bc1ccdd643e45a62" label="People Info" max_length="40" name="x_1896436_bot_ap_0_people_info" type="collection">
+    <element audit="true" db_object_id="978117863b927210bc1ccdd643e45a62" label="People Info" max_length="40" name="x_1896436_bot_ap_0_people_info" text_index="true" type="collection">
         <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
         <element choice="3" default="MALE" label="เพศ" max_length="40" name="gender" type="choice">
             <choice>

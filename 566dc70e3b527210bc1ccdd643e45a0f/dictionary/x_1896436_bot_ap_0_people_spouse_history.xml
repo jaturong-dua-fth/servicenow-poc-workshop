@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="5e411a143b2eba10bc1ccdd643e45ab1" label="People Spouse History" max_length="40" name="x_1896436_bot_ap_0_people_spouse_history" type="collection">
+    <element db_object_id="5e411a143b2eba10bc1ccdd643e45ab1" label="People Spouse History" max_length="40" name="x_1896436_bot_ap_0_people_spouse_history" text_index="true" type="collection">
         <element label="Last_Name_TH" mandatory="true" max_length="250" name="last_name_th" type="string"/>
         <element label="Last_Name_EN" mandatory="true" max_length="250" name="last_name_en" type="string"/>
         <element label="People_Spouse_Id" mandatory="true" max_length="40" name="people_spouse_id" reference="x_1896436_bot_ap_0_people_spouse" reference_cascade_rule="delete" type="reference"/>

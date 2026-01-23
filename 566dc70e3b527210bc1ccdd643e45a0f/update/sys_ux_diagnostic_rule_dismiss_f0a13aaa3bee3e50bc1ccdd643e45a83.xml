@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_diagnostic_rule_dismiss">
+    <sys_ux_diagnostic_rule_dismiss action="INSERT_OR_UPDATE">
+        <dismiss_targets>{
+  "2b25002a438182101f2bf7bb68b8f237": [
+    {
+      "radio_buttons_1": {
+        "queryId": "",
+        "dismissTimestamp": "2026-01-23T06:43:58.407Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ],
+  "77aa8944ff7b12101279ffffffffffd8": [
+    {
+      "unlock_card_base_container": {
+        "queryId": "",
+        "dismissTimestamp": "2026-01-23T06:44:00.522Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "request_card_base_container": {
+        "queryId": "",
+        "dismissTimestamp": "2026-01-23T06:44:02.438Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    },
+    {
+      "permit_base_container": {
+        "queryId": "",
+        "dismissTimestamp": "2026-01-23T06:44:03.237Z",
+        "dismissedBy": "6816f79cc0a8016401c5a33be04be441"
+      }
+    }
+  ]
+}</dismiss_targets>
+        <sys_class_name>sys_ux_diagnostic_rule_dismiss</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 06:59:02</sys_created_on>
+        <sys_id>f0a13aaa3bee3e50bc1ccdd643e45a83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_diagnostic_rule_dismiss_f0a13aaa3bee3e50bc1ccdd643e45a83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 06:59:02</sys_updated_on>
+        <table_name>sys_ux_macroponent</table_name>
+        <target_id>762ccaea3baa3e50bc1ccdd643e45ab5</target_id>
+    </sys_ux_diagnostic_rule_dismiss>
+</record_update>

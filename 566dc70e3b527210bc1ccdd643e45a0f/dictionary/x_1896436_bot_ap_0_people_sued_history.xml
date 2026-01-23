@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="876113e93b627650bc1ccdd643e45ab6" label="People Sued History" max_length="40" name="x_1896436_bot_ap_0_people_sued_history" type="collection">
+    <element db_object_id="876113e93b627650bc1ccdd643e45ab6" label="People Sued History" max_length="40" name="x_1896436_bot_ap_0_people_sued_history" text_index="true" type="collection">
         <element choice="1" label="ผลคดี" mandatory="true" max_length="40" name="result" type="choice">
             <choice>
                 <element inactive_on_update="false" label="คดีสิ้นสุด" sequence="6" value="end"/>
@@ -33,8 +33,8 @@
             </choice>
         </element>
         <element label="วันที่พิจารณาคดีล่าสุด/วันที่ศาลมีคำสั่งพิพากษาถึงที่สุด" max_length="40" name="court_date" type="glide_date"/>
+        <element default="True" label="Flag Draft" max_length="255" name="flag_draft" type="boolean"/>
         <element label="หมายเหตุ" max_length="40" name="comment" type="string"/>
         <element label="ข้อหาหรือฐานความผิด" mandatory="true" max_length="40" name="accusation" type="string"/>
-        <element label="เลขที่รายการคำขอ" max_length="40" name="request_item_id" reference="x_1896436_bot_ap_0_request_item" type="reference"/>
     </element>
 </database>

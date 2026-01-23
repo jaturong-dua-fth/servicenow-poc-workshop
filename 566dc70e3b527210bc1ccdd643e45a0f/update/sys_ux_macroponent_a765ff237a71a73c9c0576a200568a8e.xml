@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>primitives</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>41146037f9d7bae4d67b045dbcdcae13</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Status Sidebar Team Component</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "รายการคำขอทั้งหมด",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "fieldType": "string",
+        "label": "Status (bind statusState)",
+        "name": "status",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": true,
+        "fieldType": "boolean",
+        "label": "Navigate on click",
+        "name": "navigateOnClick",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "Pending review count",
+        "name": "pendingReviewCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "In review count",
+        "name": "inReviewCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "Awaiting requester update count",
+        "name": "awaitingRequesterUpdateCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "Waiting for external input count",
+        "name": "waitingForExternalInputCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "In approval count",
+        "name": "inApprovalCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "Waiting for ministry document count",
+        "name": "waitingForMinistryDocumentCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    },
+    {
+        "defaultValue": 0,
+        "fieldType": "integer",
+        "label": "Waiting for result letter count",
+        "name": "waitingForResultLetterCount",
+        "typeMetadata": {
+            "min": 0
+        },
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-1896436-status-sidebar-team">cd6166387db087506c30f92427f3a34d</root_component>
+        <root_component_config>{"title":"@context/title","status":"@context/status","navigateOnClick":"@context/navigateOnClick","pendingReviewCount":"@context/pendingReviewCount","inReviewCount":"@context/inReviewCount","awaitingRequesterUpdateCount":"@context/awaitingRequesterUpdateCount","waitingForExternalInputCount":"@context/waitingForExternalInputCount","inApprovalCount":"@context/inApprovalCount","waitingForMinistryDocumentCount":"@context/waitingForMinistryDocumentCount","waitingForResultLetterCount":"@context/waitingForResultLetterCount"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 01:15:39</sys_created_on>
+        <sys_id>a765ff237a71a73c9c0576a200568a8e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Status Sidebar Team Component</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_macroponent_a765ff237a71a73c9c0576a200568a8e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 04:52:51</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=a765ff237a71a73c9c0576a200568a8e"/>
+</record_update>

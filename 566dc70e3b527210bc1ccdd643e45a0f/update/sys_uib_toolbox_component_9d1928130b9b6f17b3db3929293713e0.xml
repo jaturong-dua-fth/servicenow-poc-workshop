@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Status sidebar (7 statuses, fire click)</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-1896436-status-sidebar-team.svg">7ff2ebed94ef6f8adac277714c163c61</image_icon>
+        <internal_component>false</internal_component>
+        <label>Status Sidebar Team Component</label>
+        <macroponent display_value="Status Sidebar Team Component">a765ff237a71a73c9c0576a200568a8e</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 01:15:39</sys_created_on>
+        <sys_id>9d1928130b9b6f17b3db3929293713e0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Status Sidebar Team Component</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_9d1928130b9b6f17b3db3929293713e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 04:52:52</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=9d1928130b9b6f17b3db3929293713e0"/>
+</record_update>

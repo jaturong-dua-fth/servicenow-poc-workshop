@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1896436_bot_ap_0_request_people" version="2" view="workspace-bot-loan-application-0">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_1896436_bot_ap_0_request_people" element="NULL" name="x_1896436_bot_ap_0_request_people" parent="NULL" relationship="NULL" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">1703ef2a3ba67e50bc1ccdd643e45a1c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_id>1703ef2a3ba67e50bc1ccdd643e45a1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_1896436_bot_ap_0_request_people" element="NULL" name="x_1896436_bot_ap_0_request_people" parent="NULL" relationship="NULL" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">1703ef2a3ba67e50bc1ccdd643e45a1c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_id>df03ef2a3ba67e50bc1ccdd643e45a42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_1896436_bot_ap_0_request_people" element="NULL" name="x_1896436_bot_ap_0_request_people" parent="NULL" relationship="NULL" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">1703ef2a3ba67e50bc1ccdd643e45a1c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_id>5703ef2a3ba67e50bc1ccdd643e45a43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_1896436_bot_ap_0_request_people" element="NULL" name="x_1896436_bot_ap_0_request_people" parent="NULL" relationship="NULL" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">1703ef2a3ba67e50bc1ccdd643e45a1c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_id>db03ef2a3ba67e50bc1ccdd643e45a43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_mod_count</element>
+            <list_id display_value="x_1896436_bot_ap_0_request_people" element="NULL" name="x_1896436_bot_ap_0_request_people" parent="NULL" relationship="NULL" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">1703ef2a3ba67e50bc1ccdd643e45a1c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_id>5303ef2a3ba67e50bc1ccdd643e45a44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1896436_bot_ap_0_request_people</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1703ef2a3ba67e50bc1ccdd643e45a1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_request_people</sys_name>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_list_x_1896436_bot_ap_0_request_people_workspace-bot-loan-application-0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace BOT Loan Application 0" name="workspace-bot-loan-application-0">bbc2ef2219a67e50d85e518e52c90c53</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

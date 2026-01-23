@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <component_config>{}</component_config>
+        <config_layout/>
+        <description>Request list card with title, company, request number, request type, date, and navigation</description>
+        <external_configuration_sources>[]</external_configuration_sources>
+        <group/>
+        <group_category/>
+        <group_icon/>
+        <icon/>
+        <image_icon display_value="sn_tile_icon/x-1896436-request-list-item-admin.svg">8b1be4537daeb05e96e2bb8646406895</image_icon>
+        <internal_component>false</internal_component>
+        <label>Request List Item Admin</label>
+        <macroponent display_value="Request List Item Admin">ccfc133fc62859af43c93da01052df06</macroponent>
+        <order>0</order>
+        <required_translations/>
+        <scripted_config_policy/>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 00:59:37</sys_created_on>
+        <sys_id>d00e9045c85bcf44a198bce9e79c6546</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Request List Item Admin</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_d00e9045c85bcf44a198bce9e79c6546</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 04:52:12</sys_updated_on>
+    </sys_uib_toolbox_component>
+    <sys_translated_text action="delete_multiple" query="documentkey=d00e9045c85bcf44a198bce9e79c6546"/>
+</record_update>

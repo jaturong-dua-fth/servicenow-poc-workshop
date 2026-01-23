@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="d6d36a4b3b1e3210bc1ccdd643e45a2c" label="Master Form" max_length="40" name="x_1896436_bot_ap_0_master_form" type="collection">
+    <element db_object_id="d6d36a4b3b1e3210bc1ccdd643e45a2c" label="Master Form" max_length="40" name="x_1896436_bot_ap_0_master_form" text_index="true" type="collection">
         <element label="Effective From" max_length="40" name="effective_from" type="glide_date"/>
         <element label="Form No" max_length="40" name="form_no" type="string"/>
         <element label="Is Need Opinion" max_length="40" name="is_need_opinion" type="boolean"/>

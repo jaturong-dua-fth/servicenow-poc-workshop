@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_component">
+    <sys_ux_lib_component action="INSERT_OR_UPDATE">
+        <default_children/>
+        <default_layout/>
+        <deprecated>false</deprecated>
+        <inner_components>cd5582042d08270f1b197ce1513137e0</inner_components>
+        <overrides/>
+        <required_sys_props/>
+        <required_translation_keys>[]</required_translation_keys>
+        <required_user_prefs/>
+        <source_script/>
+        <source_script_name>@myorg/wow-test</source_script_name>
+        <suspend_on_view_change>false</suspend_on_view_change>
+        <sys_class_name>sys_ux_lib_component</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 01:15:31</sys_created_on>
+        <sys_id>cd6166387db087506c30f92427f3a34d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>x-1896436-status-sidebar-team</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_lib_component_cd6166387db087506c30f92427f3a34d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 04:52:46</sys_updated_on>
+        <tag>x-1896436-status-sidebar-team</tag>
+    </sys_ux_lib_component>
+</record_update>

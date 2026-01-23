@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="072ed90b3b923210bc1ccdd643e45adf" label="Location area" max_length="40" name="x_1896436_bot_ap_0_u_location_area" type="collection">
+    <element db_object_id="072ed90b3b923210bc1ccdd643e45adf" label="Location area" max_length="40" name="x_1896436_bot_ap_0_u_location_area" text_index="true" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element choice="3" default="province" label="Type" mandatory="true" max_length="40" name="type" type="choice">
             <choice>

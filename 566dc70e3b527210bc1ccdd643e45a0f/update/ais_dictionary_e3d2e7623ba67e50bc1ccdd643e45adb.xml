@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_dictionary">
+    <ais_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <auto_refresh>24</auto_refresh>
+        <blocked_field/>
+        <case_sensitive>false</case_sensitive>
+        <data_source>x_1896436_bot_ap_0_master_form,x_1896436_bot_ap_0_u_nationality,x_1896436_bot_ap_0_request_coordinator,x_1896436_bot_ap_0_people_sued_history,x_1896436_bot_ap_0_request_document,x_1896436_bot_ap_0_request_people,x_1896436_bot_ap_0_people_approval,x_1896436_bot_ap_0_people_info_history,x_1896436_bot_ap_0_people_spouse_history,x_1896436_bot_ap_0_license_approval,x_1896436_bot_ap_0_approval,x_1896436_bot_ap_0_u_location_area,x_1896436_bot_ap_0_license_task,x_1896436_bot_ap_0_people_adoptee,x_1896436_bot_ap_0_people_spouse,x_1896436_bot_ap_0_request,x_1896436_bot_ap_0_request_item,x_1896436_bot_ap_0_people_task,x_1896436_bot_ap_0_people_adoptee_history,x_1896436_bot_ap_0_people_info</data_source>
+        <derived>true</derived>
+        <field/>
+        <label>bot-loan-application Search Profile Default Spell Check Dictionary</label>
+        <last_derived/>
+        <locale>en</locale>
+        <name>x_1896436_bot_ap_0_bot_loan_application_search_profile_default_spell_check_dictionary</name>
+        <publish_id/>
+        <punctuation_sensitive>false</punctuation_sensitive>
+        <state>DRAFT</state>
+        <sys_class_name>ais_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 10:34:07</sys_created_on>
+        <sys_id>e3d2e7623ba67e50bc1ccdd643e45adb</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>x_1896436_bot_ap_0_bot_loan_application_search_profile_default_spell_check_dictionary</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>ais_dictionary_e3d2e7623ba67e50bc1ccdd643e45adb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 10:34:21</sys_updated_on>
+        <type>SPELLCHECK</type>
+    </ais_dictionary>
+</record_update>

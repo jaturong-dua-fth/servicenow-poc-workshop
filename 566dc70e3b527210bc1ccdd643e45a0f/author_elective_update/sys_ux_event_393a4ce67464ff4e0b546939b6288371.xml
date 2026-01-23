@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="DELETE">
+        <description>EVENT_FIRED
+
+
+</description>
+        <event_name>EVENT_FIRED</event_name>
+        <explicit_api_name/>
+        <interfaces>[]</interfaces>
+        <label>EVENT_FIRED</label>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-16 07:23:21</sys_created_on>
+        <sys_id>393a4ce67464ff4e0b546939b6288371</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>EVENT_FIRED</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_event_393a4ce67464ff4e0b546939b6288371</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 03:40:31</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="DELETE" query="documentkey=393a4ce67464ff4e0b546939b6288371"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_event_393a4ce67464ff4e0b546939b6288371</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event"><sys_ux_event action="INSERT_OR_UPDATE"><description>EVENT_FIRED
+
+
+</description><event_name>EVENT_FIRED</event_name><explicit_api_name/><interfaces>[]</interfaces><label>EVENT_FIRED</label><props>[]</props><required_translations/><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_event</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-16 07:23:21</sys_created_on><sys_id>393a4ce67464ff4e0b546939b6288371</sys_id><sys_mod_count>2</sys_mod_count><sys_name>EVENT_FIRED</sys_name><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>sys_ux_event_393a4ce67464ff4e0b546939b6288371</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-23 03:40:31</sys_updated_on></sys_ux_event><sys_translated_text action="delete_multiple" query="documentkey=393a4ce67464ff4e0b546939b6288371"/></record_update>]]></payload>
+        <payload_hash>187028740</payload_hash>
+        <record_name>EVENT_FIRED</record_name>
+        <reverted_from/>
+        <source>abe81cf93bea7650bc1ccdd643e45aef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 03:40:31</sys_created_on>
+        <sys_id>81340a6a3b6a3e50bc1ccdd643e45aed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19be8f076c90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 03:40:31</sys_updated_on>
+        <type>UX Event</type>
+        <update_guid>8934cae6456a3e50719dc0ae169ee0c5</update_guid>
+        <update_guid_history>8934cae6456a3e50719dc0ae169ee0c5:187028740,8c79f21c4862fa1067dea15ff5c4f17a:829218719,f014be9c7c22fa100014be51ffed4ea5:1747529901</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 03:41:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_event">sys_ux_event</sys_db_object>
+        <sys_id>5fe147f5392c47b8955be5c66a75d840</sys_id>
+        <sys_metadata>393a4ce67464ff4e0b546939b6288371</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EVENT_FIRED</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_event_393a4ce67464ff4e0b546939b6288371</sys_update_name>
+        <sys_update_version display_value="sys_ux_event_393a4ce67464ff4e0b546939b6288371">81340a6a3b6a3e50bc1ccdd643e45aed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 03:41:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

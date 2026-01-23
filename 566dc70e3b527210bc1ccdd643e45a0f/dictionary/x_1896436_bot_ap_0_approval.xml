@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8592b99e3ba6ba50bc1ccdd643e45a0c" label="Approval" max_length="40" name="x_1896436_bot_ap_0_approval" text_index="true" type="collection">
+        <element label="Step No" max_length="40" name="step_no" type="string"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Role" max_length="40" name="role" type="string"/>
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element label="Sub Task" max_length="32" name="sub_task" reference="x_1896436_bot_ap_0_sub_task" type="reference"/>
+        <element label="Comment" max_length="255" name="comment" type="string"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="sub_task"/>
+        </index>
+    </element>
+</database>

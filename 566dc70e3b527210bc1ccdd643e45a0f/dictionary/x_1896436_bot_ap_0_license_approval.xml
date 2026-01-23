@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="75986ae13b2e3650bc1ccdd643e45ab0" label="License Approval" max_length="40" name="x_1896436_bot_ap_0_license_approval" type="collection">
+    <element db_object_id="75986ae13b2e3650bc1ccdd643e45ab0" label="License Approval" max_length="40" name="x_1896436_bot_ap_0_license_approval" text_index="true" type="collection">
         <element label="Step No" max_length="2" name="step_no" type="integer"/>
         <element label="Comment" max_length="255" name="comment" type="string"/>
         <element label="Action Date" max_length="40" name="action_date" type="string"/>

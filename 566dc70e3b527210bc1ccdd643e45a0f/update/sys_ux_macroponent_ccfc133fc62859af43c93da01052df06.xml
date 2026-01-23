@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <bundles/>
+        <category>component</category>
+        <component_dependencies/>
+        <composition>[]</composition>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>41146037f9d7bae4d67b045dbcdcae13</dispatched_events>
+        <ext_controller_dep/>
+        <extends/>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{}</layout>
+        <macroponent_dependencies/>
+        <name>Request List Item Admin</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "description": "Bind a record object from a Repeater (recommended)",
+        "fieldType": "object",
+        "label": "Record (from Repeater)",
+        "name": "record",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Request title (used if record is not provided)",
+        "fieldType": "string",
+        "label": "Title",
+        "name": "title",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Company name to show as applicant",
+        "fieldType": "string",
+        "label": "Company (Applicant)",
+        "name": "company",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Request number to show",
+        "fieldType": "string",
+        "label": "Request Number",
+        "name": "requestNumber",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Type of request",
+        "fieldType": "string",
+        "label": "Request Type",
+        "name": "requestType",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Formatted request date",
+        "fieldType": "string",
+        "label": "Request Date",
+        "name": "requestDate",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Record sys_id (optional)",
+        "fieldType": "string",
+        "label": "Sys ID",
+        "name": "sysId",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "/people-info/{{sysId}}",
+        "description": "Example: /people-info/{{sysId}}",
+        "fieldType": "string",
+        "label": "Target path template",
+        "name": "targetPath",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Open the link in a new browser tab",
+        "fieldType": "boolean",
+        "label": "Open in new tab",
+        "name": "openInNewTab",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": false,
+        "description": "Highlight this item as active/selected",
+        "fieldType": "boolean",
+        "label": "Active (selected state)",
+        "name": "active",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "sys_id",
+        "description": "Which field in the bound record should be used as sysId (default: sys_id).",
+        "fieldType": "string",
+        "label": "Sys ID field (from record)",
+        "name": "sysIdField",
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "Legacy prop (kept for backward compatibility). If company is empty, this value may be used.",
+        "fieldType": "string",
+        "label": "Coordinator (legacy)",
+        "name": "coordinator",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component display_value="x-1896436-request-list-item-admin">8de8b0299c2eb3b654edb59059c148b7</root_component>
+        <root_component_config>{"record":"@context/record","title":"@context/title","company":"@context/company","requestNumber":"@context/requestNumber","requestType":"@context/requestType","requestDate":"@context/requestDate","sysId":"@context/sysId","targetPath":"@context/targetPath","openInNewTab":"@context/openInNewTab","active":"@context/active","sysIdField":"@context/sysIdField","coordinator":"@context/coordinator"}</root_component_config>
+        <root_component_definition>{"availableSlots":[]}</root_component_definition>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 00:59:36</sys_created_on>
+        <sys_id>ccfc133fc62859af43c93da01052df06</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Request List Item Admin</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_macroponent_ccfc133fc62859af43c93da01052df06</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 04:52:11</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=ccfc133fc62859af43c93da01052df06"/>
+</record_update>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="ข้อมูลการติดต่อ" section_id="f40327e63ba67e50bc1ccdd643e45adf" sys_domain="global" table="x_1896436_bot_ap_0_people_info" version="3" view="workspace-bot-loan-application-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>fc0367e63ba67e50bc1ccdd643e45ab1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>f00367e63ba67e50bc1ccdd643e45ab0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>province</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>f80367e63ba67e50bc1ccdd643e45aac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>740367e63ba67e50bc1ccdd643e45aaf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tel_no</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>7c0367e63ba67e50bc1ccdd643e45aab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>f40367e63ba67e50bc1ccdd643e45aae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>fc0367e63ba67e50bc1ccdd643e45aaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>district</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>780367e63ba67e50bc1ccdd643e45aad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>post_code</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>700367e63ba67e50bc1ccdd643e45aaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_no</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>700367e63ba67e50bc1ccdd643e45ab1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>ข้อมูลการติดต่อ</caption>
+            <header>false</header>
+            <name>x_1896436_bot_ap_0_people_info</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40327e63ba67e50bc1ccdd643e45adf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_people_info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_section_f40327e63ba67e50bc1ccdd643e45adf</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace BOT Loan Application 0" name="workspace-bot-loan-application-0">bbc2ef2219a67e50d85e518e52c90c53</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

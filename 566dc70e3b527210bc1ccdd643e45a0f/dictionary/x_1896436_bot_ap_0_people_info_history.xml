@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="4da7471b3b52f210bc1ccdd643e45a2d" label="People Info History" max_length="40" name="x_1896436_bot_ap_0_people_info_history" type="collection">
+    <element db_object_id="4da7471b3b52f210bc1ccdd643e45a2d" label="People Info History" max_length="40" name="x_1896436_bot_ap_0_people_info_history" text_index="true" type="collection">
         <element label="ชื่อ (ภาษาอังกฤษ)" max_length="250" name="first_name_en" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element display="true" label="ชื่อ (ภาษาไทย)" max_length="250" name="first_name_th" type="string"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="cecac7e93b227650bc1ccdd643e45ab1" label="Request People" max_length="40" name="x_1896436_bot_ap_0_request_people" type="collection">
+    <element db_object_id="cecac7e93b227650bc1ccdd643e45ab1" label="Request People" max_length="40" name="x_1896436_bot_ap_0_request_people" text_index="true" type="collection">
         <element label="People" max_length="32" name="people" reference="x_1896436_bot_ap_0_people_info" type="reference"/>
         <element label="Request" max_length="32" name="request" reference="x_1896436_bot_ap_0_request" type="reference"/>
         <index name="index">

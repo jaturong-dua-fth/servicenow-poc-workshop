@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" section_id="f80367e63ba67e50bc1ccdd643e45ab3" sys_domain="global" table="x_1896436_bot_ap_0_people_info" version="3" view="workspace-bot-loan-application-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>fc03a7e63ba67e50bc1ccdd643e45a80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>effective_date</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>7403a7e63ba67e50bc1ccdd643e45a7e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_at</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>7803a7e63ba67e50bc1ccdd643e45a83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>7003a7e63ba67e50bc1ccdd643e45a80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>f803a7e63ba67e50bc1ccdd643e45a82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_category</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>f003a7e63ba67e50bc1ccdd643e45a7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>position_type</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_id>7c03a7e63ba67e50bc1ccdd643e45a81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง</caption>
+            <header>false</header>
+            <name>x_1896436_bot_ap_0_people_info</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f80367e63ba67e50bc1ccdd643e45ab3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_people_info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_section_f80367e63ba67e50bc1ccdd643e45ab3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace BOT Loan Application 0" name="workspace-bot-loan-application-0">bbc2ef2219a67e50d85e518e52c90c53</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="56d1b91e3ba6ba50bc1ccdd643e45a3f" label="Sub Task" max_length="40" name="x_1896436_bot_ap_0_sub_task" type="collection">
+        <element label="Type" max_length="10" name="type" type="string"/>
+        <element label="Reject Reason" max_length="255" name="reject_reason" type="string"/>
+        <element label="Step" max_length="40" name="step" type="integer"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Request Item" max_length="32" name="request_item" reference="x_1896436_bot_ap_0_request_item" type="reference"/>
+        <element label="Is Reject" max_length="255" name="is_reject" type="boolean"/>
+        <element label="Request" max_length="32" name="request" reference="x_1896436_bot_ap_0_request" type="reference"/>
+        <element label="Assign To" max_length="32" name="assign_to" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="assign_to"/>
+        </index>
+        <index name="index2">
+            <element name="request"/>
+        </index>
+        <index name="index3">
+            <element name="request_item"/>
+        </index>
+    </element>
+</database>

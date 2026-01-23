@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="f803a7a63ba67e50bc1ccdd643e45a89" sys_domain="global" table="x_1896436_bot_ap_0_people_info" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7c03a3e63ba67e50bc1ccdd643e45af6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1896436_bot_ap_0_people_info" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f803a7a63ba67e50bc1ccdd643e45a89</sys_ui_form>
+            <sys_ui_section caption="ข้อมูลส่วนตัว" display_value="ข้อมูลส่วนตัว" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">b003a3e63ba67e50bc1ccdd643e45af4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7403e3e63ba67e50bc1ccdd643e45ae6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1896436_bot_ap_0_people_info" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f803a7a63ba67e50bc1ccdd643e45a89</sys_ui_form>
+            <sys_ui_section caption="New section 1" display_value="New section 1" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">3003e3e63ba67e50bc1ccdd643e45ae4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>300327e63ba67e50bc1ccdd643e45ad8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1896436_bot_ap_0_people_info" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f803a7a63ba67e50bc1ccdd643e45a89</sys_ui_form>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80327e63ba67e50bc1ccdd643e45ad5</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c0367e63ba67e50bc1ccdd643e45aa8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1896436_bot_ap_0_people_info" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f803a7a63ba67e50bc1ccdd643e45a89</sys_ui_form>
+            <sys_ui_section caption="ข้อมูลการติดต่อ" display_value="ข้อมูลการติดต่อ" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f40327e63ba67e50bc1ccdd643e45adf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3003a7e63ba67e50bc1ccdd643e45a7d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1896436_bot_ap_0_people_info" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f803a7a63ba67e50bc1ccdd643e45a89</sys_ui_form>
+            <sys_ui_section caption="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" display_value="ข้อมูลเพิ่มเติมเกี่ยวกับตำแหน่ง" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">f80367e63ba67e50bc1ccdd643e45ab3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1896436_bot_ap_0_people_info</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f803a7a63ba67e50bc1ccdd643e45a89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_people_info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f803a7a63ba67e50bc1ccdd643e45a89</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace BOT Loan Application 0" name="workspace-bot-loan-application-0">bbc2ef2219a67e50d85e518e52c90c53</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

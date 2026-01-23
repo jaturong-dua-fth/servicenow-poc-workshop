@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_1896436_bot_ap_0_bot_loan_application_search_profile_default_spell_check_dictionary">e3d2e7623ba67e50bc1ccdd643e45adb</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="bot-loan-application Search Profile">7bc2ef2205a67e508329c9bf788fcc5e</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-23 10:34:07</sys_created_on>
+        <sys_id>e7d2e7623ba67e50bc1ccdd643e45ae1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1896436_bot_ap_0_bot_loan_application_search_profile_default_spell_check_dictionary.bot-loan-application Search Profile</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_e7d2e7623ba67e50bc1ccdd643e45ae1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-23 10:34:07</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

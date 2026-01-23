@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="53f22b263ba67e50bc1ccdd643e45a24" sys_domain="global" table="x_1896436_bot_ap_0_master_form" version="3" view="workspace-bot-loan-application-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>form_no</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>e7f22b263ba67e50bc1ccdd643e45a2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>form_category</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>e3f22b263ba67e50bc1ccdd643e45a29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>effective_from</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>6bf22b263ba67e50bc1ccdd643e45a2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sla</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>67f22b263ba67e50bc1ccdd643e45a28</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>is_active</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>ebf22b263ba67e50bc1ccdd643e45a2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>is_need_opinion</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>e7f22b263ba67e50bc1ccdd643e45a27</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>is_auto_close</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>e3f26b263ba67e50bc1ccdd643e45a0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>63f22b263ba67e50bc1ccdd643e45a2a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>form_name</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>6ff22b263ba67e50bc1ccdd643e45a2b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>form_type</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>6bf22b263ba67e50bc1ccdd643e45a26</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>effective_to</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_id>eff22b263ba67e50bc1ccdd643e45a2a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1896436_bot_ap_0_master_form" sys_domain="global" view="bbc2ef2219a67e50d85e518e52c90c53">53f22b263ba67e50bc1ccdd643e45a24</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1896436_bot_ap_0_master_form</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-23 10:34:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>53f22b263ba67e50bc1ccdd643e45a24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_master_form</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_section_53f22b263ba67e50bc1ccdd643e45a24</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-23 10:34:40</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace BOT Loan Application 0" name="workspace-bot-loan-application-0">bbc2ef2219a67e50d85e518e52c90c53</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
