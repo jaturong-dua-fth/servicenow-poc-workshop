@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_theme_style">
+    <m2m_theme_style action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <style display_value="Mobile Colors">3ddee7c03b727610bc1ccdd643e45a25</style>
+        <sys_class_name>m2m_theme_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:17:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35dee7c03b727610bc1ccdd643e45a40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>m2m_theme_style_35dee7c03b727610bc1ccdd643e45a40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:17:19</sys_updated_on>
+        <theme display_value="BOT App Theme">b5de27c03b727610bc1ccdd643e45a53</theme>
+    </m2m_theme_style>
+</record_update>

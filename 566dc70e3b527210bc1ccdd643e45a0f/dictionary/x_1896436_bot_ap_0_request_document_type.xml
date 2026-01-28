@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f5e23803b727610bc1ccdd643e45ae1" label="Request Document Type" max_length="40" name="x_1896436_bot_ap_0_request_document_type" type="collection">
+        <element display="true" label="Doc Type Name" max_length="250" name="doc_type_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Doc Type Id" max_length="40" name="doc_type_id" type="string"/>
+    </element>
+</database>

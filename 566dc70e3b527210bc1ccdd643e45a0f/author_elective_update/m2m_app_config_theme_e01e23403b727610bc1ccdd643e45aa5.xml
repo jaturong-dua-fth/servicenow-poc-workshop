@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:13:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e01e23403b727610bc1ccdd643e45aa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>m2m_app_config_theme_e01e23403b727610bc1ccdd643e45aa5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:13:58</sys_updated_on>
+        <theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme>
+        <ux_app_configuration display_value="BOT Loan Application App Config">bbc2ef229ea67e502540f3d0aaf4b95d</ux_app_configuration>
+    </m2m_app_config_theme>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>m2m_app_config_theme_e01e23403b727610bc1ccdd643e45aa5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme"><m2m_app_config_theme action="INSERT_OR_UPDATE"><applicability/><order>0</order><sys_class_name>m2m_app_config_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-28 03:13:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e01e23403b727610bc1ccdd643e45aa5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package><sys_policy/><sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope><sys_update_name>m2m_app_config_theme_e01e23403b727610bc1ccdd643e45aa5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-28 03:13:58</sys_updated_on><theme display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</theme><ux_app_configuration display_value="BOT Loan Application App Config">bbc2ef229ea67e502540f3d0aaf4b95d</ux_app_configuration></m2m_app_config_theme></record_update>]]></payload>
+        <payload_hash>-386837885</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>abe81cf93bea7650bc1ccdd643e45aef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:13:58</sys_created_on>
+        <sys_id>a01e67403b727610bc1ccdd643e45a21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c0297f1e60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:13:58</sys_updated_on>
+        <type>UX App Theme</type>
+        <update_guid>601e67406d7276102a8a2dc6d4e9d620</update_guid>
+        <update_guid_history>601e67406d7276102a8a2dc6d4e9d620:-386837885</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6861f7883b727610bc1ccdd643e45aab</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 03:28:25</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>3f14ee94f3074e78a541235d471c8840</sys_id>
+        <sys_metadata>e01e23403b727610bc1ccdd643e45aa5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_e01e23403b727610bc1ccdd643e45aa5</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_e01e23403b727610bc1ccdd643e45aa5">a01e67403b727610bc1ccdd643e45a21</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 03:28:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
