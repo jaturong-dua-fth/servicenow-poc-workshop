@@ -1813,7 +1813,74 @@
                                                                                                                     },
                                                                                                                     "elementId": "button_delete_lawsuit",
                                                                                                                     "elementLabel": "Button Delete Lawsuit",
-                                                                                                                    "eventMappings": [],
+                                                                                                                    "eventMappings": [
+                                                                                                                        {
+                                                                                                                            "eventMappingId": "ZbwwOPdeeBkGnjjccaaGSfddIRmeeddQ",
+                                                                                                                            "isConfiguration": false,
+                                                                                                                            "offRowStorageId": null,
+                                                                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON_ICONIC#CLICKED",
+                                                                                                                            "sourceEventCorrelationId": null,
+                                                                                                                            "sourceEventDefinition": {
+                                                                                                                                "apiName": "sn_button.NOW_BUTTON_ICONIC#CLICKED",
+                                                                                                                                "id": null,
+                                                                                                                                "type": "UXEVENT"
+                                                                                                                            },
+                                                                                                                            "sourceEventSysId": null,
+                                                                                                                            "targets": [
+                                                                                                                                {
+                                                                                                                                    "broker": null,
+                                                                                                                                    "clientScript": null,
+                                                                                                                                    "clientTransformScript": "",
+                                                                                                                                    "conditional": null,
+                                                                                                                                    "declarativeAction": null,
+                                                                                                                                    "event": null,
+                                                                                                                                    "operation": {
+                                                                                                                                        "dataBrokerId": "00cd9b8353211010cbc2ddeeff7b1205",
+                                                                                                                                        "operationName": "EXECUTE",
+                                                                                                                                        "parentResourceId": "delete_record_lawsuit",
+                                                                                                                                        "payload": {
+                                                                                                                                            "container": {
+                                                                                                                                                "recordId": {
+                                                                                                                                                    "binding": {
+                                                                                                                                                        "address": [
+                                                                                                                                                            "lawsuit_selected_sys_id"
+                                                                                                                                                        ]
+                                                                                                                                                    },
+                                                                                                                                                    "type": "STATE_BINDING"
+                                                                                                                                                },
+                                                                                                                                                "table": {
+                                                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                                                    "value": "x_1896436_bot_ap_0_people_lawsuit"
+                                                                                                                                                }
+                                                                                                                                            },
+                                                                                                                                            "type": "MAP_CONTAINER"
+                                                                                                                                        }
+                                                                                                                                    },
+                                                                                                                                    "targetId": "xQggeggvVuBEJeejjxiiDddHUggLsxcc",
+                                                                                                                                    "type": "DATABROKER_OP"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "broker": null,
+                                                                                                                                    "clientScript": null,
+                                                                                                                                    "clientTransformScript": "",
+                                                                                                                                    "conditional": null,
+                                                                                                                                    "declarativeAction": null,
+                                                                                                                                    "event": null,
+                                                                                                                                    "operation": {
+                                                                                                                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                                                                                                                        "operationName": "REFRESH",
+                                                                                                                                        "parentResourceId": "look_up_multiple_records_lawsuit",
+                                                                                                                                        "payload": {
+                                                                                                                                            "type": "JSON_LITERAL",
+                                                                                                                                            "value": {}
+                                                                                                                                        }
+                                                                                                                                    },
+                                                                                                                                    "targetId": "beeddNHUfeeddwCaahLjjeehhsFYYDbhhpeeV",
+                                                                                                                                    "type": "DATABROKER_OP"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ],
                                                                                                                     "isHidden": {
                                                                                                                         "type": "JSON_LITERAL",
                                                                                                                         "value": null
@@ -2246,7 +2313,93 @@
                                                                     },
                                                                     "elementId": "button_save_draft",
                                                                     "elementLabel": "Button Save Draft",
-                                                                    "eventMappings": [],
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "AdYLeeddPrpCUAQjjeeddAFmMSHSyKi",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventDefinition": {
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "id": null,
+                                                                                "type": "UXEVENT"
+                                                                            },
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "clientTransformScript": "",
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "43f97dd2770300108d070d74c81061c2",
+                                                                                        "operationName": "EXECUTE",
+                                                                                        "parentResourceId": "update_multiple_records_lawsuit_save_draft",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "query": {
+                                                                                                    "transform": {
+                                                                                                        "operands": {
+                                                                                                            "container": [
+                                                                                                                {
+                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                    "value": "is_new=true^people_id="
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "binding": {
+                                                                                                                        "address": [
+                                                                                                                            "people_id"
+                                                                                                                        ]
+                                                                                                                    },
+                                                                                                                    "type": "STATE_BINDING"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "type": "LIST_CONTAINER"
+                                                                                                        },
+                                                                                                        "operator": "CONCAT"
+                                                                                                    },
+                                                                                                    "type": "CLIENT_TRANSFORM"
+                                                                                                },
+                                                                                                "table": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "x_1896436_bot_ap_0_people_lawsuit"
+                                                                                                },
+                                                                                                "templateFields": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "is_new=false"
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "AXkGrvqIAEyYjjiiiiDKUxJvMyg",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "clientTransformScript": "",
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                                                                        "operationName": "REFRESH",
+                                                                                        "parentResourceId": "look_up_multiple_records_lawsuit",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "WhMCneehhccCCaavddjjeoFGgdFiiKnh",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
                                                                     "isHidden": {
                                                                         "type": "JSON_LITERAL",
                                                                         "value": null
@@ -2386,7 +2539,89 @@
                                                                     },
                                                                     "elementId": "button_cancel",
                                                                     "elementLabel": "Button Cancel",
-                                                                    "eventMappings": [],
+                                                                    "eventMappings": [
+                                                                        {
+                                                                            "eventMappingId": "jjphhemeehheeddjjCaaHBjjbbMBtBTnxoTe",
+                                                                            "isConfiguration": false,
+                                                                            "offRowStorageId": null,
+                                                                            "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                            "sourceEventCorrelationId": null,
+                                                                            "sourceEventDefinition": {
+                                                                                "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                                                                "id": null,
+                                                                                "type": "UXEVENT"
+                                                                            },
+                                                                            "sourceEventSysId": null,
+                                                                            "targets": [
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "clientTransformScript": "",
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "f97b8252770300108d070d74c81061a9",
+                                                                                        "operationName": "EXECUTE",
+                                                                                        "parentResourceId": "delete_multiple_records_lawsuit_is_draft",
+                                                                                        "payload": {
+                                                                                            "container": {
+                                                                                                "query": {
+                                                                                                    "transform": {
+                                                                                                        "operands": {
+                                                                                                            "container": [
+                                                                                                                {
+                                                                                                                    "type": "JSON_LITERAL",
+                                                                                                                    "value": "is_new=true^people_id="
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "binding": {
+                                                                                                                        "address": [
+                                                                                                                            "people_id"
+                                                                                                                        ]
+                                                                                                                    },
+                                                                                                                    "type": "STATE_BINDING"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "type": "LIST_CONTAINER"
+                                                                                                        },
+                                                                                                        "operator": "CONCAT"
+                                                                                                    },
+                                                                                                    "type": "CLIENT_TRANSFORM"
+                                                                                                },
+                                                                                                "table": {
+                                                                                                    "type": "JSON_LITERAL",
+                                                                                                    "value": "x_1896436_bot_ap_0_people_lawsuit"
+                                                                                                }
+                                                                                            },
+                                                                                            "type": "MAP_CONTAINER"
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "ggeehhSOWAAJCUOYeeddKEOaaiPFJnXeehh",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                },
+                                                                                {
+                                                                                    "broker": null,
+                                                                                    "clientScript": null,
+                                                                                    "clientTransformScript": "",
+                                                                                    "conditional": null,
+                                                                                    "declarativeAction": null,
+                                                                                    "event": null,
+                                                                                    "operation": {
+                                                                                        "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                                                                        "operationName": "REFRESH",
+                                                                                        "parentResourceId": "look_up_multiple_records_lawsuit",
+                                                                                        "payload": {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": {}
+                                                                                        }
+                                                                                    },
+                                                                                    "targetId": "zNIneeddPddggCUHiijjhcAhhVggfKqeeddeehh",
+                                                                                    "type": "DATABROKER_OP"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
                                                                     "isHidden": {
                                                                         "type": "JSON_LITERAL",
                                                                         "value": null
@@ -3347,7 +3582,19 @@
                                                                         "container": [
                                                                             {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "court="
+                                                                                "value": "people_id="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "people_id"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "STATE_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^court="
                                                                             },
                                                                             {
                                                                                 "binding": {
@@ -3363,15 +3610,99 @@
                                                                             },
                                                                             {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "^people_id="
+                                                                                "value": "^status="
                                                                             },
                                                                             {
                                                                                 "binding": {
                                                                                     "address": [
-                                                                                        "people_id"
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "status",
+                                                                                        "value"
                                                                                     ]
                                                                                 },
-                                                                                "type": "STATE_BINDING"
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^case_type="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "case_type",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^accusation="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "accusation",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^principal="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "principal",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^case_id="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "case_id",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^result="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "result",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
                                                                             }
                                                                         ],
                                                                         "type": "LIST_CONTAINER"
@@ -3439,7 +3770,55 @@
                                                                         "container": [
                                                                             {
                                                                                 "type": "JSON_LITERAL",
-                                                                                "value": "accusation="
+                                                                                "value": "court="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "court",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^status="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "status",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^case_type="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "case_type",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^accusation="
                                                                             },
                                                                             {
                                                                                 "binding": {
@@ -3448,6 +3827,54 @@
                                                                                         "form",
                                                                                         "fields",
                                                                                         "accusation",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^principal="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "principal",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^case_id="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "case_id",
+                                                                                        "value"
+                                                                                    ]
+                                                                                },
+                                                                                "type": "DATA_OUTPUT_BINDING"
+                                                                            },
+                                                                            {
+                                                                                "type": "JSON_LITERAL",
+                                                                                "value": "^result="
+                                                                            },
+                                                                            {
+                                                                                "binding": {
+                                                                                    "address": [
+                                                                                        "form_lawsuit",
+                                                                                        "form",
+                                                                                        "fields",
+                                                                                        "result",
                                                                                         "value"
                                                                                     ]
                                                                                 },
@@ -3653,6 +4080,27 @@
                                                 },
                                                 "operation": null,
                                                 "targetId": "AaddEmeehhxffAEggTjjcIKjidaaOxUB",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "clientTransformScript": "",
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "lawsuit_selected_sys_id",
+                                                            "value": null
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "ftUfQPQBBUoWeeddFoBffeeddnmsoEM",
                                                 "type": "EVENT"
                                             }
                                         ]
@@ -4691,6 +5139,103 @@
             }
         },
         "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "f97b8252770300108d070d74c81061a9",
+            "type": "GRAPHQL"
+        },
+        "elementId": "delete_multiple_records_lawsuit_is_draft",
+        "elementLabel": "Delete Multiple Records - Lawsuit is draft",
+        "eventMappings": [
+            {
+                "eventMappingId": "faacJEfggXDkDyjjaaeeOeeddMddLSCmjj",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_uxf.DATA_OP_SUCCEEDED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "282c32eb3bea3210bc1ccdd643e45a5e"
+                        },
+                        "clientTransformScript": "",
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "heeddHgreehhbbSCEdCeeddFMMVBLUggUvK",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "inputValues": {
+            "query": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "43f97dd2770300108d070d74c81061c2",
+            "type": "GRAPHQL"
+        },
+        "elementId": "update_multiple_records_lawsuit_save_draft",
+        "elementLabel": "Update Multiple Records - Lawsuit save draft",
+        "eventMappings": [],
+        "inputValues": {
+            "query": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "templateFields": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
+    },
+    {
+        "definition": {
+            "id": "00cd9b8353211010cbc2ddeeff7b1205",
+            "type": "GRAPHQL"
+        },
+        "elementId": "delete_record_lawsuit",
+        "elementLabel": "Delete Record - Lawsuit",
+        "eventMappings": [],
+        "inputValues": {
+            "recordId": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            }
+        },
+        "readEvaluationMode": "EXPLICIT"
     }
 ]</data>
         <description/>
@@ -4708,7 +5253,51 @@
         <handled_events/>
         <interactions/>
         <interfaces/>
-        <internal_event_mappings>{}</internal_event_mappings>
+        <internal_event_mappings>{
+    "MACROPONENT_READY": [
+        {
+            "broker": null,
+            "clientScript": null,
+            "clientTransformScript": "",
+            "conditional": null,
+            "declarativeAction": null,
+            "event": null,
+            "operation": {
+                "dataBrokerId": "f97b8252770300108d070d74c81061a9",
+                "operationName": "EXECUTE",
+                "parentResourceId": "delete_multiple_records_lawsuit_is_draft",
+                "payload": {
+                    "type": "JSON_LITERAL",
+                    "value": {
+                        "query": "is_new=true",
+                        "table": "x_1896436_bot_ap_0_people_lawsuit"
+                    }
+                }
+            },
+            "targetId": "jjuuOHPiiwBkwLjjaABpZhhWIXgK",
+            "type": "DATABROKER_OP"
+        },
+        {
+            "broker": null,
+            "clientScript": null,
+            "clientTransformScript": "",
+            "conditional": null,
+            "declarativeAction": null,
+            "event": null,
+            "operation": {
+                "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                "operationName": "REFRESH",
+                "parentResourceId": "look_up_multiple_records_lawsuit",
+                "payload": {
+                    "type": "JSON_LITERAL",
+                    "value": {}
+                }
+            },
+            "targetId": "eebbbSsfQUCEccdjjsiiPrjcctahhVE",
+            "type": "DATABROKER_OP"
+        }
+    ]
+}</internal_event_mappings>
         <layout>{
     "default": {
         "children": null,
@@ -5039,14 +5628,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-26 07:23:37</sys_created_on>
         <sys_id>9a045e633be63210bc1ccdd643e45af2</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>115</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy/>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_macroponent_9a045e633be63210bc1ccdd643e45af2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-27 12:53:36</sys_updated_on>
+        <sys_updated_on>2026-01-28 09:59:36</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=9a045e633be63210bc1ccdd643e45af2"/>
 </record_update>

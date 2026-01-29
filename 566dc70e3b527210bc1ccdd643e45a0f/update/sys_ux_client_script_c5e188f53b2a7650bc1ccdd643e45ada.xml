@@ -56,6 +56,11 @@ function handler({
         messages.push('กรุณาเพิ่ม "ผู้ประสานงานคำขอ" ในหัวข้อ ผู้ประสานงานคำขอ');
     }
 
+    var documents = api.state.documents;
+    if (!Array.isArray(documents) || documents.length === 0) {
+        messages.push('กรุณาอัพโหลด "เอกสารประกอบการพิจารณา" ในหัวข้อ เอกสารประกอบการพิจารณา');
+    }
+
     // ถ้ามี error -> set state + เปิด modal แล้วจบ
     if (messages.length > 0) {
         api.setState('warningMessage', messages.join('<br>'));
@@ -87,14 +92,14 @@ function handler({
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-20 11:10:17</sys_created_on>
         <sys_id>c5e188f53b2a7650bc1ccdd643e45ada</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Submit Request</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy/>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_ux_client_script_c5e188f53b2a7650bc1ccdd643e45ada</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-21 10:49:05</sys_updated_on>
+        <sys_updated_on>2026-01-29 04:59:28</sys_updated_on>
         <target>macroponent</target>
         <type>default</type>
     </sys_ux_client_script>

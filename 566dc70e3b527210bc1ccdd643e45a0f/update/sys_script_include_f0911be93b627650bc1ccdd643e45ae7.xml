@@ -11,387 +11,484 @@
         <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var RequestSubmitService = Class.create();
 RequestSubmitService.prototype = {
-  initialize: function () {},
-
-  /**
-   * p = {
-   *   action: "draft" | "submit",
-   *   payload: {
-   *     title: string,
-   *     company?: string,
-   *     items: [formSysId, formSysId, ...],
-   *     coordinators?: [{...}]
-   *   }
-   * }
-   */
-  submit: function (p) {
-    var payload = p && p.payload ? p.payload : {};
-    var action = p && p.action === 'draft' ? 'draft' : 'submit';
-
-    var data = this._normalize(payload);
-
-    var v = this._validate(data, action);
-    if (!v.ok) return v;
-
-    try {
-      // 1) upsert request
-      var req = this._upsertRequest(data, action);
-
-      // 2) coordinators (many)
-      if (data.coordinators && data.coordinators.length) {
-        this._syncRequestCoordinators(req.sys_id, data.coordinators);
-      } else {
-        this._deleteRequestCoordinators(req.sys_id);
-      }
-
-      // 3) request items (items = form sys_id[])
-      var insertedItems = [];
-      if (data.items && data.items.length) {
-        insertedItems = this._syncRequestItems(req.sys_id, data.items);
-      } else {
-        // ถ้าไม่มี items ก็ลบ request item เดิมไปแล้วใน _syncRequestItems ไม่ถูกเรียก
-        // แต่คุณ validate draft ได้ให้ไม่มี item ได้ ดังนั้นอย่าพึ่งลบเองที่นี่
-        insertedItems = [];
-      }
-
-      // ✅ 3.5) update request_type summary (คำนวณจาก insertedItems แล้วเก็บลง request)
-      this._updateRequestType(req.sys_id, insertedItems);
-
-      // 1.5) request people (many)
-      if (data.people && data.people.length) {
-        this._syncRequestPeople(req.sys_id, data.people);
-      } else {
-        this._deleteRequestPeople(req.sys_id);
-      }
-
-      // 4) create tasks (เฉพาะ submit)
-      if (action === 'submit') {
-        this._syncTasksFromItems(req.sys_id, insertedItems);
-      }
-
-      // refresh req data (เพราะเรา update request_type ไปแล้ว)
-      var reqReload = this._getRequest(req.sys_id);
-
-      return {
-        ok: true,
-        requestSysId: req.sys_id,
-        requestNumber: reqReload.number,
-        status: reqReload.status,
-        request_type: reqReload.request_type, // เผื่ออยากเอากลับไปโชว์
-        message: action === 'draft' ? 'Draft saved' : 'Submitted'
-      };
-
-    } catch (e) {
-      gs.error('[RequestSubmitService] submit failed: ' + e);
-      return { ok: false, message: String(e) };
-    }
-  },
-
-  // =====================
-  // Normalize / Validate
-  // =====================
-
-  _normalize: function (payload) {
-    var p = payload || {};
-    var r = p.request || {};
-
-    var coordinators =
-      p.coordinator ||
-      p.requestCoordinator ||
-      r.coordinator ||
-      r.requestCoordinator ||
-      null;
-
-    if (coordinators && !Array.isArray(coordinators)) coordinators = [coordinators];
-    if (!coordinators) coordinators = [];
-
-    return {
-      requestSysId: p.requestSysId || r.requestSysId || r.sys_id || p.sys_id || '',
-      title: (r.title != null ? r.title : p.title) || '',
-      company: (r.company != null ? r.company : p.company) || '',
-      items: p.items || [],
-      people: Array.isArray(p.people) ? p.people : (p.people ? [p.people] : []),
-      documents: p.documents || [],
-      coordinators: coordinators
-    };
-  },
-
-  _validate: function (data, action) {
-    if (!data.title || !String(data.title).trim()) {
-      return { ok: false, message: 'Title is required' };
-    }
-
-    if (action === 'submit') {
-      if (!data.items || !data.items.length) {
-        return { ok: false, message: 'At least 1 form is required' };
-      }
-    }
-
-    return { ok: true };
-  },
-
-  // =====================
-  // Request
-  // =====================
-
-  _upsertRequest: function (data, action) {
-    var TABLE_REQ = 'x_1896436_bot_ap_0_request';
-    var gr = new GlideRecord(TABLE_REQ);
-
-    var isUpdate = data.requestSysId && gr.get(data.requestSysId);
-
-    if (!isUpdate) {
-      gr.initialize();
-      gr.setValue('requested_by', gs.getUserID());
-    }
-
-    gr.setValue('title', String(data.title).trim());
-    if (data.company) gr.setValue('company', data.company);
-
-    gr.setValue('status', action === 'draft' ? 'draft' : 'under_review');
-
-    var sysId = isUpdate ? gr.update() : gr.insert();
-    gr.get(sysId);
-
-    return {
-      sys_id: sysId,
-      number: gr.getValue('number'),
-      status: gr.getValue('status')
-    };
-  },
-
-  // ✅ helper: reload request
-  _getRequest: function (requestSysId) {
-    var TABLE_REQ = 'x_1896436_bot_ap_0_request';
-    var gr = new GlideRecord(TABLE_REQ);
-    if (!gr.get(requestSysId)) {
-      return { sys_id: requestSysId, number: '', status: '', request_type: '' };
-    }
-    return {
-      sys_id: requestSysId,
-      number: gr.getValue('number'),
-      status: gr.getValue('status'),
-      request_type: gr.getValue('request_type') || ''
-    };
-  },
-
-  // =====================
-  // Request Coordinators
-  // =====================
-
-  _deleteRequestCoordinators: function (requestSysId) {
-    var TABLE = 'x_1896436_bot_ap_0_request_coordinator';
-    var gr = new GlideRecord(TABLE);
-    gr.addQuery('request', requestSysId);
-    gr.query();
-    while (gr.next()) gr.deleteRecord();
-  },
-
-  _syncRequestCoordinators: function (requestSysId, coordinators) {
-    var TABLE = 'x_1896436_bot_ap_0_request_coordinator';
-
-    this._deleteRequestCoordinators(requestSysId);
-
-    for (var i = 0; i < coordinators.length; i++) {
-      var c = coordinators[i] || {};
-
-      var hasAny =
-        c.title_name ||
-        c.email ||
-        c.first_name_th || c.first_name_en ||
-        c.last_name_th || c.last_name_en ||
-        c.mobile_no;
-
-      if (!hasAny) continue;
-
-      var gr = new GlideRecord(TABLE);
-      gr.initialize();
-      gr.setValue('request', requestSysId);
-
-      if (c.title_name) gr.setValue('title_name', c.title_name);
-      if (c.email) gr.setValue('email', c.email);
-      if (c.first_name_th) gr.setValue('first_name_th', c.first_name_th);
-      if (c.first_name_en) gr.setValue('first_name_en', c.first_name_en);
-      if (c.last_name_th) gr.setValue('last_name_th', c.last_name_th);
-      if (c.last_name_en) gr.setValue('last_name_en', c.last_name_en);
-      if (c.mobile_no) gr.setValue('mobile_no', c.mobile_no);
-
-      gr.insert();
-    }
-  },
-
-  // =====================
-  // Request Items
-  // =====================
-
-  _syncRequestItems: function (requestSysId, formSysIds) {
-    var TABLE = 'x_1896436_bot_ap_0_request_item';
-
-    var del = new GlideRecord(TABLE);
-    del.addQuery('request', requestSysId);
-    del.query();
-    while (del.next()) del.deleteRecord();
-
-    var inserted = [];
-
-    for (var i = 0; i < formSysIds.length; i++) {
-      var formSysId = String(formSysIds[i] || '').trim();
-      if (!formSysId) continue;
-
-      var gr = new GlideRecord(TABLE);
-      gr.initialize();
-      gr.setValue('request', requestSysId);
-      gr.setValue('form', formSysId);
-      gr.setValue('status', 'draft');
-
-      var itemSysId = gr.insert();
-
-      inserted.push({
-        request_item_sys_id: itemSysId,
-        form_sys_id: formSysId
-      });
-    }
-
-    return inserted;
-  },
-
-  // =====================
-  // ✅ Request Type Summary (join form_name ด้วย ,)
-  // =====================
-
-  _updateRequestType: function (requestSysId, insertedItems) {
-    // สร้าง summary จาก master form
-    var names = this._getFormNamesFromItems(insertedItems);
-    var summary = names.join(', ');
-
-    var TABLE_REQ = 'x_1896436_bot_ap_0_request';
-    var req = new GlideRecord(TABLE_REQ);
-    if (!req.get(requestSysId)) return;
-
-    req.setValue('request_type', summary);
-    req.update();
-  },
-
-  _getFormNamesFromItems: function (items) {
-    var names = [];
-    var seen = {};
-
-    for (var i = 0; i < (items || []).length; i++) {
-      var formSysId = String(items[i] && items[i].form_sys_id ? items[i].form_sys_id : '').trim();
-      if (!formSysId) continue;
-
-      var name = this._getFormName(formSysId);
-      name = String(name || '').trim();
-      if (!name) continue;
-
-      // กันซ้ำ + รักษาลำดับ
-      if (seen[name]) continue;
-      seen[name] = true;
-      names.push(name);
-    }
-
-    return names;
-  },
-
-  _getFormName: function (formSysId) {
-    var TABLE = 'x_1896436_bot_ap_0_master_form';
-    var gr = new GlideRecord(TABLE);
-    if (!gr.get(formSysId)) return '';
-    return String(gr.getValue('form_name') || '');
-  },
-
-  // =====================
-  // Request People
-  // =====================
-
-  _deleteRequestPeople: function (requestSysId) {
-    var TABLE = 'x_1896436_bot_ap_0_request_people';
-    var gr = new GlideRecord(TABLE);
-    gr.addQuery('request', requestSysId);
-    gr.query();
-    while (gr.next()) gr.deleteRecord();
-  },
-
-  _syncRequestPeople: function (requestSysId, peopleSysIds) {
-    var TABLE = 'x_1896436_bot_ap_0_request_people';
-
-    this._deleteRequestPeople(requestSysId);
-
-    var seen = {};
-
-    for (var i = 0; i < (peopleSysIds || []).length; i++) {
-      var pid = String(peopleSysIds[i] || '').trim();
-      if (!pid) continue;
-      if (seen[pid]) continue;
-      seen[pid] = true;
-
-      var gr = new GlideRecord(TABLE);
-      gr.initialize();
-      gr.setValue('request', requestSysId);
-      gr.setValue('people', pid);
-      gr.insert();
-    }
-  },
-
-  // =====================
-  // Tasks
-  // =====================
-
-  _syncTasksFromItems: function (requestSysId, items) {
-    var TABLE_SUBTASK = 'x_1896436_bot_ap_0_sub_task';
-    this._deleteTasks(TABLE_SUBTASK, requestSysId);
-
-    if (!items || !items.length) return;
-
-    for (var i = 0; i < items.length; i++) {
-      var it = items[i];
-      var formType = this._getFormType(it.form_sys_id);
-
-      var typesToCreate = (formType === 'license_place_channel')
-        ? ['payment', 'loan']
-        : ['loan'];
-
-      for (var t = 0; t < typesToCreate.length; t++) {
-        var gr = new GlideRecord(TABLE_SUBTASK);
-        gr.initialize();
-        gr.setValue('request', requestSysId);
-        gr.setValue('request_item', it.request_item_sys_id);
-        gr.setValue('type', typesToCreate[t]);
-        gr.setValue('status', 'pending_review');
-        gr.setValue('step', 1);
-        gr.insert();
-      }
-    }
-  },
-
-  _deleteTasks: function (table, requestSysId) {
-    var gr = new GlideRecord(table);
-    gr.addQuery('request', requestSysId);
-    gr.query();
-    while (gr.next()) gr.deleteRecord();
-  },
-
-  _getFormType: function (formSysId) {
-    var TABLE = 'x_1896436_bot_ap_0_master_form';
-    var gr = new GlideRecord(TABLE);
-    if (!gr.get(formSysId)) return '';
-    return String(gr.getValue('form_type') || '');
-  },
-
-  type: 'RequestSubmitService'
+	initialize: function () { },
+
+	/**
+	 * p = {
+	 *   action: "draft" | "submit",
+	 *   payload: {
+	 *     title: string,
+	 *     company?: string,
+	 *     items: [formSysId, formSysId, ...],
+	 *     coordinators?: [{...}]
+	 *   }
+	 * }
+	 */
+	submit: function (p) {
+		var payload = p && p.payload ? p.payload : {};
+		var action = p && p.action === 'draft' ? 'draft' : 'submit';
+
+		var data = this._normalize(payload);
+
+		var v = this._validate(data, action);
+		if (!v.ok) return v;
+
+		try {
+			// 1) upsert request
+			var req = this._upsertRequest(data, action);
+
+			// 2) coordinators (many)
+			if (data.coordinators && data.coordinators.length) {
+				this._syncRequestCoordinators(req.sys_id, data.coordinators);
+			} else {
+				this._deleteRequestCoordinators(req.sys_id);
+			}
+
+			// 3) request items (items = form sys_id[])
+			var insertedItems = [];
+			if (data.items && data.items.length) {
+				insertedItems = this._syncRequestItems(req.sys_id, data.items);
+			} else {
+				// ถ้าไม่มี items ก็ลบ request item เดิมไปแล้วใน _syncRequestItems ไม่ถูกเรียก
+				// แต่คุณ validate draft ได้ให้ไม่มี item ได้ ดังนั้นอย่าพึ่งลบเองที่นี่
+				insertedItems = [];
+			}
+
+			// ✅ 3.5) update request_type summary (คำนวณจาก insertedItems แล้วเก็บลง request)
+			this._updateRequestType(req.sys_id, insertedItems);
+
+			// 1.5) request people (many)
+			if (data.people && data.people.length) {
+				this._syncRequestPeople(req.sys_id, data.people);
+			} else {
+				this._deleteRequestPeople(req.sys_id);
+			}
+
+			// 1.7) request documents (many)
+			if (data.documents && data.documents.length) {
+				this._syncRequestDocuments(req.sys_id, data.documents);
+			} else {
+				this._deactivateRequestDocuments(req.sys_id); // หรือจะลบก็ได้
+			}
+
+			// 4) create tasks (เฉพาะ submit)
+			if (action === 'submit') {
+				this._syncTasksFromItems(req.sys_id, insertedItems);
+			}
+
+			// refresh req data (เพราะเรา update request_type ไปแล้ว)
+			var reqReload = this._getRequest(req.sys_id);
+
+			return {
+				ok: true,
+				requestSysId: req.sys_id,
+				requestNumber: reqReload.number,
+				status: reqReload.status,
+				request_type: reqReload.request_type, // เผื่ออยากเอากลับไปโชว์
+				message: action === 'draft' ? 'Draft saved' : 'Submitted'
+			};
+
+		} catch (e) {
+			gs.error('[RequestSubmitService] submit failed: ' + e);
+			return { ok: false, message: String(e) };
+		}
+	},
+
+	// =====================
+	// Normalize / Validate
+	// =====================
+
+	_normalize: function (payload) {
+		var p = payload || {};
+		var r = p.request || {};
+
+		var coordinators =
+			p.coordinator ||
+			p.requestCoordinator ||
+			r.coordinator ||
+			r.requestCoordinator ||
+			null;
+
+		if (coordinators && !Array.isArray(coordinators)) coordinators = [coordinators];
+		if (!coordinators) coordinators = [];
+
+		var docs = p.documents || r.documents || [];
+		if (docs && !Array.isArray(docs)) docs = [docs];
+
+		return {
+			requestSysId: p.requestSysId || r.requestSysId || r.sys_id || p.sys_id || '',
+			title: (r.title != null ? r.title : p.title) || '',
+			company: (r.company != null ? r.company : p.company) || '',
+			items: p.items || [],
+			people: Array.isArray(p.people) ? p.people : (p.people ? [p.people] : []),
+			documents: docs || [],
+			coordinators: coordinators
+		};
+	},
+
+	_validate: function (data, action) {
+		if (!data.title || !String(data.title).trim()) {
+			return { ok: false, message: 'Title is required' };
+		}
+
+		if (action === 'submit') {
+			if (!data.items || !data.items.length) {
+				return { ok: false, message: 'At least 1 form is required' };
+			}
+		}
+
+		return { ok: true };
+	},
+
+	// =====================
+	// Request
+	// =====================
+
+	_upsertRequest: function (data, action) {
+		var TABLE_REQ = 'x_1896436_bot_ap_0_request';
+		var gr = new GlideRecord(TABLE_REQ);
+
+		var isUpdate = data.requestSysId && gr.get(data.requestSysId);
+
+		if (!isUpdate) {
+			gr.initialize();
+			gr.setValue('requested_by', gs.getUserID());
+		}
+
+		gr.setValue('title', String(data.title).trim());
+		if (data.company) gr.setValue('company', data.company);
+
+		gr.setValue('status', action === 'draft' ? 'draft' : 'under_review');
+
+		var sysId = isUpdate ? gr.update() : gr.insert();
+		gr.get(sysId);
+
+		return {
+			sys_id: sysId,
+			number: gr.getValue('number'),
+			status: gr.getValue('status')
+		};
+	},
+
+	// ✅ helper: reload request
+	_getRequest: function (requestSysId) {
+		var TABLE_REQ = 'x_1896436_bot_ap_0_request';
+		var gr = new GlideRecord(TABLE_REQ);
+		if (!gr.get(requestSysId)) {
+			return { sys_id: requestSysId, number: '', status: '', request_type: '' };
+		}
+		return {
+			sys_id: requestSysId,
+			number: gr.getValue('number'),
+			status: gr.getValue('status'),
+			request_type: gr.getValue('request_type') || ''
+		};
+	},
+
+	// =====================
+	// Request Coordinators
+	// =====================
+
+	_deleteRequestCoordinators: function (requestSysId) {
+		var TABLE = 'x_1896436_bot_ap_0_request_coordinator';
+		var gr = new GlideRecord(TABLE);
+		gr.addQuery('request', requestSysId);
+		gr.query();
+		while (gr.next()) gr.deleteRecord();
+	},
+
+	_syncRequestCoordinators: function (requestSysId, coordinators) {
+		var TABLE = 'x_1896436_bot_ap_0_request_coordinator';
+
+		this._deleteRequestCoordinators(requestSysId);
+
+		for (var i = 0; i < coordinators.length; i++) {
+			var c = coordinators[i] || {};
+
+			var hasAny =
+				c.title_name ||
+				c.email ||
+				c.first_name_th || c.first_name_en ||
+				c.last_name_th || c.last_name_en ||
+				c.mobile_no;
+
+			if (!hasAny) continue;
+
+			var gr = new GlideRecord(TABLE);
+			gr.initialize();
+			gr.setValue('request', requestSysId);
+
+			if (c.title_name) gr.setValue('title_name', c.title_name);
+			if (c.email) gr.setValue('email', c.email);
+			if (c.first_name_th) gr.setValue('first_name_th', c.first_name_th);
+			if (c.first_name_en) gr.setValue('first_name_en', c.first_name_en);
+			if (c.last_name_th) gr.setValue('last_name_th', c.last_name_th);
+			if (c.last_name_en) gr.setValue('last_name_en', c.last_name_en);
+			if (c.mobile_no) gr.setValue('mobile_no', c.mobile_no);
+
+			gr.insert();
+		}
+	},
+
+	// =====================
+	// Request Items
+	// =====================
+
+	_syncRequestItems: function (requestSysId, formSysIds) {
+		var TABLE = 'x_1896436_bot_ap_0_request_item';
+
+		var del = new GlideRecord(TABLE);
+		del.addQuery('request', requestSysId);
+		del.query();
+		while (del.next()) del.deleteRecord();
+
+		var inserted = [];
+
+		for (var i = 0; i < formSysIds.length; i++) {
+			var formSysId = String(formSysIds[i] || '').trim();
+			if (!formSysId) continue;
+
+			var gr = new GlideRecord(TABLE);
+			gr.initialize();
+			gr.setValue('request', requestSysId);
+			gr.setValue('form', formSysId);
+			gr.setValue('status', 'draft');
+
+			var itemSysId = gr.insert();
+
+			inserted.push({
+				request_item_sys_id: itemSysId,
+				form_sys_id: formSysId
+			});
+		}
+
+		return inserted;
+	},
+
+	// =====================
+	// ✅ Request Type Summary (join form_name ด้วย ,)
+	// =====================
+
+	_updateRequestType: function (requestSysId, insertedItems) {
+		// สร้าง summary จาก master form
+		var names = this._getFormNamesFromItems(insertedItems);
+		var summary = names.join(', ');
+
+		var TABLE_REQ = 'x_1896436_bot_ap_0_request';
+		var req = new GlideRecord(TABLE_REQ);
+		if (!req.get(requestSysId)) return;
+
+		req.setValue('request_type', summary);
+		req.update();
+	},
+
+	_getFormNamesFromItems: function (items) {
+		var names = [];
+		var seen = {};
+
+		for (var i = 0; i < (items || []).length; i++) {
+			var formSysId = String(items[i] && items[i].form_sys_id ? items[i].form_sys_id : '').trim();
+			if (!formSysId) continue;
+
+			var name = this._getFormName(formSysId);
+			name = String(name || '').trim();
+			if (!name) continue;
+
+			// กันซ้ำ + รักษาลำดับ
+			if (seen[name]) continue;
+			seen[name] = true;
+			names.push(name);
+		}
+
+		return names;
+	},
+
+	_getFormName: function (formSysId) {
+		var TABLE = 'x_1896436_bot_ap_0_master_form';
+		var gr = new GlideRecord(TABLE);
+		if (!gr.get(formSysId)) return '';
+		return String(gr.getValue('form_name') || '');
+	},
+
+	// =====================
+	// Request People
+	// =====================
+
+	_deleteRequestPeople: function (requestSysId) {
+		var TABLE = 'x_1896436_bot_ap_0_request_people';
+		var gr = new GlideRecord(TABLE);
+		gr.addQuery('request', requestSysId);
+		gr.query();
+		while (gr.next()) gr.deleteRecord();
+	},
+
+	_syncRequestPeople: function (requestSysId, peopleSysIds) {
+		var TABLE = 'x_1896436_bot_ap_0_request_people';
+
+		this._deleteRequestPeople(requestSysId);
+
+		var seen = {};
+
+		for (var i = 0; i < (peopleSysIds || []).length; i++) {
+			var pid = String(peopleSysIds[i] || '').trim();
+			if (!pid) continue;
+			if (seen[pid]) continue;
+			seen[pid] = true;
+
+			var gr = new GlideRecord(TABLE);
+			gr.initialize();
+			gr.setValue('request', requestSysId);
+			gr.setValue('people', pid);
+			gr.insert();
+		}
+	},
+
+	// =====================
+	// Tasks
+	// =====================
+
+	_syncTasksFromItems: function (requestSysId, items) {
+		var TABLE_SUBTASK = 'x_1896436_bot_ap_0_sub_task';
+		this._deleteTasks(TABLE_SUBTASK, requestSysId);
+
+		if (!items || !items.length) return;
+
+		for (var i = 0; i < items.length; i++) {
+			var it = items[i];
+			var formType = this._getFormType(it.form_sys_id);
+
+			var typesToCreate = (formType === 'license_place_channel')
+				? ['payment', 'loan']
+				: ['loan'];
+
+			for (var t = 0; t < typesToCreate.length; t++) {
+				var gr = new GlideRecord(TABLE_SUBTASK);
+				gr.initialize();
+				gr.setValue('request', requestSysId);
+				gr.setValue('request_item', it.request_item_sys_id);
+				gr.setValue('type', typesToCreate[t]);
+				gr.setValue('status', 'pending_review');
+				gr.setValue('step', 1);
+				gr.insert();
+			}
+		}
+	},
+
+	_deleteTasks: function (table, requestSysId) {
+		var gr = new GlideRecord(table);
+		gr.addQuery('request', requestSysId);
+		gr.query();
+		while (gr.next()) gr.deleteRecord();
+	},
+
+	// =====================
+	// Request Documents
+	// =====================
+
+	_deactivateRequestDocuments: function (requestSysId) {
+		var TABLE = 'x_1896436_bot_ap_0_request_document';
+		var gr = new GlideRecord(TABLE);
+		gr.addQuery('request', requestSysId);
+		gr.query();
+		while (gr.next()) {
+			gr.setValue('status', false);
+			gr.update();
+		}
+	},
+
+	_syncRequestDocuments: function (requestSysId, documents) {
+		var TABLE = 'x_1896436_bot_ap_0_request_document';
+
+		// 1) เตรียม set ของ doc_id ที่ส่งเข้ามา (กันซ้ำ + ใช้ไป deactivate ของเก่า)
+		var incoming = {};
+		var cleaned = [];
+
+		for (var i = 0; i < (documents || []).length; i++) {
+			var d = documents[i] || {};
+
+			var docId = String(d.doc_id || d.docId || '').trim();
+			if (!docId) continue;
+
+			if (incoming[docId]) continue; // กันซ้ำ
+			incoming[docId] = true;
+
+			cleaned.push({
+				doc_id: docId,
+				doc_file: String(d.doc_file || d.docFile || d.file_name || '').trim(), // ชื่อไฟล์ (ถ้าคุณส่งมา)
+				doc_type_id: String(d.doc_type_id || d.docTypeId || d.doc_type || '').trim() // sys_id ของ doc_type
+			});
+		}
+
+		// 2) upsert ทีละตัว โดย key = request + doc_id
+		for (var j = 0; j < cleaned.length; j++) {
+			this._upsertRequestDocument(requestSysId, cleaned[j]);
+		}
+
+		// 3) deactivate เอกสารเก่าที่ไม่ได้อยู่ใน incoming
+		var old = new GlideRecord(TABLE);
+		old.addQuery('request', requestSysId);
+		old.query();
+		while (old.next()) {
+			var oldDocId = String(old.getValue('doc_id') || '').trim();
+			if (!oldDocId) continue;
+
+			if (!incoming[oldDocId]) {
+				old.setValue('status', false);
+				old.update();
+			}
+		}
+	},
+
+	_upsertRequestDocument: function (requestSysId, d) {
+		var TABLE = 'x_1896436_bot_ap_0_request_document';
+		var gr = new GlideRecord(TABLE);
+
+		// หา record เดิมด้วย (request, doc_id)
+		gr.addQuery('request', requestSysId);
+		gr.addQuery('doc_id', d.doc_id);
+		gr.query();
+
+		var isUpdate = gr.next();
+
+		if (!isUpdate) {
+			gr.initialize();
+			gr.setValue('request', requestSysId);
+			gr.setValue('doc_id', d.doc_id);
+		}
+
+		// set fields ตามที่คุณต้องการ
+		if (d.doc_id) gr.setValue('doc_file', d.doc_id);
+
+		// doc_type เป็น Reference → ควรเก็บ sys_id
+		if (d.doc_type_id) gr.setValue('doc_type', d.doc_type_id);
+
+		gr.setValue('status', true);
+
+		if (isUpdate) gr.update();
+		else gr.insert();
+	},
+
+	_getFormType: function (formSysId) {
+		var TABLE = 'x_1896436_bot_ap_0_master_form';
+		var gr = new GlideRecord(TABLE);
+		if (!gr.get(formSysId)) return '';
+		return String(gr.getValue('form_type') || '');
+	},
+
+	type: 'RequestSubmitService'
 };
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-20 06:49:04</sys_created_on>
         <sys_id>f0911be93b627650bc1ccdd643e45ae7</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>RequestSubmitService</sys_name>
         <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
         <sys_update_name>sys_script_include_f0911be93b627650bc1ccdd643e45ae7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-23 08:36:18</sys_updated_on>
+        <sys_updated_on>2026-01-29 05:16:10</sys_updated_on>
     </sys_script_include>
 </record_update>

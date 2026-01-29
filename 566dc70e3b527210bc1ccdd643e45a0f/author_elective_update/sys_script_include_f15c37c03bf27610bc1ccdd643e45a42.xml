@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1896436_bot_ap_0.RequestDocUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RequestDocUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// 1. สร้าง Record ใหม่ในตาราง u_request_document
+	var grDoc = new GlideRecord('x_1896436_bot_ap_0_request_document');
+	grDoc.initialize();
+	console.log('RequestDocUtils',grDoc);
+
+	grDoc.doc_file = current.file_name; 
+	grDoc.comment = "สร้างอัตโนมัติจากการอัปโหลดไฟล์: " + current.file_name;
+	// grDoc.u_attachment_id = current.sys_id;
+	
+
+	grDoc.insert();
+	
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 04:18:09</sys_created_on>
+        <sys_id>f15c37c03bf27610bc1ccdd643e45a42</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RequestDocUtils</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_script_include_f15c37c03bf27610bc1ccdd643e45a42</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 04:30:05</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_script_include_f15c37c03bf27610bc1ccdd643e45a42</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1896436_bot_ap_0.RequestDocUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;RequestDocUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// 1. สร้าง Record ใหม่ในตาราง u_request_document
+	var grDoc = new GlideRecord('x_1896436_bot_ap_0_request_document');
+	grDoc.initialize();
+	console.log('RequestDocUtils',grDoc);
+
+	grDoc.doc_file = current.file_name; 
+	grDoc.comment = "สร้างอัตโนมัติจากการอัปโหลดไฟล์: " + current.file_name;
+	// grDoc.u_attachment_id = current.sys_id;
+	
+
+	grDoc.insert();
+	
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-28 04:18:09&lt;/sys_created_on&gt;&lt;sys_id&gt;f15c37c03bf27610bc1ccdd643e45a42&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;RequestDocUtils&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f15c37c03bf27610bc1ccdd643e45a42&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-28 04:30:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-774263122</payload_hash>
+        <record_name>RequestDocUtils</record_name>
+        <reverted_from/>
+        <source>abe81cf93bea7650bc1ccdd643e45aef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 04:30:05</sys_created_on>
+        <sys_id>bb7f3b883bf27610bc1ccdd643e45aeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c02dda3d00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 04:30:05</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f77f3b8856f27610d981f0d5551347ea</update_guid>
+        <update_guid_history>f77f3b8856f27610d981f0d5551347ea:-774263122,b47ff7882bf276101ed91bf99cef162e:1079439253,0ffeff0894f2761035b8360125273da6:-1648219272,09cc730459f27610cf99231a0e86d858:-1052770752</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 04:32:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0454d98abbdc45518013b6312170dfb1</sys_id>
+        <sys_metadata>f15c37c03bf27610bc1ccdd643e45a42</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RequestDocUtils</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_script_include_f15c37c03bf27610bc1ccdd643e45a42</sys_update_name>
+        <sys_update_version display_value="sys_script_include_f15c37c03bf27610bc1ccdd643e45a42">bb7f3b883bf27610bc1ccdd643e45aeb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 04:32:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

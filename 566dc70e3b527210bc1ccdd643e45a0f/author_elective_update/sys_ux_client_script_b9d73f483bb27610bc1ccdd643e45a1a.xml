@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">534ad6883b6e3a10bc1ccdd643e45ac7</macroponent>
+        <name>select_1/now_default/items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    const results = api.data.look_up_req_doc_type.results || [];
+    console.log('results',results);
+    return results.map(record => {
+        return {
+            "id": record._row_data.uniqueValue,
+            "label": record.doc_type_name.displayValue,
+        };
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 08:05:57</sys_created_on>
+        <sys_id>b9d73f483bb27610bc1ccdd643e45a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_1/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_b9d73f483bb27610bc1ccdd643e45a1a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 08:05:57</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</application>
+        <file_path/>
+        <instance_id>00f607df478bae5021f3e676706d43b0</instance_id>
+        <instance_name>dev352312</instance_name>
+        <name>sys_ux_client_script_b9d73f483bb27610bc1ccdd643e45a1a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Default"&gt;534ad6883b6e3a10bc1ccdd643e45ac7&lt;/macroponent&gt;&lt;name&gt;select_1/now_default/items&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    const results = api.data.look_up_req_doc_type.results || [];
+    console.log('results',results);
+    return results.map(record =&gt; {
+        return {
+            "id": record._row_data.uniqueValue,
+            "label": record.doc_type_name.displayValue,
+        };
+    });
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-28 08:05:57&lt;/sys_created_on&gt;&lt;sys_id&gt;b9d73f483bb27610bc1ccdd643e45a1a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;select_1/now_default/items&lt;/sys_name&gt;&lt;sys_package display_value="BOT Application" source="x_1896436_bot_ap_0"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BOT Application"&gt;566dc70e3b527210bc1ccdd643e45a0f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_b9d73f483bb27610bc1ccdd643e45a1a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-28 08:05:57&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>646503015</payload_hash>
+        <record_name>select_1/now_default/items</record_name>
+        <reverted_from/>
+        <source>abe81cf93bea7650bc1ccdd643e45aef</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 08:05:57</sys_created_on>
+        <sys_id>75e0f4d83bba7610bc1ccdd643e45a3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c03a345b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 08:05:57</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>35e0f4d874ba76100cdcd4f16e1beb3e</update_guid>
+        <update_guid_history>35e0f4d874ba76100cdcd4f16e1beb3e:646503015</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-28 08:08:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>9d9d0aa0ed2d43c988efcb5a3fba7579</sys_id>
+        <sys_metadata>b9d73f483bb27610bc1ccdd643e45a1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_1/now_default/items</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_scope_delete display_value="">2139d00090824b309b75786abe415100</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_b9d73f483bb27610bc1ccdd643e45a1a</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_b9d73f483bb27610bc1ccdd643e45a1a">75e0f4d83bba7610bc1ccdd643e45a3f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-28 08:08:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

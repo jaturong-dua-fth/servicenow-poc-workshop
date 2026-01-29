@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1896436_bot_ap_0.Remove Attachment File</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>Remove Attachment File</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AttachmentAjax = Class.create();
+AttachmentAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+  deleteAttachment: function () {
+    var sysId = this.getParameter('sysparm_sys_id');
+    if (!sysId) return 'missing_sys_id';
+
+    var att = new GlideRecord('sys_attachment');
+    if (!att.get(sysId)) return 'not_found';
+
+    // กันพลาด: เพิ่มเช็คสิทธิ์/ownership เองตามระบบคุณ
+    // เช่น ตรวจว่า att.table_name / table_sys_id เป็นของ record ที่ user มีสิทธิ์
+
+    att.deleteRecord();
+    return 'ok';
+  },
+
+  type: 'AttachmentAjax'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-29 04:27:23</sys_created_on>
+        <sys_id>e2580d203b7ef610bc1ccdd643e45a2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remove Attachment File</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_script_include_e2580d203b7ef610bc1ccdd643e45a2e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-29 04:27:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

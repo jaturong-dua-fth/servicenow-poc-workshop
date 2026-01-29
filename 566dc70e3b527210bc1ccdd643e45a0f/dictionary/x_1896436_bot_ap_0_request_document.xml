@@ -5,7 +5,7 @@
         <element label="Status" max_length="40" name="status" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Comment" max_length="512" name="comment" type="string"/>
-        <element label="Doc File" max_length="120" name="doc_file" type="string"/>
+        <element label="Doc File" max_length="32" name="doc_file" type="file_attachment"/>
         <element label="Doc Id" max_length="40" name="doc_id" type="string"/>
         <index name="index">
             <element name="request"/>

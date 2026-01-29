@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">534ad6883b6e3a10bc1ccdd643e45ac7</macroponent>
+        <name>On Rename Attachment File</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+  console.log('rename event called', event);
+
+  const attSysId = event.payload.sys_id;
+  const newName  = event.payload.file_name || event.payload.new_file_name;
+
+  if (!attSysId || !newName) {
+    console.warn('rename payload missing sys_id or new file name', event.payload);
+    return;
+  }
+
+  const prev = Array.isArray(api.state.documents) ? api.state.documents : [];
+
+  const next = prev.map(doc =>
+    doc.doc_id === attSysId
+      ? { ...doc, doc_file: newName }   // ✅ update แบบ immutable
+      : doc
+  );
+
+  api.setState('documents', next);
+
+  console.log('documents after rename', next);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-29 04:53:02</sys_created_on>
+        <sys_id>e2a041603b3ef610bc1ccdd643e45a71</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>On Rename Attachment File</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_client_script_e2a041603b3ef610bc1ccdd643e45a71</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-29 04:56:08</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
