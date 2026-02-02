@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="ข้อมูลทั่วไป" section_id="fddec2f43b76ba10bc1ccdd643e45a01" sys_domain="global" table="x_1896436_bot_ap_0_people_info" version="3" view="workspace-test-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nationality</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>39dec2f43b76ba10bc1ccdd643e45a16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>id_card</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>f5dec2f43b76ba10bc1ccdd643e45a07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dob</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>f9dec2f43b76ba10bc1ccdd643e45a05</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>b9dec2f43b76ba10bc1ccdd643e45a15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>79dec2f43b76ba10bc1ccdd643e45a06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>passport_no</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_id>3ddec2f43b76ba10bc1ccdd643e45a14</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ข้อมูลทั่วไป" display_value="ข้อมูลทั่วไป" name="x_1896436_bot_ap_0_people_info" sys_domain="global" view="12be4a74c576ba101a83ab2f3d2d6dd0">fddec2f43b76ba10bc1ccdd643e45a01</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>ข้อมูลทั่วไป</caption>
+            <header>false</header>
+            <name>x_1896436_bot_ap_0_people_info</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-30 04:13:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fddec2f43b76ba10bc1ccdd643e45a01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1896436_bot_ap_0_people_info</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+            <sys_update_name>sys_ui_section_fddec2f43b76ba10bc1ccdd643e45a01</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-30 04:13:20</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Test 0" name="workspace-test-0">12be4a74c576ba101a83ab2f3d2d6dd0</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for app test">57beca743b76ba10bc1ccdd643e45af2</applicability>
+        <list display_value="All">6fbe0e743b76ba10bc1ccdd643e45aa5</list>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-30 04:12:54</sys_created_on>
+        <sys_id>efbe0e743b76ba10bc1ccdd643e45aa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_efbe0e743b76ba10bc1ccdd643e45aa9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-30 04:12:54</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

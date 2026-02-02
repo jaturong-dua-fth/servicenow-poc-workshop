@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="People Adoptee">d8e2ab623ba67e50bc1ccdd643e45a5c</ais_search_source>
+        <label>People Adoptee</label>
+        <name>People Adoptee</name>
+        <order>700</order>
+        <search_context_config display_value="Test AI Search Configuration">1abe4a74b676ba10d9c83816d3b7fbd1</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-30 04:12:59</sys_created_on>
+        <sys_id>fcce02b43b76ba10bc1ccdd643e45a92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>People Adoptee</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_search_filter_fcce02b43b76ba10bc1ccdd643e45a92</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-30 04:12:59</sys_updated_on>
+    </sys_search_filter>
+</record_update>

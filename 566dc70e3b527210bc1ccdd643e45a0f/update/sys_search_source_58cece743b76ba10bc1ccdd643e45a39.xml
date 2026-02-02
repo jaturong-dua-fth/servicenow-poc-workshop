@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1896436_bot_ap_0_request_document">active=true</condition>
+        <group/>
+        <name>Test - x_1896436_bot_ap_0_request_document</name>
+        <roles/>
+        <source_table>x_1896436_bot_ap_0_request_document</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-30 04:12:57</sys_created_on>
+        <sys_id>58cece743b76ba10bc1ccdd643e45a39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test - x_1896436_bot_ap_0_request_document</sys_name>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_search_source_58cece743b76ba10bc1ccdd643e45a39</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-30 04:12:57</sys_updated_on>
+    </sys_search_source>
+</record_update>
