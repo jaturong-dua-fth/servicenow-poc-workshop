@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=5035000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>049a0e497743011031e3b3c64b5a9996</copied_from>
+        <copied_from_name>FlowTemplate: Record Trigger</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>new_people_lawsuit</internal_name>
+        <label_cache>[{"name":"0077acca-490e-4b60-9631-1c0982dddb17.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e59bfaab-2ae3-4747-b1a8-3f2c3e45012e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.case_type","label":"Trigger - Record Created➛ Record➛ประเภทคดี","reference":"","reference_display":"ประเภทคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_type","choices":[{"label":"อาญา","used":false,"image":"","reference":false,"rawLabel":"อาญา","selected":false,"missing":false,"value":"criminal","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"แพ่ง","used":false,"image":"","reference":false,"rawLabel":"แพ่ง","selected":false,"missing":false,"value":"civil","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ล้มละลาย","used":false,"image":"","reference":false,"rawLabel":"ล้มละลาย","selected":false,"missing":false,"value":"insolvent","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ปกครอง","used":false,"image":"","reference":false,"rawLabel":"ปกครอง","selected":false,"missing":false,"value":"administrative","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"อื่นๆ","used":false,"image":"","reference":false,"rawLabel":"อื่นๆ","selected":false,"missing":false,"value":"other","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"0cc2ea75-4269-4caa-920e-7de67cb41e80":["condition"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.people_id","label":"2 - Look Up Record➛People Lawsuit Record➛เลขที่บุคคล","reference":"x_1896436_bot_ap_0_people_info","reference_display":"People Info","type":"reference","base_type":"reference","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"people_id","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["people_id"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.status","label":"2 - Look Up Record➛People Lawsuit Record➛สถานะในคดี","reference":"","reference_display":"สถานะในคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"status","choices":[{"label":"จำเลย","used":false,"image":"","reference":false,"rawLabel":"จำเลย","selected":false,"missing":false,"value":"jumloey","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ผู้ถูกฟ้องคดี","used":false,"image":"","reference":false,"rawLabel":"ผู้ถูกฟ้องคดี","selected":false,"missing":false,"value":"defendant","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["status"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.case_type","label":"2 - Look Up Record➛People Lawsuit Record➛ประเภทคดี","reference":"","reference_display":"ประเภทคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_type","choices":[{"label":"อาญา","used":false,"image":"","reference":false,"rawLabel":"อาญา","selected":false,"missing":false,"value":"criminal","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"แพ่ง","used":false,"image":"","reference":false,"rawLabel":"แพ่ง","selected":false,"missing":false,"value":"civil","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ล้มละลาย","used":false,"image":"","reference":false,"rawLabel":"ล้มละลาย","selected":false,"missing":false,"value":"insolvent","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ปกครอง","used":false,"image":"","reference":false,"rawLabel":"ปกครอง","selected":false,"missing":false,"value":"administrative","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"อื่นๆ","used":false,"image":"","reference":false,"rawLabel":"อื่นๆ","selected":false,"missing":false,"value":"other","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["case_type"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.court","label":"2 - Look Up Record➛People Lawsuit Record➛ศาล/อัยการ/ตำรวจ","reference":"","reference_display":"ศาล/อัยการ/ตำรวจ","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"court","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["court"]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛ Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"sys_id","usedInstances":{"2ebd0edf-6641-4383-9daa-949e922cab90":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛ Record","reference":"x_1896436_bot_ap_0_people_lawsuit","reference_display":"People Lawsuit","type":"reference","base_type":"reference","usedInstances":{"0077acca-490e-4b60-9631-1c0982dddb17":["record"],"76849175-16e2-4109-8bd9-a698d53fb2ec":["record"],"bcb0535a-42ee-429a-bff4-4a9c22a42741":["record"],"b05b40e9-71f4-4fb7-b8fe-6210103d0877":["record"]},"attributes":{}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.accusation","label":"2 - Look Up Record➛People Lawsuit Record➛ข้อหาหรือฐานความผิด","reference":"","reference_display":"ข้อหาหรือฐานความผิด","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"accusation","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["accusation"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.principal","label":"2 - Look Up Record➛People Lawsuit Record➛ทุนทรัพย์/ค่าเสียหายที่เรียกร้องได้ในคดี","reference":"","reference_display":"ทุนทรัพย์/ค่าเสียหายที่เรียกร้องได้ในคดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"principal","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["principal"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.result","label":"2 - Look Up Record➛People Lawsuit Record➛ผลคดี","reference":"","reference_display":"ผลคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"result","choices":[{"label":"ผิด","used":false,"image":"","reference":false,"rawLabel":"ผิด","selected":false,"missing":false,"value":"wrong","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ไม่ผิด","used":false,"image":"","reference":false,"rawLabel":"ไม่ผิด","selected":false,"missing":false,"value":"faultless","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ยกฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ยกฟ้อง","selected":false,"missing":false,"value":"dismiss","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ถอนฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ถอนฟ้อง","selected":false,"missing":false,"value":"discontinue","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ขาดอายุความ","used":false,"image":"","reference":false,"rawLabel":"ขาดอายุความ","selected":false,"missing":false,"value":"expire","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีอยู่ระหว่างพิจารณา","used":false,"image":"","reference":false,"rawLabel":"คดีอยู่ระหว่างพิจารณา","selected":false,"missing":false,"value":"pending","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีสิ้นสุด","used":false,"image":"","reference":false,"rawLabel":"คดีสิ้นสุด","selected":false,"missing":false,"value":"end","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["result"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.case_id","label":"2 - Look Up Record➛People Lawsuit Record➛เลขที่คดี","reference":"","reference_display":"เลขที่คดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_id","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["case_id"]}},{"name":"{{static.6816f79cc0a8016401c5a33be04be441}}","label":"System Administrator","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"0077acca-490e-4b60-9631-1c0982dddb17":["approval_conditions"]}},{"name":"Created_1.current.case_id","label":"Trigger - Record Created➛ Record➛เลขที่คดี","reference":"","reference_display":"เลขที่คดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_id","usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":["ah_subject"]}},{"name":"Created_1.current.accusation","label":"Trigger - Record Created➛ Record➛ข้อหาหรือฐานความผิด","reference":"","reference_display":"ข้อหาหรือฐานความผิด","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"accusation","usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":[null]}},{"name":"Created_1.current.result","label":"Trigger - Record Created➛ Record➛ผลคดี","reference":"","reference_display":"ผลคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"result","choices":[{"label":"ผิด","used":false,"image":"","reference":false,"rawLabel":"ผิด","selected":false,"missing":false,"value":"wrong","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ไม่ผิด","used":false,"image":"","reference":false,"rawLabel":"ไม่ผิด","selected":false,"missing":false,"value":"faultless","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ยกฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ยกฟ้อง","selected":false,"missing":false,"value":"dismiss","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ถอนฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ถอนฟ้อง","selected":false,"missing":false,"value":"discontinue","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ขาดอายุความ","used":false,"image":"","reference":false,"rawLabel":"ขาดอายุความ","selected":false,"missing":false,"value":"expire","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีอยู่ระหว่างพิจารณา","used":false,"image":"","reference":false,"rawLabel":"คดีอยู่ระหว่างพิจารณา","selected":false,"missing":false,"value":"pending","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีสิ้นสุด","used":false,"image":"","reference":false,"rawLabel":"คดีสิ้นสุด","selected":false,"missing":false,"value":"end","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":[null]}}]</label_cache>
+        <master_snapshot>934737c23bfe3650bc1ccdd643e45a6b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>New People Lawsuit</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ce1dbb023b327650bc1ccdd643e45a0a</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bbd9630a3b7e3650bc1ccdd643e45ae4</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>New People Lawsuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name>sys_hub_flow_bbd9630a3b7e3650bc1ccdd643e45ae4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:27</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2026-02-03 01:27:29">b61dfb023b327650bc1ccdd643e45a04</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1896436_bot_ap_0_people_lawsuit">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce1dbb023b327650bc1ccdd643e45a0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:27</sys_updated_on>
+        <table>x_1896436_bot_ap_0_people_lawsuit</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>bbd9630a3b7e3650bc1ccdd643e45ae4</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:27</sys_created_on>
+        <sys_id>ca1dbb023b327650bc1ccdd643e45a0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:27</sys_updated_on>
+        <trigger display_value="">ce1dbb023b327650bc1ccdd643e45a0a</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT INca1dbb023b327650bc1ccdd643e45a0b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN04e9a30a3b7e3650bc1ccdd643e45a41"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bbd9630a3b7e3650bc1ccdd643e45ae4</id>
+        <name>New People Lawsuit</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:28</sys_created_on>
+        <sys_id>04e9a30a3b7e3650bc1ccdd643e45a41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 08:03:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=04e9a30a3b7e3650bc1ccdd643e45a41"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN58e9a30a3b7e3650bc1ccdd643e45aa4,c1e9a30a3b7e3650bc1ccdd643e45ace"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</model>
+        <model_id>bbd9630a3b7e3650bc1ccdd643e45ae4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bbd9630a3b7e3650bc1ccdd643e45ae4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:29</sys_created_on>
+        <sys_id>58e9a30a3b7e3650bc1ccdd643e45aa4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 08:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=58e9a30a3b7e3650bc1ccdd643e45aa4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</model>
+        <model_id>bbd9630a3b7e3650bc1ccdd643e45ae4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bbd9630a3b7e3650bc1ccdd643e45ae4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:32</sys_created_on>
+        <sys_id>c1e9a30a3b7e3650bc1ccdd643e45ace</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 08:58:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1e9a30a3b7e3650bc1ccdd643e45ace"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT INede9e30a3b7e3650bc1ccdd643e45a9b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:34</sys_created_on>
+        <sys_id>ede9e30a3b7e3650bc1ccdd643e45a9b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:01:19</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLZACWmzLyts0SdEA05nW8bQPQUpQFGkLpSlXopR4Bvn3XmqLrMVLnHTs5MWASJo85/Lw3EveftNlFMxmNLoWscSC0JtVfO3r5zoeuZiMxq7jDGzDNA3bpLZnk9HAG2LXxbZ+pnPsUQ5Dp9jjFL4DIWkkMJ+ulhSapWpGAi9U3wILH8swWunnMkromc6icDGliyXHEgYzzGNoDCOfRvq5eaZnfyvmgL+nmCfq+wGZY3c0sEfICyXCS2SgJQ2XsA7H93ESSBjrBzHMuvqz+Au0LHEE00k19TedzAPuR1To57d3gFlxJYxg16IGsU3bsgzDGg9Mb2R7puXbmBpGB9cGPtlB+YkMfZBU+NSveLaiEVHsfxZ8VY2YQzBz8Av8EAdfYfaxocYxCthJQaz6RAXpvJnMw4DQz0sZhCJvyXHmnSFPFuJTjl+FizKccFkLVxLDfHSpICsQBSJ2Mw/vJ+WCvwQiY1d08pBgXn1hCaLyEkljFXAWcAg9ymMTh0mUoZ9cXXyeXKK/Pkwvfr2aoMnVzXRyfTG9utQfM17o30TNmCMssKCcDgyISRQs5Qcig7RUz+PZS2j5IhR+kMWtpWdSdsV1TDUR1Ha1jNkmkRtGJSNSW7WU+t9Xf7TFnDdu0/NohLFPcY+ePdbDtwOM7KBex79J2UXLLtIeGMZ3EndhRs/V9iL0Kb+sayFXIArEMpEqWvdYyBjJEGHfR7U4qqGAaZvYc26vqfgoEbAUqnayrfss4FXkPwYxEL2Fc11GNQMD/exjMeUkEVoIWw4/GkkiCKrUykPCrhd4VuwF+70UchbMQn8pjhBaoHgVo3niobWIIscdu+aoT9oOWYtgdpRg6ltdv3tUu0w5JbKmVvYlrn/9FsRxIGa18FYcs81qUazYgeq1MoI51fi0uN4dYl9tCaUNaTRsbJNAtpmbaTLmUWYZjooJSNtjpuEYQ8x82zCItVHavYBlQ+uvYnL7WVycnTK+w5lqRrsErxTM9xFsuq72Yh5LqaNw0osjhNbICPZeKaFSaN58ubtQX7hMwn6qHNzfNTO8elJgPLwHJ3pGQvAw+WcWhYnwm5ap5tQCoT2N0H4oIv/jaRlmPTmwMKKb+a6POB2WB6eFJxGVBxiLVTsh5I3brN9mpufSATXA8W0we2/ouh7BFmPOyKGW2SvgTkAnYflbDkzadeL6PLZTjGmXhvcw/u8P8CD7L9TYaf5531u3+fs5FQhIRogrI2+5/YwHPi37DjOD1lLp071s/1cbNnbJ0HQc4oAHghuwAfWwObCApTOyx8NtPDcBkx3c/5d7r7J8BaTHKb7kXcf1wHOcko6plCqT7V++CLgaZP/BObxaTlcbqmVWFUbap1D8dP00TruhkDuzZ5MTyvD1OmYX0kqB2pti7YVy3qrbgOnP0L7GVF1Mevb8vd32GycsXQ9lx23/OQHd+hJAB+Ohy+zuBMDcza7Qz+boC8MdXSjt9bOuAmzXU552mkVVkDVLumfse0NNxdT2lmL0/QbloAK4PLK9zx/PAfsuCoysXjykylBoKQpZPflchhp0aLCIFjCtQEt9zVtpck5hMzjckWBBTa1+YlmnnnTbzKuj9qZ553fKVq0BzVpR9p8QsZcpIxrnaOM7UUe8tlUJ1HfwcGj3XBPd5qNRF6QtiI++XtjbVNIuj9qYH/ebtzlnZ4as7fG6JnYsCN4w61d78upAcaS5/O4/Lp7FVLskAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN1e77bbc23bfe3650bc1ccdd643e45af9,319833863bfe3650bc1ccdd643e45a50,42acbbce3bfe3650bc1ccdd643e45a63,7695bbce3bbe3650bc1ccdd643e45ab8,c2f87f863bfe3650bc1ccdd643e45a4a,f3a437063b7e3650bc1ccdd643e45a19"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:53</sys_created_on>
+        <sys_id>1e77bbc23bfe3650bc1ccdd643e45af9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>0077acca-490e-4b60-9631-1c0982dddb17</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YTW/bOBCG/0rAs+OlrA/LvgUxArTYbYEk7SUOBIocJSxoSRWpJF7B/30pkbJUO3HdhXJI04sBDmeod0bPkKJvKsQZmqNpmExgNpvg2MHYxTj0KQ5diN1pMHUJxWiEUrIC7VkAzQqmxw9ElLWhqs4LIApY5IxpWRSQqs1GzzMuc0HWX62bttB7LpieR/Ob2xHKSaFXVFCgebUzdawkQWIQ2vWy1bSrUa3zeswyWq60roi3xr9t5MLOnHxY6BkdVMvBIwRPClIGWkdChIQRWpGUEZUVazRXRakNOmf2ORXrrcc9T5XJc0WeJP9XP9id1H4J6MSorcF2GNn6GHOyIIpc6ZWpKottuTJOQZqSMEhIKdR532YcPueKZ6kJUSQWbXQmylX6yRQEbRfovY5SahGQ13nWyk1aydV99njZirzgaVMRm6LIKBHbEVGq4HGpajkVAgFNiVckz3l6F+VF9sCbYC1lNb4TejBORPaonyn5XTomtNY91lUl4wttXzTmr6TgdRL/6GV08GaE5FqeCyJll4quYfS9rJWYxGwKUVMFU4I6jhY8V2f6KQ9gNW9GFveYHmSLdiiZ5TranyInnAWeG0RxpiKSRzjKIcsFRII8ypKrAcg/Ql1L/rWVt6PWct8Mo2buR+ybsJNPZsJS7xym3lo67A0vz1Af4jdEvU3rzWP/M+LBC1xf/0wTFzsTB4cQhCGdYULDIPA9t2NIK9A5EBHpVy312h37A6B9hIwW7TOr4+Sy1fGiQIu71C8mvdtB/ao1Wswnv4j5y7u7E7wn0Et+vVNlY9mr8+t0RP24Lyn/XsKHmqNgEgczHLJTluD41Atd/5RQwKcQOD74LKC+475CF2Hn0M7MwmcgTTgINmwTHaFir4kurIyX5NkWaobPnRhN/M6JMVwrhRi/pV56T59K9CBs0Ds4vmVlkb4O8UeIaIn/aFTsAr8r7v/w7v7h/ffn3fMPotb72N7uoTRLGa8Vyx71ZucFeQnfgCp5lq6/3FSVVERxOg5CJ0imM0oxCbETeNihPnHdGLAXg+c5m83tftcMsOKvdd0RpdjewEsB8melsT3Xfb/ZoH7fdV99dtL2njfUnfyNtd57uZ/Qg6wls44tVuoCEdW/lFdLZGQv0XyJ0iyFJRotUe0V1XA1Zu2hxW0nGltVbTbGUhbELuD0hl00I2vZeEp6D0yz2Vh/sERNM1j7EP+AHVGTtv8WJZwsTFH2y9Rej1qdpi5878y7sg7NSn9d8/7Z5w929nl/2m+Iy1DUbqP1waZ3vwF78vY/jV5yRRYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e77bbc23bfe3650bc1ccdd643e45af9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:07:46</sys_created_on>
+        <sys_id>319833863bfe3650bc1ccdd643e45a50</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>76849175-16e2-4109-8bd9-a698d53fb2ec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXYviMBT9K5LnUlrriPq2KMLC7AzMLL7MDiFtbjWQpt0k9WPF/763bVrFkRkXfJHtW+5Xzjk9t33bE8HJhAyAB+E4HCZRGEX9IOiPBmE8jOKwzyMGEBKPKJYBVmpIcs3xvGayrAL7/VQDs8Bp6Cel1qDs4YB5Lkwh2W7hyjCSrITkmCeTt3ePFEzjRAuaTPZnqWshSRaDxNKXFtM5RrsrqjPPkzJDXFS0wUfXOXOZ3vcZZrCpghMGHoGtBcUBgaRMGvBIxhRnNtc7MrG6xACS5s9K7rqKlVC2IZqxrRF/8OZBUNWlgMwSJ0J3pE6gJpzOmGWvODmxpe70ykUCptGEQ8pKaaensabgubAiV02LZbFsu3NZZuqpUYR0A07eR2kQBBQVzwp5Qyt9XeWblxbkXKhaEkdR5gmT3YlZq0Vc2grOnoCEWuOMFYVQS1rofC3qZoSS+UuJBz+V+QbvNGKpfJZUuH1UlflzjM/q8IJpUZH4gWOw+eARszNTyYw5UkEN6e+yQtIQcxRorUItAa2dUDUnWhT2G161Bgf84DnTxw+fOSwZHw11MvNo/C0NR+PhIBrSOLeUFTSgBeQFFkq2MaWwN1iCKyC2S/CzfvWXIbs9+BB7PO3tPTUJtwUPN9uC0T1tgaNx92vwlfmD/qef1xMn1X43J8YXhirY/CqDIOL10I9Gv1Tyb86/Al/r/LkAyc0FwK3tIUNsFmhD4Mz6LtlbuGT3E7iZ/8NhUD93tAX/zb/g/S+p9bl5AgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=319833863bfe3650bc1ccdd643e45a50"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:25:32</sys_created_on>
+        <sys_id>42acbbce3bfe3650bc1ccdd643e45a63</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>b05b40e9-71f4-4fb7-b8fe-6210103d0877</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42acbbce3bfe3650bc1ccdd643e45a63"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:54:43</sys_created_on>
+        <sys_id>7695bbce3bbe3650bc1ccdd643e45ab8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>79c6a204-8f74-4d90-b034-c24dd9c1e8a7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4HOiWHHmRHnNrQodtjaoR166TqDluhEgPwxSW6bBfnvo2w5DboW24xeCtQ3kXxPjxQl+mbHpGArlkQYfkijhMdRHM/DcL5cRHkS59FcxIC4YFNWQYkUaSFXmHWLKbsD1TrjQxYt02QRJ1le2wyaLMwarBsKNC2KbCONrfWWAEKaRsH22uO+dkGTKwqafDoE8Y1UQmPFVje3U9aAps0sarbaPXH9q3QFOSoK/ea0v5CK3TbP2j4fYyfnvaPWwukJpwwfLFYCSUgByuCUlVAJ6BJZWd2SQSOIi0ptDxEbWVkiZC72wchftO0ydHEFUmYce99hmfma9ebiFCxcETO3rfahfFNLjqavicACWmVPjm19wEVjZV31kC5Nj65VW1bnfUnYgWA4IrK0hkRg4/J0yn0axdWmvr8cVJ7JqiuJd6qagzqswFot89Y6PTuGCksiykpoGlmts0bXd7IDk5YyWCtaBIWq72lTI9dVANwJD6isEJyR/bQzX4OWLosvREPg/ZSZrTlRYMxjLlTE7GfrlPSZ+RyyvgwOwrVs7Efa4A693P10uBMCw/TFxoryx0bqroE5ug+8brX93oZhLHa7OeYiRFHMkmQRzRbxMp6lAmCWLlJM53MOeRoGl8ipqYIOuN//4EA1d+03imQAE5GxYFszhqVHEoW/yVKMYTmAiQg4bw24sxzD9Ih2mrSsuGxAjdI0gIlIo6FmH8PSI4ezGlcdDyWSQsE6ExoKr8W9HX++l+999d5Xr9JX/zli//4SDiP2TKIS5pmncZivWFJDW8z6p/LJjPXOybV3+jkbvdacjZKw+97QtO2Te/PD9ui/6oWxe/sbCWkiIowKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7695bbce3bbe3650bc1ccdd643e45ab8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>56262601-a1f6-45a6-b6f4-586fea27e8f5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:25</sys_created_on>
+        <sys_id>c2f87f863bfe3650bc1ccdd643e45a4a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>bcb0535a-42ee-429a-bff4-4a9c22a42741</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0XPxthxGpK8jYTAoGuhHXnpOiFb14lAlj1JzsdC/vuubdkxaekyyEuY3+6XdM71OfbrgQhOpmQIPAgn4SiJwigaBMFgPAzjURSHAx4xgJB4RLEMsFNDkmuO8YbJskocDjMNzAKnoZ+UWoOyxyPWuTCFZPula8NMshaSY51MX988UjCNJ1rQZHo4K10KSbIYJLY+t5jOMdp9UcU8T8oMcVHRJh/c5NxV7r7OsYJDFZww8AjsLCgOCCRl0oBHMqY4s7nek6nVJSaQNH9Sct91rIWyDdGM7Yz4jTcPg6ovBWSWuCV0IXULatLpnFn2gicnttTdvnKRgGl2wiFlpbSzfq5peCqsyFUzYlks2+lclpl6bDZCugN676M0CAKKimeFvKGVvqzz7XMLciFUvRJHUeYJk13ErNUiLm0F50BAQr3jjBWFUCta6Hwj6mGEkvkriYGfynyLdxqxUj5LKtw+bpX5C8zP6/SSaVGR+IbH4PDRI2ZvZpIZc6KCO6S/ygpJQ8xRoPUW6hXQWgnVcKJFYb/gVRtwwI+eE318/5nCkslJUL0zT8Lf0XA8GQ2jEY1zS1lBA1pAXmCjZFtTCnsFE1wAsTXB9/rVfwzZ+eBd7qE/e/fYFJwL7q/mgvEtucDRuHkb/E38weDTz2tPSbXeTU/4wiB2iar9UQZBxCsh/MScgm2TqC96L/5Lx/7NIRfwaB2yECC5+YBYaw/IEK8F2hA9s4gr3i1dsftZXM0n4Sionxtyy3/zz3j7A0wnaNQqCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2f87f863bfe3650bc1ccdd643e45a4a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:50:42</sys_created_on>
+        <sys_id>f3a437063b7e3650bc1ccdd643e45a19</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:30:32</sys_updated_on>
+        <ui_id>2ebd0edf-6641-4383-9daa-949e922cab90</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3UyuklXrb07a3L3sry4mdYp2xs7ZTShH//cZxEiKgQHRUanWPHo/tb2a+b+zkx9pnxL/2yTSYZtPpaBIHQRQFwXgcpThMkmicJkGCh37PF3hBwdPghFMYPmNe2PELCifT8TAao0QahHMUoJzKnFPE8VIXzIAvYTrnePW9WvJnOe/dNfPpnHGiqPCvf/zs+TlWcJShyr9e70ydi5XjhHJwfazA7mA3q7wZonLO2e7ay7yvbkIqYqEEPZ++GCoIBQwZ5pr2/AUWBBupVo1FUUzuBd8a5kwY2NG3zi+avcK5k8D6ZRSiSqmba4aoSpUzZ7fY4AejitQUqnJN55KlVLt8EJrhgpubts053OeGSeGWuLDdasmLhfjq0uE3G9SVAUuhAQTNbaAWeRVG9jCXy281yhkTZU6qSS5TzJsRNkaxpDAWz9qnnC5gI7TAec7EE8qVfGblYsCy6D9xGPQzLpdwqGZPoo9TC7wPecX9GdhvS/N3rJiN4g/YBhYDIMaBIciVUMtClal8RikvdDmhsNBuL3/T8/VK33Cs9TZySDn6VVjcLg9VxMglzS5JFcvN77DFM62C2/RquYyOUnC6pVwqBWEWhW5pBtAgRv4uYDFZr2+ANIYSFPbTQkF+Td/Nbzb70umwsqOoTkdUi+qmHdKhMCt57dnuDm1QySu8mLyGQfCZBAaHfzx9dVeMS8EJ2YTkKMnIlk9aKoNcLlu62ddDZ56fAaHm+b1lppes3kJV0TxjlJNDt8jMTuzcIoP/5y3yIUkOgAhy1WOCM1E+CQDoe7F/dJR6SbjDs5JerTvD2rBO9zWAPSO9185KOANOrYQHONt7dHgOQKz7fUmZ3V5fGysBRBcTQDS4jADWTZhNIg/kvH4F2mrW/q/WH+/6AwVbC8LNIYF1OjPseuZgsy/gqJOC22RzM7dvcO7Cz8U3FNl7zxYwh6XVecjpFy0ZeaJme3rtRaRZYv7PofmKcaguVBneOzw9w6NfP0nr6ckytIDKMfstpmgK5NAIK4oyWQiCqrfxlki2khlT2lTO+43mGwX9CE+CMD0zp17p7TXeHS/i03HUqfySeXUg1Wnag0C8MhCvCaRb2F2a1vCCj9NLN60ZZrysBnz25K1yUqWkeqNxnSjkEUac2dXOBBVeFNR/b3uHJHCw/Z3A+im+oS/fmlKKk+EAj+MoDIMgDEgcTOI4nIyTbIzjYbbVKEJapNBNYecMqALbo5oadZ2D/f7jWmrXRnMGqpqCt1LYT+tBbDwLC+rr1bBOA68aSiIlp1jsdJRHuCd+m1X4K76OPlxX+RR/lAr2uJtpZzqY6/d6NxTsL8F+FfSLpdiEBoNJSNKrSRzGV8OMjK+mBI+u8DQZxRGh6TC75FPg57+N4NoDthUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f3a437063b7e3650bc1ccdd643e45a19"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN99e3ffca3bbe3650bc1ccdd643e45a5e,da687b463bfe3650bc1ccdd643e45ae4,dee83b863bfe3650bc1ccdd643e45ac7"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aa863b423bfe3650bc1ccdd643e45ae9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:47:15</sys_created_on>
+        <sys_id>99e3ffca3bbe3650bc1ccdd643e45a5e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:23</sys_updated_on>
+        <ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U22obMRD9FaPnZdlLbBq/hZRAoW2gCXlpg5iVZm1RrbSVtHZc43/vaC+JaW3Slj72bXXmds7MYffMdqHtgr+3V96rlWHLz48JUyZi9L1nBhpkSyaskSooa3gPJGwDuusD4HEWdi3OlJ8JpxplQFNcKt9q2D28kibWSkuH49wWHHUP6Nhy/1Mo1nINFWrqdhecMisqV5JedQZ1filyURaLssiy4s1FXi3KKi9kCQgl5U2F15OM2fseSc7qi/MI99Mk62SklWcJw6eARiKNrkF7TFgDRkKwbveMOAR5a/QLsFYmUDsWk5+8+k69i/k8JtZIGgUOwecnH/c3wGJtlcDbNhIckACVHmuE1V1jPg464uaxhk6HafOEdJ76YRtJRxYjpfpubbefpoE3yvQCx6C2gu4zvSDQGqouoI+HQY0NNeINtC0th7fOblRfTFyadKXpkdbabmlo9FQKIhJPaUeQ3hD+tocfwKmo4gO1oeKBZgVeCd77j9oFRxIO/Vr4ty4SGgSOUviwDUrwZKk2XNGcDY6sD8mv5j3y7X5/TUcKKHmeis7RDkIaTcrj4Q+HL12WlfK8n/+0/F/4/BLm9TzP5qd9frE45fMTDj9v7uIVc8dz/Ka3syz7b+5jcyvPB5OO2vrhf+3tx2jkYYIffCNRKE9E7iP2bvp/x8CODKDEMbS17muU8IIdfgBoK9TNCQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b0933c63bfe3650bc1ccdd643e45a90</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:06:59</sys_created_on>
+        <sys_id>da687b463bfe3650bc1ccdd643e45ae4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:23</sys_updated_on>
+        <ui_id>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4PPiSHb+WhyCzYUGLCtwFr0shUGLdGJMFnyJDlpFuS/j/JHWrQJNgw97mY9iuR71KMPkWl83Xh3Z1bOybWOlt8eRpHUAaPvQ6ShwmgZcaOF9NLovAVG0RZUEwKrurZmi4IgIV2tYH//OsI3UgmLffUaLNXwaKPl4UXI72vMFRSoqMCtt1KvKV0KOpUMymTBE56lsyxlLL2aJMUsK5JUZICQ0b0h8f1A9t2nFhldVBH6Ee6GTsaKQCthowgfPWpB9JclKIejqAItwBu7PyEWQdxo9QRspPZULgqXH538RbXT6TRcLJE0cuyCp2Pej6yD+cZIjjd1INghHgrV53Cjmkp/6XSEYWMJjfLDsAlpHNXDOpAOLHpK5e3G7L4ODa+lbgX2QWU4qNMJPI2haDy68DCosKJCeQV1TcPJw2PKNpm4VPFa0SEuldlR0+CcGHggHtOMIL4m/EML34OVQcVnKkPJHc0CnOR56zIq5y1JOLZjyX82gVAnsJeSd9OgC45bWfsV9dliz/o4em3RZ+48HBibz4FzGE8WDMeTYsbGi1mWjBPOFlepEKJI5jG0VgWVOw8ej8fvDWOZgIvWfquyb7EXC5iW04RNz+/FZHZuL85sxOVlSP+wDOH5/nIXGGP/l+H5MkiXd6butbXN/3kXHoLxuw6u841ALh0RuQvYx+GvHgJ7MoDkz6GdsT+ChCfs+BtEeaqoHwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c70933c63bfe3650bc1ccdd643e45a94</block>
+        <comment/>
+        <connected_to>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:10</sys_created_on>
+        <sys_id>dee83b863bfe3650bc1ccdd643e45ac7</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:23</sys_updated_on>
+        <ui_id>56262601-a1f6-45a6-b6f4-586fea27e8f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN130dbbce3bfe3650bc1ccdd643e45acd,df0db7023b327650bc1ccdd643e45a8f"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>bbd9630a3b7e3650bc1ccdd643e45ae4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.accusation}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:15</sys_created_on>
+        <sys_id>130dbbce3bfe3650bc1ccdd643e45acd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dd5978db-eac7-43af-84d9-532bac5fea9d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>bbd9630a3b7e3650bc1ccdd643e45ae4</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.result}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:15</sys_created_on>
+        <sys_id>df0db7023b327650bc1ccdd643e45a8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0639308e-d4f4-49e6-8476-1846539a5fb6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbd9630a3b7e3650bc1ccdd643e45ae4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:33</sys_created_on>
+        <sys_id>85e9a30a3b7e3650bc1ccdd643e45ad1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 08:03:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbd9630a3b7e3650bc1ccdd643e45ae4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 08:03:32</sys_created_on>
+        <sys_id>b0e9a30a3b7e3650bc1ccdd643e45acc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 08:03:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>049a0e497743011031e3b3c64b5a9996</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>new_people_lawsuit</internal_name>
+        <label_cache>[{"name":"0077acca-490e-4b60-9631-1c0982dddb17.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e59bfaab-2ae3-4747-b1a8-3f2c3e45012e":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.case_type","label":"Trigger - Record Created➛ Record➛ประเภทคดี","reference":"","reference_display":"ประเภทคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_type","choices":[{"label":"อาญา","used":false,"image":"","reference":false,"rawLabel":"อาญา","selected":false,"missing":false,"value":"criminal","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"แพ่ง","used":false,"image":"","reference":false,"rawLabel":"แพ่ง","selected":false,"missing":false,"value":"civil","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ล้มละลาย","used":false,"image":"","reference":false,"rawLabel":"ล้มละลาย","selected":false,"missing":false,"value":"insolvent","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ปกครอง","used":false,"image":"","reference":false,"rawLabel":"ปกครอง","selected":false,"missing":false,"value":"administrative","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"อื่นๆ","used":false,"image":"","reference":false,"rawLabel":"อื่นๆ","selected":false,"missing":false,"value":"other","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"0cc2ea75-4269-4caa-920e-7de67cb41e80":["condition"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.people_id","label":"2 - Look Up Record➛People Lawsuit Record➛เลขที่บุคคล","reference":"x_1896436_bot_ap_0_people_info","reference_display":"People Info","type":"reference","base_type":"reference","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"people_id","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["people_id"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.status","label":"2 - Look Up Record➛People Lawsuit Record➛สถานะในคดี","reference":"","reference_display":"สถานะในคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"status","choices":[{"label":"จำเลย","used":false,"image":"","reference":false,"rawLabel":"จำเลย","selected":false,"missing":false,"value":"jumloey","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ผู้ถูกฟ้องคดี","used":false,"image":"","reference":false,"rawLabel":"ผู้ถูกฟ้องคดี","selected":false,"missing":false,"value":"defendant","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["status"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.case_type","label":"2 - Look Up Record➛People Lawsuit Record➛ประเภทคดี","reference":"","reference_display":"ประเภทคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_type","choices":[{"label":"อาญา","used":false,"image":"","reference":false,"rawLabel":"อาญา","selected":false,"missing":false,"value":"criminal","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"แพ่ง","used":false,"image":"","reference":false,"rawLabel":"แพ่ง","selected":false,"missing":false,"value":"civil","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ล้มละลาย","used":false,"image":"","reference":false,"rawLabel":"ล้มละลาย","selected":false,"missing":false,"value":"insolvent","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ปกครอง","used":false,"image":"","reference":false,"rawLabel":"ปกครอง","selected":false,"missing":false,"value":"administrative","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"อื่นๆ","used":false,"image":"","reference":false,"rawLabel":"อื่นๆ","selected":false,"missing":false,"value":"other","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["case_type"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.court","label":"2 - Look Up Record➛People Lawsuit Record➛ศาล/อัยการ/ตำรวจ","reference":"","reference_display":"ศาล/อัยการ/ตำรวจ","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"court","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["court"]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛ Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"sys_id","usedInstances":{"2ebd0edf-6641-4383-9daa-949e922cab90":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛ Record","reference":"x_1896436_bot_ap_0_people_lawsuit","reference_display":"People Lawsuit","type":"reference","base_type":"reference","usedInstances":{"0077acca-490e-4b60-9631-1c0982dddb17":["record"],"76849175-16e2-4109-8bd9-a698d53fb2ec":["record"],"bcb0535a-42ee-429a-bff4-4a9c22a42741":["record"],"b05b40e9-71f4-4fb7-b8fe-6210103d0877":["record"]},"attributes":{}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.accusation","label":"2 - Look Up Record➛People Lawsuit Record➛ข้อหาหรือฐานความผิด","reference":"","reference_display":"ข้อหาหรือฐานความผิด","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"accusation","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["accusation"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.principal","label":"2 - Look Up Record➛People Lawsuit Record➛ทุนทรัพย์/ค่าเสียหายที่เรียกร้องได้ในคดี","reference":"","reference_display":"ทุนทรัพย์/ค่าเสียหายที่เรียกร้องได้ในคดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"principal","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["principal"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.result","label":"2 - Look Up Record➛People Lawsuit Record➛ผลคดี","reference":"","reference_display":"ผลคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"result","choices":[{"label":"ผิด","used":false,"image":"","reference":false,"rawLabel":"ผิด","selected":false,"missing":false,"value":"wrong","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ไม่ผิด","used":false,"image":"","reference":false,"rawLabel":"ไม่ผิด","selected":false,"missing":false,"value":"faultless","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ยกฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ยกฟ้อง","selected":false,"missing":false,"value":"dismiss","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ถอนฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ถอนฟ้อง","selected":false,"missing":false,"value":"discontinue","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ขาดอายุความ","used":false,"image":"","reference":false,"rawLabel":"ขาดอายุความ","selected":false,"missing":false,"value":"expire","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีอยู่ระหว่างพิจารณา","used":false,"image":"","reference":false,"rawLabel":"คดีอยู่ระหว่างพิจารณา","selected":false,"missing":false,"value":"pending","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีสิ้นสุด","used":false,"image":"","reference":false,"rawLabel":"คดีสิ้นสุด","selected":false,"missing":false,"value":"end","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["result"]}},{"name":"2ebd0edf-6641-4383-9daa-949e922cab90.Record.case_id","label":"2 - Look Up Record➛People Lawsuit Record➛เลขที่คดี","reference":"","reference_display":"เลขที่คดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_id","usedInstances":{"79c6a204-8f74-4d90-b034-c24dd9c1e8a7":["case_id"]}},{"name":"{{static.6816f79cc0a8016401c5a33be04be441}}","label":"System Administrator","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"0077acca-490e-4b60-9631-1c0982dddb17":["approval_conditions"]}},{"name":"Created_1.current.case_id","label":"Trigger - Record Created➛ Record➛เลขที่คดี","reference":"","reference_display":"เลขที่คดี","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"case_id","usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":["ah_subject"]}},{"name":"Created_1.current.accusation","label":"Trigger - Record Created➛ Record➛ข้อหาหรือฐานความผิด","reference":"","reference_display":"ข้อหาหรือฐานความผิด","type":"string","base_type":"string","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"accusation","usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":[null]}},{"name":"Created_1.current.result","label":"Trigger - Record Created➛ Record➛ผลคดี","reference":"","reference_display":"ผลคดี","type":"choice","base_type":"choice","parent_table_name":"x_1896436_bot_ap_0_people_lawsuit","column_name":"result","choices":[{"label":"ผิด","used":false,"image":"","reference":false,"rawLabel":"ผิด","selected":false,"missing":false,"value":"wrong","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ไม่ผิด","used":false,"image":"","reference":false,"rawLabel":"ไม่ผิด","selected":false,"missing":false,"value":"faultless","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ยกฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ยกฟ้อง","selected":false,"missing":false,"value":"dismiss","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ถอนฟ้อง","used":false,"image":"","reference":false,"rawLabel":"ถอนฟ้อง","selected":false,"missing":false,"value":"discontinue","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"ขาดอายุความ","used":false,"image":"","reference":false,"rawLabel":"ขาดอายุความ","selected":false,"missing":false,"value":"expire","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีอยู่ระหว่างพิจารณา","used":false,"image":"","reference":false,"rawLabel":"คดีอยู่ระหว่างพิจารณา","selected":false,"missing":false,"value":"pending","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}},{"label":"คดีสิ้นสุด","used":false,"image":"","reference":false,"rawLabel":"คดีสิ้นสุด","selected":false,"missing":false,"value":"end","parameters":{"name":"x_1896436_bot_ap_0_people_lawsuit","dependent_values":[""]}}],"usedInstances":{"b05b40e9-71f4-4fb7-b8fe-6210103d0877":[null]}}]</label_cache>
+        <master>true</master>
+        <name>New People Lawsuit</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="New People Lawsuit">bbd9630a3b7e3650bc1ccdd643e45ae4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>934737c23bfe3650bc1ccdd643e45a6b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT IN534737c23bfe3650bc1ccdd643e45a6c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>934737c23bfe3650bc1ccdd643e45a6b</id>
+        <name>New People Lawsuit</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>534737c23bfe3650bc1ccdd643e45a6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:02:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=534737c23bfe3650bc1ccdd643e45a6c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT IN534737c23bfe3650bc1ccdd643e45a80,5f4737c23bfe3650bc1ccdd643e45a6d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</model>
+        <model_id>934737c23bfe3650bc1ccdd643e45a6b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_934737c23bfe3650bc1ccdd643e45a6b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>534737c23bfe3650bc1ccdd643e45a80</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=534737c23bfe3650bc1ccdd643e45a80"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</model>
+        <model_id>934737c23bfe3650bc1ccdd643e45a6b</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_934737c23bfe3650bc1ccdd643e45a6b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>5f4737c23bfe3650bc1ccdd643e45a6d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5f4737c23bfe3650bc1ccdd643e45a6d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT INab4737c23bfe3650bc1ccdd643e45aa7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>ab4737c23bfe3650bc1ccdd643e45aa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:02:08</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLZACWmzLyts0SdEA05nW8bQPQUpQFGkLpSlXopR4Bvn3XmqLrMVLnHTs5MWASJo85/Lw3EveftNlFMxmNLoWscSC0JtVfO3r5zoeuZiMxq7jDGzDNA3bpLZnk9HAG2LXxbZ+pnPsUQ5Dp9jjFL4DIWkkMJ+ulhSapWpGAi9U3wILH8swWunnMkromc6icDGliyXHEgYzzGNoDCOfRvq5eaZnfyvmgL+nmCfq+wGZY3c0sEfICyXCS2SgJQ2XsA7H93ESSBjrBzHMuvqz+Au0LHEE00k19TedzAPuR1To57d3gFlxJYxg16IGsU3bsgzDGg9Mb2R7puXbmBpGB9cGPtlB+YkMfZBU+NSveLaiEVHsfxZ8VY2YQzBz8Av8EAdfYfaxocYxCthJQaz6RAXpvJnMw4DQz0sZhCJvyXHmnSFPFuJTjl+FizKccFkLVxLDfHSpICsQBSJ2Mw/vJ+WCvwQiY1d08pBgXn1hCaLyEkljFXAWcAg9ymMTh0mUoZ9cXXyeXKK/Pkwvfr2aoMnVzXRyfTG9utQfM17o30TNmCMssKCcDgyISRQs5Qcig7RUz+PZS2j5IhR+kMWtpWdSdsV1TDUR1Ha1jNkmkRtGJSNSW7WU+t9Xf7TFnDdu0/NohLFPcY+ePdbDtwOM7KBex79J2UXLLtIeGMZ3EndhRs/V9iL0Kb+sayFXIArEMpEqWvdYyBjJEGHfR7U4qqGAaZvYc26vqfgoEbAUqnayrfss4FXkPwYxEL2Fc11GNQMD/exjMeUkEVoIWw4/GkkiCKrUykPCrhd4VuwF+70UchbMQn8pjhBaoHgVo3niobWIIscdu+aoT9oOWYtgdpRg6ltdv3tUu0w5JbKmVvYlrn/9FsRxIGa18FYcs81qUazYgeq1MoI51fi0uN4dYl9tCaUNaTRsbJNAtpmbaTLmUWYZjooJSNtjpuEYQ8x82zCItVHavYBlQ+uvYnL7WVycnTK+w5lqRrsErxTM9xFsuq72Yh5LqaNw0osjhNbICPZeKaFSaN58ubtQX7hMwn6qHNzfNTO8elJgPLwHJ3pGQvAw+WcWhYnwm5ap5tQCoT2N0H4oIv/jaRlmPTmwMKKb+a6POB2WB6eFJxGVBxiLVTsh5I3brN9mpufSATXA8W0we2/ouh7BFmPOyKGW2SvgTkAnYflbDkzadeL6PLZTjGmXhvcw/u8P8CD7L9TYaf5531u3+fs5FQhIRogrI2+5/YwHPi37DjOD1lLp071s/1cbNnbJ0HQc4oAHghuwAfWwObCApTOyx8NtPDcBkx3c/5d7r7J8BaTHKb7kXcf1wHOcko6plCqT7V++CLgaZP/BObxaTlcbqmVWFUbap1D8dP00TruhkDuzZ5MTyvD1OmYX0kqB2pti7YVy3qrbgOnP0L7GVF1Mevb8vd32GycsXQ9lx23/OQHd+hJAB+Ohy+zuBMDcza7Qz+boC8MdXSjt9bOuAmzXU552mkVVkDVLumfse0NNxdT2lmL0/QbloAK4PLK9zx/PAfsuCoysXjykylBoKQpZPflchhp0aLCIFjCtQEt9zVtpck5hMzjckWBBTa1+YlmnnnTbzKuj9qZ553fKVq0BzVpR9p8QsZcpIxrnaOM7UUe8tlUJ1HfwcGj3XBPd5qNRF6QtiI++XtjbVNIuj9qYH/ebtzlnZ4as7fG6JnYsCN4w61d78upAcaS5/O4/Lp7FVLskAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT IN174737c23bfe3650bc1ccdd643e45aa2,1b0973c63bfe3650bc1ccdd643e45a79,711d7b023b327650bc1ccdd643e45a4d,d70973c63bfe3650bc1ccdd643e45a78,d938b3463bfe3650bc1ccdd643e45a67,df4737c23bfe3650bc1ccdd643e45aa3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>174737c23bfe3650bc1ccdd643e45aa2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:02:08</sys_updated_on>
+        <ui_id>2ebd0edf-6641-4383-9daa-949e922cab90</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC3UyuklXrb07a3L3sry4mdYp2xs7ZTShH//cZxEiKgQHRUanWPHo/tb2a+b+zkx9pnxL/2yTSYZtPpaBIHQRQFwXgcpThMkmicJkGCh37PF3hBwdPghFMYPmNe2PELCifT8TAao0QahHMUoJzKnFPE8VIXzIAvYTrnePW9WvJnOe/dNfPpnHGiqPCvf/zs+TlWcJShyr9e70ydi5XjhHJwfazA7mA3q7wZonLO2e7ay7yvbkIqYqEEPZ++GCoIBQwZ5pr2/AUWBBupVo1FUUzuBd8a5kwY2NG3zi+avcK5k8D6ZRSiSqmba4aoSpUzZ7fY4AejitQUqnJN55KlVLt8EJrhgpubts053OeGSeGWuLDdasmLhfjq0uE3G9SVAUuhAQTNbaAWeRVG9jCXy281yhkTZU6qSS5TzJsRNkaxpDAWz9qnnC5gI7TAec7EE8qVfGblYsCy6D9xGPQzLpdwqGZPoo9TC7wPecX9GdhvS/N3rJiN4g/YBhYDIMaBIciVUMtClal8RikvdDmhsNBuL3/T8/VK33Cs9TZySDn6VVjcLg9VxMglzS5JFcvN77DFM62C2/RquYyOUnC6pVwqBWEWhW5pBtAgRv4uYDFZr2+ANIYSFPbTQkF+Td/Nbzb70umwsqOoTkdUi+qmHdKhMCt57dnuDm1QySu8mLyGQfCZBAaHfzx9dVeMS8EJ2YTkKMnIlk9aKoNcLlu62ddDZ56fAaHm+b1lppes3kJV0TxjlJNDt8jMTuzcIoP/5y3yIUkOgAhy1WOCM1E+CQDoe7F/dJR6SbjDs5JerTvD2rBO9zWAPSO9185KOANOrYQHONt7dHgOQKz7fUmZ3V5fGysBRBcTQDS4jADWTZhNIg/kvH4F2mrW/q/WH+/6AwVbC8LNIYF1OjPseuZgsy/gqJOC22RzM7dvcO7Cz8U3FNl7zxYwh6XVecjpFy0ZeaJme3rtRaRZYv7PofmKcaguVBneOzw9w6NfP0nr6ckytIDKMfstpmgK5NAIK4oyWQiCqrfxlki2khlT2lTO+43mGwX9CE+CMD0zp17p7TXeHS/i03HUqfySeXUg1Wnag0C8MhCvCaRb2F2a1vCCj9NLN60ZZrysBnz25K1yUqWkeqNxnSjkEUac2dXOBBVeFNR/b3uHJHCw/Z3A+im+oS/fmlKKk+EAj+MoDIMgDEgcTOI4nIyTbIzjYbbVKEJapNBNYecMqALbo5oadZ2D/f7jWmrXRnMGqpqCt1LYT+tBbDwLC+rr1bBOA68aSiIlp1jsdJRHuCd+m1X4K76OPlxX+RR/lAr2uJtpZzqY6/d6NxTsL8F+FfSLpdiEBoNJSNKrSRzGV8OMjK+mBI+u8DQZxRGh6TC75FPg57+N4NoDthUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=174737c23bfe3650bc1ccdd643e45aa2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>56262601-a1f6-45a6-b6f4-586fea27e8f5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:47</sys_created_on>
+        <sys_id>1b0973c63bfe3650bc1ccdd643e45a79</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:24:57</sys_updated_on>
+        <ui_id>bcb0535a-42ee-429a-bff4-4a9c22a42741</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWvbMBT9K0XPxthxGpK8jYTAoGuhHXnpOiFb14lAlj1JzsdC/vuubdkxaekyyEuY3+6XdM71OfbrgQhOpmQIPAgn4SiJwigaBMFgPAzjURSHAx4xgJB4RLEMsFNDkmuO8YbJskocDjMNzAKnoZ+UWoOyxyPWuTCFZPula8NMshaSY51MX988UjCNJ1rQZHo4K10KSbIYJLY+t5jOMdp9UcU8T8oMcVHRJh/c5NxV7r7OsYJDFZww8AjsLCgOCCRl0oBHMqY4s7nek6nVJSaQNH9Sct91rIWyDdGM7Yz4jTcPg6ovBWSWuCV0IXULatLpnFn2gicnttTdvnKRgGl2wiFlpbSzfq5peCqsyFUzYlks2+lclpl6bDZCugN676M0CAKKimeFvKGVvqzz7XMLciFUvRJHUeYJk13ErNUiLm0F50BAQr3jjBWFUCta6Hwj6mGEkvkriYGfynyLdxqxUj5LKtw+bpX5C8zP6/SSaVGR+IbH4PDRI2ZvZpIZc6KCO6S/ygpJQ8xRoPUW6hXQWgnVcKJFYb/gVRtwwI+eE318/5nCkslJUL0zT8Lf0XA8GQ2jEY1zS1lBA1pAXmCjZFtTCnsFE1wAsTXB9/rVfwzZ+eBd7qE/e/fYFJwL7q/mgvEtucDRuHkb/E38weDTz2tPSbXeTU/4wiB2iar9UQZBxCsh/MScgm2TqC96L/5Lx/7NIRfwaB2yECC5+YBYaw/IEK8F2hA9s4gr3i1dsftZXM0n4Sionxtyy3/zz3j7A0wnaNQqCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1b0973c63bfe3650bc1ccdd643e45a79"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:25</sys_created_on>
+        <sys_id>711d7b023b327650bc1ccdd643e45a4d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:25</sys_updated_on>
+        <ui_id>b05b40e9-71f4-4fb7-b8fe-6210103d0877</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=711d7b023b327650bc1ccdd643e45a4d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:47</sys_created_on>
+        <sys_id>d70973c63bfe3650bc1ccdd643e45a78</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:24:57</sys_updated_on>
+        <ui_id>76849175-16e2-4109-8bd9-a698d53fb2ec</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXYviMBT9K5LnUlrriPq2KMLC7AzMLL7MDiFtbjWQpt0k9WPF/763bVrFkRkXfJHtW+5Xzjk9t33bE8HJhAyAB+E4HCZRGEX9IOiPBmE8jOKwzyMGEBKPKJYBVmpIcs3xvGayrAL7/VQDs8Bp6Cel1qDs4YB5Lkwh2W7hyjCSrITkmCeTt3ePFEzjRAuaTPZnqWshSRaDxNKXFtM5RrsrqjPPkzJDXFS0wUfXOXOZ3vcZZrCpghMGHoGtBcUBgaRMGvBIxhRnNtc7MrG6xACS5s9K7rqKlVC2IZqxrRF/8OZBUNWlgMwSJ0J3pE6gJpzOmGWvODmxpe70ykUCptGEQ8pKaaensabgubAiV02LZbFsu3NZZuqpUYR0A07eR2kQBBQVzwp5Qyt9XeWblxbkXKhaEkdR5gmT3YlZq0Vc2grOnoCEWuOMFYVQS1rofC3qZoSS+UuJBz+V+QbvNGKpfJZUuH1UlflzjM/q8IJpUZH4gWOw+eARszNTyYw5UkEN6e+yQtIQcxRorUItAa2dUDUnWhT2G161Bgf84DnTxw+fOSwZHw11MvNo/C0NR+PhIBrSOLeUFTSgBeQFFkq2MaWwN1iCKyC2S/CzfvWXIbs9+BB7PO3tPTUJtwUPN9uC0T1tgaNx92vwlfmD/qef1xMn1X43J8YXhirY/CqDIOL10I9Gv1Tyb86/Al/r/LkAyc0FwK3tIUNsFmhD4Mz6LtlbuGT3E7iZ/8NhUD93tAX/zb/g/S+p9bl5AgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d70973c63bfe3650bc1ccdd643e45a78"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:06:06</sys_created_on>
+        <sys_id>d938b3463bfe3650bc1ccdd643e45a67</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:24:57</sys_updated_on>
+        <ui_id>0077acca-490e-4b60-9631-1c0982dddb17</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YTW/bOBCG/0rAs+OlrA/LvgUxArTYbYEk7SUOBIocJSxoSRWpJF7B/30pkbJUO3HdhXJI04sBDmeod0bPkKJvKsQZmqNpmExgNpvg2MHYxTj0KQ5diN1pMHUJxWiEUrIC7VkAzQqmxw9ElLWhqs4LIApY5IxpWRSQqs1GzzMuc0HWX62bttB7LpieR/Ob2xHKSaFXVFCgebUzdawkQWIQ2vWy1bSrUa3zeswyWq60roi3xr9t5MLOnHxY6BkdVMvBIwRPClIGWkdChIQRWpGUEZUVazRXRakNOmf2ORXrrcc9T5XJc0WeJP9XP9id1H4J6MSorcF2GNn6GHOyIIpc6ZWpKottuTJOQZqSMEhIKdR532YcPueKZ6kJUSQWbXQmylX6yRQEbRfovY5SahGQ13nWyk1aydV99njZirzgaVMRm6LIKBHbEVGq4HGpajkVAgFNiVckz3l6F+VF9sCbYC1lNb4TejBORPaonyn5XTomtNY91lUl4wttXzTmr6TgdRL/6GV08GaE5FqeCyJll4quYfS9rJWYxGwKUVMFU4I6jhY8V2f6KQ9gNW9GFveYHmSLdiiZ5TranyInnAWeG0RxpiKSRzjKIcsFRII8ypKrAcg/Ql1L/rWVt6PWct8Mo2buR+ybsJNPZsJS7xym3lo67A0vz1Af4jdEvU3rzWP/M+LBC1xf/0wTFzsTB4cQhCGdYULDIPA9t2NIK9A5EBHpVy312h37A6B9hIwW7TOr4+Sy1fGiQIu71C8mvdtB/ao1Wswnv4j5y7u7E7wn0Et+vVNlY9mr8+t0RP24Lyn/XsKHmqNgEgczHLJTluD41Atd/5RQwKcQOD74LKC+475CF2Hn0M7MwmcgTTgINmwTHaFir4kurIyX5NkWaobPnRhN/M6JMVwrhRi/pV56T59K9CBs0Ds4vmVlkb4O8UeIaIn/aFTsAr8r7v/w7v7h/ffn3fMPotb72N7uoTRLGa8Vyx71ZucFeQnfgCp5lq6/3FSVVERxOg5CJ0imM0oxCbETeNihPnHdGLAXg+c5m83tftcMsOKvdd0RpdjewEsB8melsT3Xfb/ZoH7fdV99dtL2njfUnfyNtd57uZ/Qg6wls44tVuoCEdW/lFdLZGQv0XyJ0iyFJRotUe0V1XA1Zu2hxW0nGltVbTbGUhbELuD0hl00I2vZeEp6D0yz2Vh/sERNM1j7EP+AHVGTtv8WJZwsTFH2y9Rej1qdpi5878y7sg7NSn9d8/7Z5w929nl/2m+Iy1DUbqP1waZ3vwF78vY/jV5yRRYWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d938b3463bfe3650bc1ccdd643e45a67"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>df4737c23bfe3650bc1ccdd643e45aa3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:24:57</sys_updated_on>
+        <ui_id>79c6a204-8f74-4d90-b034-c24dd9c1e8a7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4HOiWHHmRHnNrQodtjaoR166TqDluhEgPwxSW6bBfnvo2w5DboW24xeCtQ3kXxPjxQl+mbHpGArlkQYfkijhMdRHM/DcL5cRHkS59FcxIC4YFNWQYkUaSFXmHWLKbsD1TrjQxYt02QRJ1le2wyaLMwarBsKNC2KbCONrfWWAEKaRsH22uO+dkGTKwqafDoE8Y1UQmPFVje3U9aAps0sarbaPXH9q3QFOSoK/ea0v5CK3TbP2j4fYyfnvaPWwukJpwwfLFYCSUgByuCUlVAJ6BJZWd2SQSOIi0ptDxEbWVkiZC72wchftO0ydHEFUmYce99hmfma9ebiFCxcETO3rfahfFNLjqavicACWmVPjm19wEVjZV31kC5Nj65VW1bnfUnYgWA4IrK0hkRg4/J0yn0axdWmvr8cVJ7JqiuJd6qagzqswFot89Y6PTuGCksiykpoGlmts0bXd7IDk5YyWCtaBIWq72lTI9dVANwJD6isEJyR/bQzX4OWLosvREPg/ZSZrTlRYMxjLlTE7GfrlPSZ+RyyvgwOwrVs7Efa4A693P10uBMCw/TFxoryx0bqroE5ug+8brX93oZhLHa7OeYiRFHMkmQRzRbxMp6lAmCWLlJM53MOeRoGl8ipqYIOuN//4EA1d+03imQAE5GxYFszhqVHEoW/yVKMYTmAiQg4bw24sxzD9Ih2mrSsuGxAjdI0gIlIo6FmH8PSI4ezGlcdDyWSQsE6ExoKr8W9HX++l+999d5Xr9JX/zli//4SDiP2TKIS5pmncZivWFJDW8z6p/LJjPXOybV3+jkbvdacjZKw+97QtO2Te/PD9ui/6oWxe/sbCWkiIowKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=df4737c23bfe3650bc1ccdd643e45aa3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT IN5f4737c23bfe3650bc1ccdd643e45a91,d30973c63bfe3650bc1ccdd643e45a8f,db0973c63bfe3650bc1ccdd643e45a8d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">aa863b423bfe3650bc1ccdd643e45ae9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>5f4737c23bfe3650bc1ccdd643e45a91</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <ui_id>0cc2ea75-4269-4caa-920e-7de67cb41e80</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfAgcBCqQN0AS5tIGwIimbKEWqfNhxBf97l3rYRuogNZJjb+Lscnd2uAO1RHvXeGcf9JW1YqnI/PtTRIQKGH63REHNyZxQrZhwQquiAyKyBum7AFg+cduGT4SdUCNqoUBinAnbSNg+vpFGV0Iyw4e+DRis7rgh8/ZFSDCsUiVQpZc0pXk2y7MkyT5dpOUsL9OM5cAhx4ISSi4xdTESntx2SPTqJIEV4tYZoZbD+Xaocj+C2rDAKk0iwp8dV4wjnwqk5RGpQTFw2mz3iOHA7pQ8ACuhHJYjIfnZit/YMJtOQ2LFcUTK++D+WAzy9XB1DQ6QiqfOmyGVrrSg3PbiMF6Bl25xjPUJd00Ytb/ioJTjbS19rb72ipB9gfG1EPEWSfAmTBqoD3NU9yu9+TayvBGqU2UISk3xTccTONSu9C7waQmXvMZCRQ1Ng4oWjdFr0V1GLnW8lHiIK6k32DTsYQw0EI9RWIhvEL/u4EcwIkzxBcvg5Z5mCVbQottZLIcycbKLiN3ahQRrD0OiusUvHyj2Iw/DFb0+4QouZuOusPOaD3Psor8tcLT9bbvAt3acFWlMvUFVXBxWvQhLtNv98EmSs9ddce7189xyCdNqmibT0265mJ1yywmfnGmR7A2LhPf5R4ckSfLfIu+2iLBFv9jDbF3zD3TIU7BD33OvNRUWqT0E7PP4LwmBLS6XoMfQRpufYagDtvsDGxGr/JUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c70933c63bfe3650bc1ccdd643e45a94</block>
+        <comment/>
+        <connected_to>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:47</sys_created_on>
+        <sys_id>d30973c63bfe3650bc1ccdd643e45a8f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <ui_id>56262601-a1f6-45a6-b6f4-586fea27e8f5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4b0933c63bfe3650bc1ccdd643e45a90</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="New People Lawsuit">934737c23bfe3650bc1ccdd643e45a6b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:09:47</sys_created_on>
+        <sys_id>db0973c63bfe3650bc1ccdd643e45a8d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <ui_id>e59bfaab-2ae3-4747-b1a8-3f2c3e45012e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWaAkP2LfDAcBCqQN0AS5tIGwIimbKCWqJGXHFfzvXephG42DNmiOvZmz3OXMaAduiK5dVTv7oJfWynVJFl+fAiJLj+HvhpRQCLIgTJdcOqnLtAUCsgVV+8KyqozeCo4Ql7ZSsH98WWEbqbgR/fQKDM5wwpBF81tJcmzMKeTRnEUsiadJTGl8NY6yaZJFMU9AQIIDFWRC4dXVQOvDbYsEr/J1+8rj1hlZrvvzbT/lfgC14Z5VRAMinp0oObJf5KCsCEgBJQenzf6IGAH8rlQnYCNLh+OIv/xs5U98MJ5M/MVcoEQmuuLxmPaOdXB+DQ6QSs1cbfqrbKMlE7Yzh4scauVW51h34a7yUrsWB5kaurWqi/Jz5wg5Dhg+ECK1RRKi8ko99V5Hfr/Ruy8DyxtZtq70RaUZqOMJHHqX1c7zaYhQosBBaQFVhY6mfgFk24xcinCt8BDmSu/wUb9tITBPPERjIbxB/LqFH8FIr+ITjsHmjmYGVrK03UwchzYJcgiI3duVAmtPItHd9EftKXaSe3Fp549vYUZWbokvb0Wv4xC8XPSzHW8aSmczYAxG4zkVo3E2paP5NIlGEaPzq5hznkWzENqFB5VaB04cDt9qShMOrwbkvca+LV1zmOSTiE4up2s8vZSuC7l6Y6TiP0TKf8+/TBSl9H+k/jlS0qZdEHpt7ePvmKgnH5/uzaPXTFqk9uCxj8M/jC/scbkkO4d22nz3ok7Y4RfKSR7UqwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=934737c23bfe3650bc1ccdd643e45a6b^sys_idNOT IN3d1d7b023b327650bc1ccdd643e45aa8,f51d7b023b327650bc1ccdd643e45aa8"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>934737c23bfe3650bc1ccdd643e45a6b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.result}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:26</sys_created_on>
+        <sys_id>3d1d7b023b327650bc1ccdd643e45aa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0639308e-d4f4-49e6-8476-1846539a5fb6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>934737c23bfe3650bc1ccdd643e45a6b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.accusation}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:27:26</sys_created_on>
+        <sys_id>f51d7b023b327650bc1ccdd643e45aa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>dd5978db-eac7-43af-84d9-532bac5fea9d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_934737c23bfe3650bc1ccdd643e45a6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>5f4737c23bfe3650bc1ccdd643e45a86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:02:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_934737c23bfe3650bc1ccdd643e45a6b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:08</sys_created_on>
+        <sys_id>d74737c23bfe3650bc1ccdd643e45a7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="BOT Application" source="x_1896436_bot_ap_0">566dc70e3b527210bc1ccdd643e45a0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BOT Application">566dc70e3b527210bc1ccdd643e45a0f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:02:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_934737c23bfe3650bc1ccdd643e45a6b"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>bbd9630a3b7e3650bc1ccdd643e45ae4</sys_id>
+        <latest_snapshot>934737c23bfe3650bc1ccdd643e45a6b</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch4-11-14-2025_12-03-2025_1405.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=bbd9630a3b7e3650bc1ccdd643e45ae4^sys_idNOT IN6b4737c23bfe3650bc1ccdd643e45aed"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6b4737c23bfe3650bc1ccdd643e45aed","name":"plan","plan_signature":null}}</plan>
+        <plan_id>bbd9630a3b7e3650bc1ccdd643e45ae4</plan_id>
+        <snapshot>dfcd7b823b327650bc1ccdd643e45a40</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-03 09:02:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b4737c23bfe3650bc1ccdd643e45aed</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-03 09:27:27</sys_updated_on>
+        <trigger display_value="">ce1dbb023b327650bc1ccdd643e45a0a</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=bbd9630a3b7e3650bc1ccdd643e45ae4"/>
+</record_update>
